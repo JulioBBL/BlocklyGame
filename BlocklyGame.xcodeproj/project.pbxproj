@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59CB809B1FF7328000D2EE8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB809A1FF7328000D2EE8D /* AppDelegate.swift */; };
+		59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809C1FF7328000D2EE8D /* GameScene.sks */; };
+		59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809E1FF7328000D2EE8D /* Actions.sks */; };
+		59CB80A11FF7328000D2EE8D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80A01FF7328000D2EE8D /* GameScene.swift */; };
+		59CB80A31FF7328000D2EE8D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80A21FF7328000D2EE8D /* GameViewController.swift */; };
+		59CB80A61FF7328000D2EE8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CB80A41FF7328000D2EE8D /* Main.storyboard */; };
+		59CB80A81FF7328000D2EE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CB80A71FF7328000D2EE8D /* Assets.xcassets */; };
+		59CB80AB1FF7328000D2EE8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */; };
+		59CB80B61FF7328000D2EE8D /* BlocklyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80B51FF7328000D2EE8D /* BlocklyGameTests.swift */; };
+		59CB80C11FF7328000D2EE8D /* BlocklyGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80C01FF7328000D2EE8D /* BlocklyGameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59CB80B21FF7328000D2EE8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59CB808F1FF7328000D2EE8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59CB80961FF7328000D2EE8D;
+			remoteInfo = BlocklyGame;
+		};
+		59CB80BD1FF7328000D2EE8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59CB808F1FF7328000D2EE8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59CB80961FF7328000D2EE8D;
+			remoteInfo = BlocklyGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59CB80971FF7328000D2EE8D /* BlocklyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlocklyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CB809A1FF7328000D2EE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59CB809C1FF7328000D2EE8D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		59CB809E1FF7328000D2EE8D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		59CB80A01FF7328000D2EE8D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		59CB80A21FF7328000D2EE8D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		59CB80A51FF7328000D2EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59CB80A71FF7328000D2EE8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59CB80AA1FF7328000D2EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59CB80AC1FF7328000D2EE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CB80B11FF7328000D2EE8D /* BlocklyGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocklyGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CB80B51FF7328000D2EE8D /* BlocklyGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyGameTests.swift; sourceTree = "<group>"; };
+		59CB80B71FF7328000D2EE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CB80BC1FF7328000D2EE8D /* BlocklyGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocklyGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CB80C01FF7328000D2EE8D /* BlocklyGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyGameUITests.swift; sourceTree = "<group>"; };
+		59CB80C21FF7328000D2EE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59CB80941FF7328000D2EE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CB80AE1FF7328000D2EE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CB80B91FF7328000D2EE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59CB808E1FF7328000D2EE8D = {
+			isa = PBXGroup;
+			children = (
+				59CB80991FF7328000D2EE8D /* BlocklyGame */,
+				59CB80B41FF7328000D2EE8D /* BlocklyGameTests */,
+				59CB80BF1FF7328000D2EE8D /* BlocklyGameUITests */,
+				59CB80981FF7328000D2EE8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59CB80981FF7328000D2EE8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59CB80971FF7328000D2EE8D /* BlocklyGame.app */,
+				59CB80B11FF7328000D2EE8D /* BlocklyGameTests.xctest */,
+				59CB80BC1FF7328000D2EE8D /* BlocklyGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59CB80991FF7328000D2EE8D /* BlocklyGame */ = {
+			isa = PBXGroup;
+			children = (
+				59CB809A1FF7328000D2EE8D /* AppDelegate.swift */,
+				59CB809C1FF7328000D2EE8D /* GameScene.sks */,
+				59CB809E1FF7328000D2EE8D /* Actions.sks */,
+				59CB80A01FF7328000D2EE8D /* GameScene.swift */,
+				59CB80A21FF7328000D2EE8D /* GameViewController.swift */,
+				59CB80A41FF7328000D2EE8D /* Main.storyboard */,
+				59CB80A71FF7328000D2EE8D /* Assets.xcassets */,
+				59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */,
+				59CB80AC1FF7328000D2EE8D /* Info.plist */,
+			);
+			path = BlocklyGame;
+			sourceTree = "<group>";
+		};
+		59CB80B41FF7328000D2EE8D /* BlocklyGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				59CB80B51FF7328000D2EE8D /* BlocklyGameTests.swift */,
+				59CB80B71FF7328000D2EE8D /* Info.plist */,
+			);
+			path = BlocklyGameTests;
+			sourceTree = "<group>";
+		};
+		59CB80BF1FF7328000D2EE8D /* BlocklyGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59CB80C01FF7328000D2EE8D /* BlocklyGameUITests.swift */,
+				59CB80C21FF7328000D2EE8D /* Info.plist */,
+			);
+			path = BlocklyGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59CB80961FF7328000D2EE8D /* BlocklyGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CB80C51FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGame" */;
+			buildPhases = (
+				59CB80931FF7328000D2EE8D /* Sources */,
+				59CB80941FF7328000D2EE8D /* Frameworks */,
+				59CB80951FF7328000D2EE8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlocklyGame;
+			productName = BlocklyGame;
+			productReference = 59CB80971FF7328000D2EE8D /* BlocklyGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59CB80B01FF7328000D2EE8D /* BlocklyGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CB80C81FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGameTests" */;
+			buildPhases = (
+				59CB80AD1FF7328000D2EE8D /* Sources */,
+				59CB80AE1FF7328000D2EE8D /* Frameworks */,
+				59CB80AF1FF7328000D2EE8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59CB80B31FF7328000D2EE8D /* PBXTargetDependency */,
+			);
+			name = BlocklyGameTests;
+			productName = BlocklyGameTests;
+			productReference = 59CB80B11FF7328000D2EE8D /* BlocklyGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59CB80BB1FF7328000D2EE8D /* BlocklyGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CB80CB1FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGameUITests" */;
+			buildPhases = (
+				59CB80B81FF7328000D2EE8D /* Sources */,
+				59CB80B91FF7328000D2EE8D /* Frameworks */,
+				59CB80BA1FF7328000D2EE8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59CB80BE1FF7328000D2EE8D /* PBXTargetDependency */,
+			);
+			name = BlocklyGameUITests;
+			productName = BlocklyGameUITests;
+			productReference = 59CB80BC1FF7328000D2EE8D /* BlocklyGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59CB808F1FF7328000D2EE8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Julio Brazil";
+				TargetAttributes = {
+					59CB80961FF7328000D2EE8D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					59CB80B01FF7328000D2EE8D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59CB80961FF7328000D2EE8D;
+					};
+					59CB80BB1FF7328000D2EE8D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 59CB80961FF7328000D2EE8D;
+					};
+				};
+			};
+			buildConfigurationList = 59CB80921FF7328000D2EE8D /* Build configuration list for PBXProject "BlocklyGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59CB808E1FF7328000D2EE8D;
+			productRefGroup = 59CB80981FF7328000D2EE8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59CB80961FF7328000D2EE8D /* BlocklyGame */,
+				59CB80B01FF7328000D2EE8D /* BlocklyGameTests */,
+				59CB80BB1FF7328000D2EE8D /* BlocklyGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59CB80951FF7328000D2EE8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CB80A61FF7328000D2EE8D /* Main.storyboard in Resources */,
+				59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */,
+				59CB80A81FF7328000D2EE8D /* Assets.xcassets in Resources */,
+				59CB80AB1FF7328000D2EE8D /* LaunchScreen.storyboard in Resources */,
+				59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CB80AF1FF7328000D2EE8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CB80BA1FF7328000D2EE8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59CB80931FF7328000D2EE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CB80A11FF7328000D2EE8D /* GameScene.swift in Sources */,
+				59CB80A31FF7328000D2EE8D /* GameViewController.swift in Sources */,
+				59CB809B1FF7328000D2EE8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CB80AD1FF7328000D2EE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CB80B61FF7328000D2EE8D /* BlocklyGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CB80B81FF7328000D2EE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CB80C11FF7328000D2EE8D /* BlocklyGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59CB80B31FF7328000D2EE8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59CB80961FF7328000D2EE8D /* BlocklyGame */;
+			targetProxy = 59CB80B21FF7328000D2EE8D /* PBXContainerItemProxy */;
+		};
+		59CB80BE1FF7328000D2EE8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59CB80961FF7328000D2EE8D /* BlocklyGame */;
+			targetProxy = 59CB80BD1FF7328000D2EE8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59CB80A41FF7328000D2EE8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59CB80A51FF7328000D2EE8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59CB80AA1FF7328000D2EE8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59CB80C31FF7328000D2EE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59CB80C41FF7328000D2EE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59CB80C61FF7328000D2EE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = BlocklyGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.BlocklyGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59CB80C71FF7328000D2EE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = BlocklyGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.BlocklyGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59CB80C91FF7328000D2EE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = BlocklyGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.BlocklyGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlocklyGame.app/BlocklyGame";
+			};
+			name = Debug;
+		};
+		59CB80CA1FF7328000D2EE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = BlocklyGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.BlocklyGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlocklyGame.app/BlocklyGame";
+			};
+			name = Release;
+		};
+		59CB80CC1FF7328000D2EE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = BlocklyGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.BlocklyGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlocklyGame;
+			};
+			name = Debug;
+		};
+		59CB80CD1FF7328000D2EE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
+				INFOPLIST_FILE = BlocklyGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mackmobile.Brazil.Julio.BlocklyGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlocklyGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59CB80921FF7328000D2EE8D /* Build configuration list for PBXProject "BlocklyGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CB80C31FF7328000D2EE8D /* Debug */,
+				59CB80C41FF7328000D2EE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59CB80C51FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CB80C61FF7328000D2EE8D /* Debug */,
+				59CB80C71FF7328000D2EE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59CB80C81FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CB80C91FF7328000D2EE8D /* Debug */,
+				59CB80CA1FF7328000D2EE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59CB80CB1FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CB80CC1FF7328000D2EE8D /* Debug */,
+				59CB80CD1FF7328000D2EE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59CB808F1FF7328000D2EE8D /* Project object */;
+}
