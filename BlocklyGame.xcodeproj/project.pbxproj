@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43159B4F504D4F9572F14374 /* Pods_BlocklyGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748ACCFB78202AAF54A50848 /* Pods_BlocklyGameTests.framework */; };
+		5949A94F20066CE000552C26 /* customCodeGeneratos.js in Resources */ = {isa = PBXBuildFile; fileRef = 5949A94E20066CE000552C26 /* customCodeGeneratos.js */; };
+		5949A953200672AB00552C26 /* CodeRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949A952200672AB00552C26 /* CodeRunner.swift */; };
+		597F29FD1FF7344800F30573 /* BlocklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F29FC1FF7344800F30573 /* BlocklyViewController.swift */; };
+		597F2A151FF8190900F30573 /* toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 597F2A141FF8190900F30573 /* toolbox.xml */; };
+		597F2A181FF8276400F30573 /* UIColor+FlatUIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F2A171FF8276400F30573 /* UIColor+FlatUIColors.swift */; };
+		597F2A1C1FF8284400F30573 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F2A1B1FF8284400F30573 /* UIColor+Hex.swift */; };
+		597F2A1F1FF9223300F30573 /* blockly_compressed.js in Resources */ = {isa = PBXBuildFile; fileRef = 597F2A1D1FF9223300F30573 /* blockly_compressed.js */; };
+		597F2A201FF9223300F30573 /* en.js in Resources */ = {isa = PBXBuildFile; fileRef = 597F2A1E1FF9223300F30573 /* en.js */; };
+		597F2A221FF9282400F30573 /* javascript_compressed.js in Resources */ = {isa = PBXBuildFile; fileRef = 597F2A211FF9282300F30573 /* javascript_compressed.js */; };
+		597F2A241FFC342800F30573 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F2A231FFC342800F30573 /* UIColor+Random.swift */; };
+		597F2A281FFC43A000F30573 /* customDefinitions.json in Resources */ = {isa = PBXBuildFile; fileRef = 597F2A271FFC43A000F30573 /* customDefinitions.json */; };
+		597F2A312006680C00F30573 /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F2A302006680C00F30573 /* JSHandler.swift */; };
 		59CB809B1FF7328000D2EE8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB809A1FF7328000D2EE8D /* AppDelegate.swift */; };
 		59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809C1FF7328000D2EE8D /* GameScene.sks */; };
 		59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809E1FF7328000D2EE8D /* Actions.sks */; };
@@ -17,6 +30,8 @@
 		59CB80AB1FF7328000D2EE8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */; };
 		59CB80B61FF7328000D2EE8D /* BlocklyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80B51FF7328000D2EE8D /* BlocklyGameTests.swift */; };
 		59CB80C11FF7328000D2EE8D /* BlocklyGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80C01FF7328000D2EE8D /* BlocklyGameUITests.swift */; };
+		741C0408A666D61F7B080D32 /* Pods_BlocklyGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A6EA5791CAEEE13BD3391 /* Pods_BlocklyGameUITests.framework */; };
+		ABAA63D32B5C0970E0DA75A7 /* Pods_BlocklyGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE967BEAD54A7A2F3A214F41 /* Pods_BlocklyGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +52,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086A6EA5791CAEEE13BD3391 /* Pods_BlocklyGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7EF14D08D216D1C2EC2743 /* Pods-BlocklyGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5949A94E20066CE000552C26 /* customCodeGeneratos.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = customCodeGeneratos.js; sourceTree = "<group>"; };
+		5949A952200672AB00552C26 /* CodeRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRunner.swift; sourceTree = "<group>"; };
+		597F29FC1FF7344800F30573 /* BlocklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyViewController.swift; sourceTree = "<group>"; };
+		597F2A141FF8190900F30573 /* toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = toolbox.xml; sourceTree = "<group>"; };
+		597F2A171FF8276400F30573 /* UIColor+FlatUIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+FlatUIColors.swift"; sourceTree = "<group>"; };
+		597F2A1B1FF8284400F30573 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		597F2A1D1FF9223300F30573 /* blockly_compressed.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = blockly_compressed.js; sourceTree = "<group>"; };
+		597F2A1E1FF9223300F30573 /* en.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = en.js; sourceTree = "<group>"; };
+		597F2A211FF9282300F30573 /* javascript_compressed.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = javascript_compressed.js; sourceTree = "<group>"; };
+		597F2A231FFC342800F30573 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
+		597F2A271FFC43A000F30573 /* customDefinitions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = customDefinitions.json; sourceTree = "<group>"; };
+		597F2A302006680C00F30573 /* JSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHandler.swift; sourceTree = "<group>"; };
 		59CB80971FF7328000D2EE8D /* BlocklyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlocklyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CB809A1FF7328000D2EE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CB809C1FF7328000D2EE8D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -53,6 +82,13 @@
 		59CB80BC1FF7328000D2EE8D /* BlocklyGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocklyGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CB80C01FF7328000D2EE8D /* BlocklyGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyGameUITests.swift; sourceTree = "<group>"; };
 		59CB80C21FF7328000D2EE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605873F7132D7C31FB621D0F /* Pods-BlocklyGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		73515B53E0A2C3993930B11E /* Pods-BlocklyGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame.debug.xcconfig"; sourceTree = "<group>"; };
+		748ACCFB78202AAF54A50848 /* Pods_BlocklyGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BED77401FDAEFB164A8028F /* Pods-BlocklyGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6EBAACDF13C5F33FB188AF5 /* Pods-BlocklyGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame.release.xcconfig"; sourceTree = "<group>"; };
+		CB282355B54FD3CF6B0A5281 /* Pods-BlocklyGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE967BEAD54A7A2F3A214F41 /* Pods_BlocklyGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAA63D32B5C0970E0DA75A7 /* Pods_BlocklyGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43159B4F504D4F9572F14374 /* Pods_BlocklyGameTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +112,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741C0408A666D61F7B080D32 /* Pods_BlocklyGameUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06EE1FB8792878247250FD71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE967BEAD54A7A2F3A214F41 /* Pods_BlocklyGame.framework */,
+				748ACCFB78202AAF54A50848 /* Pods_BlocklyGameTests.framework */,
+				086A6EA5791CAEEE13BD3391 /* Pods_BlocklyGameUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		597F2A161FF8274A00F30573 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				597F2A171FF8276400F30573 /* UIColor+FlatUIColors.swift */,
+				597F2A1B1FF8284400F30573 /* UIColor+Hex.swift */,
+				597F2A231FFC342800F30573 /* UIColor+Random.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		597F2A2B1FFC497700F30573 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				597F2A302006680C00F30573 /* JSHandler.swift */,
+				5949A952200672AB00552C26 /* CodeRunner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		59CB808E1FF7328000D2EE8D = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +155,8 @@
 				59CB80B41FF7328000D2EE8D /* BlocklyGameTests */,
 				59CB80BF1FF7328000D2EE8D /* BlocklyGameUITests */,
 				59CB80981FF7328000D2EE8D /* Products */,
+				D34E6AC9138495F2BDBC50DC /* Pods */,
+				06EE1FB8792878247250FD71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +173,21 @@
 		59CB80991FF7328000D2EE8D /* BlocklyGame */ = {
 			isa = PBXGroup;
 			children = (
+				5949A94E20066CE000552C26 /* customCodeGeneratos.js */,
+				597F2A271FFC43A000F30573 /* customDefinitions.json */,
+				597F2A1D1FF9223300F30573 /* blockly_compressed.js */,
+				597F2A211FF9282300F30573 /* javascript_compressed.js */,
+				597F2A1E1FF9223300F30573 /* en.js */,
+				597F2A161FF8274A00F30573 /* Extensions */,
+				597F2A2B1FFC497700F30573 /* Model */,
+				597F2A141FF8190900F30573 /* toolbox.xml */,
 				59CB809A1FF7328000D2EE8D /* AppDelegate.swift */,
 				59CB809C1FF7328000D2EE8D /* GameScene.sks */,
 				59CB809E1FF7328000D2EE8D /* Actions.sks */,
 				59CB80A01FF7328000D2EE8D /* GameScene.swift */,
 				59CB80A21FF7328000D2EE8D /* GameViewController.swift */,
 				59CB80A41FF7328000D2EE8D /* Main.storyboard */,
+				597F29FC1FF7344800F30573 /* BlocklyViewController.swift */,
 				59CB80A71FF7328000D2EE8D /* Assets.xcassets */,
 				59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */,
 				59CB80AC1FF7328000D2EE8D /* Info.plist */,
@@ -134,6 +213,19 @@
 			path = BlocklyGameUITests;
 			sourceTree = "<group>";
 		};
+		D34E6AC9138495F2BDBC50DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73515B53E0A2C3993930B11E /* Pods-BlocklyGame.debug.xcconfig */,
+				B6EBAACDF13C5F33FB188AF5 /* Pods-BlocklyGame.release.xcconfig */,
+				9BED77401FDAEFB164A8028F /* Pods-BlocklyGameTests.debug.xcconfig */,
+				605873F7132D7C31FB621D0F /* Pods-BlocklyGameTests.release.xcconfig */,
+				1A7EF14D08D216D1C2EC2743 /* Pods-BlocklyGameUITests.debug.xcconfig */,
+				CB282355B54FD3CF6B0A5281 /* Pods-BlocklyGameUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59CB80C51FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGame" */;
 			buildPhases = (
+				1918E1E96DE5DB446C566C56 /* [CP] Check Pods Manifest.lock */,
 				59CB80931FF7328000D2EE8D /* Sources */,
 				59CB80941FF7328000D2EE8D /* Frameworks */,
 				59CB80951FF7328000D2EE8D /* Resources */,
+				6CCC99D050DD5236BF6CAD51 /* [CP] Embed Pods Frameworks */,
+				15BB6E529C78004F4409C874 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59CB80C81FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGameTests" */;
 			buildPhases = (
+				FC23A8EDF76540FCD5A25D42 /* [CP] Check Pods Manifest.lock */,
 				59CB80AD1FF7328000D2EE8D /* Sources */,
 				59CB80AE1FF7328000D2EE8D /* Frameworks */,
 				59CB80AF1FF7328000D2EE8D /* Resources */,
+				8BD307DF30F2B205E575ED88 /* [CP] Embed Pods Frameworks */,
+				A7354B4217485A29892145A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59CB80CB1FF7328000D2EE8D /* Build configuration list for PBXNativeTarget "BlocklyGameUITests" */;
 			buildPhases = (
+				5916A4126B1D505B865C98D9 /* [CP] Check Pods Manifest.lock */,
 				59CB80B81FF7328000D2EE8D /* Sources */,
 				59CB80B91FF7328000D2EE8D /* Frameworks */,
 				59CB80BA1FF7328000D2EE8D /* Resources */,
+				E430C2EF1D4ECABD511B8688 /* [CP] Embed Pods Frameworks */,
+				E0F3C94E022DC0B3912B0082 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,7 +343,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				59CB80A61FF7328000D2EE8D /* Main.storyboard in Resources */,
+				597F2A221FF9282400F30573 /* javascript_compressed.js in Resources */,
+				597F2A1F1FF9223300F30573 /* blockly_compressed.js in Resources */,
+				5949A94F20066CE000552C26 /* customCodeGeneratos.js in Resources */,
+				597F2A281FFC43A000F30573 /* customDefinitions.json in Resources */,
 				59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */,
+				597F2A201FF9223300F30573 /* en.js in Resources */,
+				597F2A151FF8190900F30573 /* toolbox.xml in Resources */,
 				59CB80A81FF7328000D2EE8D /* Assets.xcassets in Resources */,
 				59CB80AB1FF7328000D2EE8D /* LaunchScreen.storyboard in Resources */,
 				59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */,
@@ -265,14 +372,172 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15BB6E529C78004F4409C874 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1918E1E96DE5DB446C566C56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlocklyGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5916A4126B1D505B865C98D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlocklyGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CCC99D050DD5236BF6CAD51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/Blockly/Blockly.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Blockly.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD307DF30F2B205E575ED88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7354B4217485A29892145A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F3C94E022DC0B3912B0082 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E430C2EF1D4ECABD511B8688 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC23A8EDF76540FCD5A25D42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlocklyGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		59CB80931FF7328000D2EE8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				59CB80A11FF7328000D2EE8D /* GameScene.swift in Sources */,
+				597F2A181FF8276400F30573 /* UIColor+FlatUIColors.swift in Sources */,
+				597F29FD1FF7344800F30573 /* BlocklyViewController.swift in Sources */,
+				597F2A241FFC342800F30573 /* UIColor+Random.swift in Sources */,
+				597F2A1C1FF8284400F30573 /* UIColor+Hex.swift in Sources */,
+				597F2A312006680C00F30573 /* JSHandler.swift in Sources */,
 				59CB80A31FF7328000D2EE8D /* GameViewController.swift in Sources */,
 				59CB809B1FF7328000D2EE8D /* AppDelegate.swift in Sources */,
+				5949A953200672AB00552C26 /* CodeRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +701,7 @@
 		};
 		59CB80C61FF7328000D2EE8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73515B53E0A2C3993930B11E /* Pods-BlocklyGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +717,7 @@
 		};
 		59CB80C71FF7328000D2EE8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EBAACDF13C5F33FB188AF5 /* Pods-BlocklyGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +733,7 @@
 		};
 		59CB80C91FF7328000D2EE8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BED77401FDAEFB164A8028F /* Pods-BlocklyGameTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +751,7 @@
 		};
 		59CB80CA1FF7328000D2EE8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605873F7132D7C31FB621D0F /* Pods-BlocklyGameTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +769,7 @@
 		};
 		59CB80CC1FF7328000D2EE8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7EF14D08D216D1C2EC2743 /* Pods-BlocklyGameUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +786,7 @@
 		};
 		59CB80CD1FF7328000D2EE8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB282355B54FD3CF6B0A5281 /* Pods-BlocklyGameUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

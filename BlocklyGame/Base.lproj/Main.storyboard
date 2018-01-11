@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ehu-ID-2Fo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,7 +14,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="BlocklyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +24,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Blockly View Controller-->
+        <scene sceneID="9PR-3W-CWs">
+            <objects>
+                <viewController id="ehu-ID-2Fo" customClass="BlocklyViewController" customModule="BlocklyGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DgQ-uw-CRE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohP-Kp-Mam" userLabel="StuffView" customClass="SKView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-vn-duA">
+                                        <rect key="frame" x="325" y="170" width="30" height="30"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressPlayButton:" destination="ehu-ID-2Fo" eventType="touchUpInside" id="Kcl-L3-5ks"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mip-vn-duA" secondAttribute="trailing" constant="20" symbolic="YES" id="dfd-YP-xDJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mip-vn-duA" secondAttribute="bottom" constant="20" symbolic="YES" id="tIa-uQ-iRB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fr7-4t-k9J" userLabel="WorkbenchView">
+                                <rect key="frame" x="0.0" y="240" width="375" height="427"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fr7-4t-k9J" firstAttribute="height" secondItem="6Pq-My-zyW" secondAttribute="height" multiplier="0.66" id="Abj-6D-1b5"/>
+                            <constraint firstItem="fr7-4t-k9J" firstAttribute="bottom" secondItem="6Pq-My-zyW" secondAttribute="bottom" id="MTl-kq-gMJ"/>
+                            <constraint firstItem="ohP-Kp-Mam" firstAttribute="top" secondItem="6Pq-My-zyW" secondAttribute="top" id="RsL-bz-0L1"/>
+                            <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="ohP-Kp-Mam" secondAttribute="trailing" id="TD9-Hf-wQ2"/>
+                            <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="fr7-4t-k9J" secondAttribute="trailing" id="VnC-k3-X5d"/>
+                            <constraint firstItem="ohP-Kp-Mam" firstAttribute="leading" secondItem="6Pq-My-zyW" secondAttribute="leading" id="X8T-3e-PKc"/>
+                            <constraint firstItem="fr7-4t-k9J" firstAttribute="top" secondItem="ohP-Kp-Mam" secondAttribute="bottom" id="aUh-LU-bSq"/>
+                            <constraint firstItem="fr7-4t-k9J" firstAttribute="leading" secondItem="6Pq-My-zyW" secondAttribute="leading" id="kFk-4g-Su0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Pq-My-zyW"/>
+                    </view>
+                    <connections>
+                        <outlet property="StuffView" destination="ohP-Kp-Mam" id="exR-Bh-DXY"/>
+                        <outlet property="WorkbenchView" destination="fr7-4t-k9J" id="lZW-7H-qa0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l92-l2-2VF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-751.20000000000005" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
