@@ -1,0 +1,6 @@
+framework module Pods_BlocklyGameTests {
+  umbrella header "Pods-BlocklyGameTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

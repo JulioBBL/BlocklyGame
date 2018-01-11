@@ -1,0 +1,1902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EDF52C6084E012DA74CC4C2F0B30E4 /* DefaultBlockLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A315F6F86FCB199C49B76ED4E4659878 /* DefaultBlockLayout.swift */; };
+		05D5C3A153F620B294E80463870B98CC /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4F7B6A2498815365C9D43380CB937 /* JSONHelper.swift */; };
+		064097BF3897280C0263B4EFC415F561 /* TrashCanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D190E9999E6B509FB45E6BE272F68A6 /* TrashCanView.swift */; };
+		06441BDCAFB7898275087FB6617F5803 /* ToolboxCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A7AE067ED69D6DBF089DEFFC42E606 /* ToolboxCategoryViewController.swift */; };
+		07DDD3670E6F5E0BC30705FAA4AA780C /* Block+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FDD03F3BA4F7D1FEDD16FC35C16A6D /* Block+JSON.swift */; };
+		08D61E854E083DFD0B085E4F1B074C08 /* WorkspaceUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7335F0C72D852A9096B6EE1A66AFC84 /* WorkspaceUnits.swift */; };
+		0910644BA5ADFCD9507E0F003ACD4C29 /* FieldCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC237C9A1446C3B6225E21FF939FCCA5 /* FieldCheckbox.swift */; };
+		0A92EC8BA20BE0B35C0518B33F17CF2B /* CGSize+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03981668D47ED2EC61D31DAE5E29805 /* CGSize+Operators.swift */; };
+		0BD97B0E9F8DD55263198E5679FE5C8A /* DefaultConnectionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB1C04B8E9B4AD889015CB348DD67AB /* DefaultConnectionValidator.swift */; };
+		1051E72753F74769DD0726DC72B3163F /* Block+XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004EBFFBDEDB2DEE51E1491DEF929960 /* Block+XML.swift */; };
+		14A063F1C4321082242F39CAF88C9641 /* FieldImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC5E147E138D435AC55074F99B0C9F /* FieldImageView.swift */; };
+		14C6239F686582508AEA4A58F5F66E56 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A503F5C9378B7EAED9D17032159AA /* Element.swift */; };
+		156E6512EBC6E97148A656C8B26C0D03 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A062075547348B6037F441F3D2C905 /* ViewBuilder.swift */; };
+		15A0C703E7EC0537DD379C4050109BF5 /* MutatorIfElseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406DF404CE779C05FC4158D036E5262 /* MutatorIfElseLayout.swift */; };
+		170943E170F90B142E625131D16E9031 /* FieldImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27469C7F9537F581102A9D9546430FAE /* FieldImage.swift */; };
+		17B5A1D5EFDE3E356A3B638F44BDBDE3 /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844716DD0F9395DB0012E98BAC17966 /* UIColor+Helper.swift */; };
+		1A70D35B52F35BFC88CEED068BEFD969 /* FieldNumberLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88EE5B9181F826F8E7CA14550F39CC /* FieldNumberLayout.swift */; };
+		1B2415A7BD419EA17FDA330B79D80F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EC4ED32A514201DA9B8ED8792795A /* Foundation.framework */; };
+		1D19F7BBA103BFF1BED8364B430BBEE6 /* Dictionary+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B545CF6B2B5BFDA6F4C265A68A5B8C /* Dictionary+Helper.swift */; };
+		1E128A06A1A752A7F87725FBB3FDC592 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94EA418B086B63FD2966AACCF8C1458 /* BlockView.swift */; };
+		1EAECF24B4C61CB51B343E20A4231158 /* BKYWorkspaceUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = 142F9BAE5B1BBD2755E5738AA5A54C5E /* BKYWorkspaceUnits.m */; };
+		1F32D75555896342ECFEE9EECEE2DE9D /* Field+XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3CBF7D7892E4EDCC69ABEF35E26260 /* Field+XML.swift */; };
+		1F704BA4DCFBA79E9C63ADA7C621C33E /* bky_messages.json in Resources */ = {isa = PBXBuildFile; fileRef = B9D14205C8DABAA4988E66F4273B65D5 /* bky_messages.json */; };
+		1FAED0428D286D34252B9E4C22F13DA1 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327595BF2FEAA4B897F081441F1A9E6E /* Field.swift */; };
+		20D84C143269E60FBCDFCC30FFB2D6DB /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80FDE3CCA0267F9F8C61542115639A7 /* Error.swift */; };
+		215BB506CA3BBD00E2A1B2836C10B328 /* MutatorProcedureIfReturnLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B2A8F132DE8916A2595AB2A58897A0 /* MutatorProcedureIfReturnLayout.swift */; };
+		21C552F74CE15025188871F129C19078 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE7BD31BB4829F1344CCAE89A1A74E /* UIView+Helper.swift */; };
+		25D3DB32BB917B1322995B22F89FAC52 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = CD20B9521BDEC204F38B81922D6C9296 /* Info.plist */; };
+		25D7D14BBF71A313AC4F10EF30A9888E /* Input+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5147E1C1B395347631FDFDD8B28073 /* Input+JSON.swift */; };
+		270615589A95B7903CCAEA97AE5BF890 /* Array+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933BCE70B2DFC4C6F52B3F127A5A9546 /* Array+Helper.swift */; };
+		2758CD107D81A4B5951A58608D939FEF /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475EE492985D826589DA003ECDCCA5BF /* Options.swift */; };
+		28850F20DBB153478449F017A24B9ADC /* Blockly.h in Headers */ = {isa = PBXBuildFile; fileRef = 6757736F9A2A4A5714A1861C63558582 /* Blockly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29694A94D9E1F87A78E96920EBA6D8BA /* Input+XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524B17AAD2205AC51E6B0E32929BAF9D /* Input+XML.swift */; };
+		2B4DB80656D140624FC5C925552AC3B1 /* CodeGenerator in Resources */ = {isa = PBXBuildFile; fileRef = 572B8506B316595DD34D242CB0762A4B /* CodeGenerator */; };
+		2C275DDD6262452621C3F273C1E36B0A /* Pods-BlocklyGameUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B604A3383EB8BFCBCCAABC290A9533F /* Pods-BlocklyGameUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C420A80FBF593FE8C9401F5C1E64F56 /* MutatorIfElseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03EAE8E5A0ADF324F848900017F03C6 /* MutatorIfElseView.swift */; };
+		2F655852E1D43E2F31FAEE9DA02BEEFC /* BezierPathLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF727A9995EB98AA59C814DCE31B3EBC /* BezierPathLayer.swift */; };
+		31BC8FF8B250EC9ABF8EF9A680FB4087 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD81204146688B276D47B85E0B40C7 /* ViewManager.swift */; };
+		33363A21A6D73F4759FCFD33AAF1361C /* BlockExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A00161B04A842BCAC0FFDF4B7CB55 /* BlockExtension.swift */; };
+		33B99C5B9A1FACBD4991C3F0374D7732 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F31A5242A407D294188A29D36297BA3 /* EventManager.swift */; };
+		34DB7022740F8BD97BD93CCC8D8863B0 /* DefaultBlockLayout+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F3179655A8BC78CBEE73150EF57F54 /* DefaultBlockLayout+Background.swift */; };
+		369EC8B2E461F7CE214B08DB63D9607A /* DefaultLayoutEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393FFB8BDBAE16D93716D8ECBF00091 /* DefaultLayoutEngine.swift */; };
+		38CF5FA8AA74C9B6A476B7FC808F8D02 /* CodeGeneratorServiceRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6053DC91AA99483C4233ABD3376CBC /* CodeGeneratorServiceRequestBuilder.swift */; };
+		393230D4E3EB14E3C37004DE7B8BB702 /* BKYLayoutConfigStructs.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6A155C9B4CB6BE48BF089C72498B76 /* BKYLayoutConfigStructs.m */; };
+		39A3586382DC8F30808BCA5D20D7DE78 /* MutatorProcedureIfReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B875B84910274DE01B68F589FDDEF42 /* MutatorProcedureIfReturn.swift */; };
+		3C2A42E6C6DEA3C2B6C3B7BF8EF3D86B /* WorkspaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3CC20CF092B45C62F591B9995A04D /* WorkspaceViewController.swift */; };
+		3C9DCCEEB8061EE268E2A6EA0B75183E /* Blockly-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1672DB1D317E3468AC031C61ECA580A2 /* Blockly-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DCB1D5462886EBF6263A99806CC22F5 /* BKYEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = EF875A0BEE5ACE612D9FCA0F3BAF1CC9 /* BKYEdgeInsets.m */; };
+		3F32E4E755ACB30B8701F53C3B8917B5 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEA1FC34817F8D49A701800DE56AD1A /* Parser.swift */; };
+		42BB1CBD656C0FD30A090766F3666DBC /* LayoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442713BDD7ED9FBBFBA5C9770A824042 /* LayoutFactory.swift */; };
+		437E2C18F9C278DE498CFAE1E791BE0D /* FieldVariableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F72459393E8F72DE57C533838F6EB32 /* FieldVariableLayout.swift */; };
+		43EFF8106F40BBDFF3497DBDE51A03D0 /* LayoutEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F49D411A6EFB4E5CE2C0337A42FAB09 /* LayoutEngine.swift */; };
+		459364B6AB6AFAFB37F9F75E8D52C5B7 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F65978D82B618C28A66B582618798F /* Layout.swift */; };
+		46CFE35451C6F5B045AB17D7BEA3237D /* FieldImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A9C175101C6C5F2E7839CE5F7D337 /* FieldImageLayout.swift */; };
+		4BE702E32DB541D9BA4E8962B50B5066 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B88792DA157F8252EFF0B78563C5273 /* InputView.swift */; };
+		4CD153A06DC3D65B8E846338C0D2B087 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98B8EED6218DCB31D310A4D7135DC45 /* InsetTextField.swift */; };
+		4D3C9952E943451970923AECEA4B3AEC /* FieldDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE109388973320EDAFD87CF41BFD1D7E /* FieldDate.swift */; };
+		4E903F23E3AC20F0F7259450ADE218B3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913BF1AC363C08133F903FF2F9B199DC /* WebKit.framework */; };
+		4EF524A84886FF49D8DD7E923CA73CE8 /* FieldDropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEC90455F470D9D058135A63DE247D1 /* FieldDropdownView.swift */; };
+		4FBCDFA2DC36504CDDC16DA11FC41D2F /* FieldInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202BAA4FC800F15E02C06F0EB07ACD3E /* FieldInput.swift */; };
+		4FE88E7E70E305C0168CDCFF7F6B6F13 /* BlocklyEvent+Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B349CC187F98AA62181DA20BE818316 /* BlocklyEvent+Change.swift */; };
+		52840DCD786B13F170A2CB1EF41FB711 /* BlockJSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49797E4DCD30E3DD1715719A248B83 /* BlockJSONFile.swift */; };
+		544010BEA4035B71C8618C5C0E56A6C4 /* BlocklyTests-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 257813F778199E7B4C2A3B7BF89DC84A /* BlocklyTests-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		544DE8838482D93A48896CF18B24B766 /* DefaultBlockGroupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A868BB5A5B6E3B67923BA20B54A4BAE7 /* DefaultBlockGroupLayout.swift */; };
+		54562C74EEBAC9E8506EAD1A8E7C0C64 /* Field+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021F2F7CCA6068769316441CF1E12D53 /* Field+JSON.swift */; };
+		545DD41EE531A0A9C5AC5A3BF79D9078 /* UIPopoverPresentationController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D846C757230CAC0D25A6E9B4519E9E /* UIPopoverPresentationController+Helper.swift */; };
+		547BBEF8D4C0E7861939BC01C06352F5 /* MutatorIfElse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A0D12AE7AEDBA40CF7E2B3B4AF84B8 /* MutatorIfElse.swift */; };
+		54DB59D6FB60E0139D20AA099F282D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EC4ED32A514201DA9B8ED8792795A /* Foundation.framework */; };
+		551F734F6E183C5BF8FFBC10D2549BE2 /* BlockGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD869D9C9CDCB72B845E932C2D50F6D9 /* BlockGroupView.swift */; };
+		567C67F1E0EF9CEB0474BC428DC327B0 /* FieldNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37988D8B828A54A58DC8C8A73E535D1C /* FieldNumber.swift */; };
+		573ECFF9E056456BCF50A4D1D1DA61A7 /* ZIndexedGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA71EFAAE2A0DB260A37C0F8E0EFCAB /* ZIndexedGroupView.swift */; };
+		5759B05355EC12E7A1098AB2F28127E3 /* FieldDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1196AD06D1467D4C0AAFB716C80C91 /* FieldDateView.swift */; };
+		592E2959C144252145AE2E5DDA700C1A /* CodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD71439BB59692558CCAA18B724196FF /* CodeGenerator.swift */; };
+		5C342C14FC4E11DF972C1997ACDA34DB /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA2116F3ABF753D9955D5D025787B1A /* String+Util.swift */; };
+		5C67BD33BEAD1A739CEC2A825F38C257 /* AEXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 113C9C29DD788B4D8D09D6F8E96C43AF /* AEXML-dummy.m */; };
+		5CE30936AD0A1BCA61138EE4D508BF75 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229EF664265BAE38F48599AEB3D8FA18 /* ConnectionManager.swift */; };
+		5DD1C9E300865986CBCBC18E90F5D79D /* AEXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D13B5180615B3D4F484EA7526BE83A1B /* AEXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63229C4A1A40F27B628B0AC9EF3DD94B /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BB195458332C9055B2348D83677444B /* AEXML.framework */; };
+		67164CBE1CEBDF63BB11FDB12C981FF2 /* BlockGroupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44371E07843BD9F9277D398A1C9B5D6F /* BlockGroupLayout.swift */; };
+		69936246115149CE352C2E2350CF2703 /* BlocklyEventFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48852361E8209FDB9911F367818474 /* BlocklyEventFactory.swift */; };
+		6A08EABB60CFE8F66FD5728FC27D9DC9 /* BlocklyEvent+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A14230D7FF732C453264D1A1C7FF5 /* BlocklyEvent+Move.swift */; };
+		6C872D7E8B8A16A92ED8722B9CEAEB8C /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB991D131E179843E2F195822552323 /* Logging.swift */; };
+		6D3EABE308400E18D7257F3DFCFB49FE /* FieldColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FE6ACF3F92583F26684C568B3AA58 /* FieldColorView.swift */; };
+		6D9D2AF283A3B08066A2C131281F8844 /* UIEdgeInsets+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7FDCC6F38C5A3F21FB5DF0237B71A /* UIEdgeInsets+Helper.swift */; };
+		6E4E7C06A1B9C35408BECAEFEA3C3AD5 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27DE640519F491BA0CBC5240277A5C3 /* Document.swift */; };
+		6F75DC752A7999FA921D96B10B5CD2F1 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA0D4F414FD3AF5B15FDCC046896D91 /* ImageLoader.swift */; };
+		7218C77120C05628A68C0B1472915B25 /* FieldColorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB49FFD44AB975B8A9044EA79461378D /* FieldColorLayout.swift */; };
+		72E646B2F5BF9736824489998DCCACC4 /* WrapperBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632957C1A012178FF9173BA873316E7 /* WrapperBox.swift */; };
+		769153282F1D4AD85CF3F7BEC13F8D1E /* MutatorProcedureDefinitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B5CE0D514291E346A8E7400981B026 /* MutatorProcedureDefinitionLayout.swift */; };
+		780A1049AE0367F72B59890F5323BE49 /* MutatorProcedureCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F0473F330F223FC25FA9687E8252E /* MutatorProcedureCaller.swift */; };
+		780BB252BE15F5F2540FD8EFF6264F1A /* FieldAngleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EF8A5CEF0A3FE02B916B8230DB513 /* FieldAngleLayout.swift */; };
+		7A6EDA97BE86D3CA763954261058D46C /* FieldLabelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FBF24C7EDBB072A90AF60A5720B763 /* FieldLabelLayout.swift */; };
+		7A927E554EA051987E8798DE87404525 /* FieldInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E5A83BCFA20C545D0640FD83C93B7C /* FieldInputView.swift */; };
+		7C307C55E9D23C7FC1286392F2DB6ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EC4ED32A514201DA9B8ED8792795A /* Foundation.framework */; };
+		7CB748384D4E62E31379695416D789AD /* MutatorProcedureDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D6EEA8CD0E8A1153C4F261EA54EAA /* MutatorProcedureDefinition.swift */; };
+		7D03AC8D40867F91C51BFB4086FC422C /* BlocklyEvent+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781EAC396476DDAE2351873EC3B8B88 /* BlocklyEvent+Create.swift */; };
+		7EF64A5553A856FE69438D71714F0918 /* BlockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1384C34EF7B6CA4908F5E6A585C930 /* BlockBuilder.swift */; };
+		7F27312D5731ED35AD9B6F27272186F6 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9800FBC42EFD505DFF6782A50C08C /* FieldView.swift */; };
+		826CBC6F0D2FE57DE565C24B020E7A63 /* ConnectionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACAD692B449D4D378C0AEC088275ADD /* ConnectionValidator.swift */; };
+		85CAD38FC752183B9882D53D74DC5EF3 /* LayoutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFCBEC4CE5E69568F27EEEAC71A624 /* LayoutConfig.swift */; };
+		8721C68CD28FD2D782B9047D17E4D6A6 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4182C1B79D4A7C5ED71F85389C1F50F /* ViewFactory.swift */; };
+		878336048675B276E7D02A02B831B798 /* NumberPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63975B609F00E7C7E6ADA2AD79508E36 /* NumberPadViewController.swift */; };
+		8785E27DCE1AF24F54850DD6005C357A /* DefaultBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7736866A8C836FB049477AAD6B8D2E7 /* DefaultBlockView.swift */; };
+		892C631D3B3FD826FA4ED570FB8C59AC /* WorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18172C88C1C1473D2CE1D216DE9F214 /* WorkspaceView.swift */; };
+		8A21DC4D47972720B5BD23A6A44704E5 /* Pods-BlocklyGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B5D03490E1DB823DF02048A99CAF9 /* Pods-BlocklyGame-dummy.m */; };
+		8ADCB70FC2A727577B461D31C0904C36 /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6258BBB50183E4E96577B0236138D2 /* String+Encoding.swift */; };
+		8BC1707B79E37706525E0E9E8C4EB9CC /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF12AFB411AF38D21B45E755C59C7CA /* ColorPalette.swift */; };
+		8BDDDD8F172665F6890C8C8CF0F259FC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6B4C0060E07A01D9CBC7240E6071F /* Connection.swift */; };
+		8C8D26AFC783B4A02AA558232B5322F8 /* BlockBumper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DCA163F9B8CF39C27726F76A15BA5 /* BlockBumper.swift */; };
+		8D9F202BABC475E1D75E118182CD4126 /* WorkspaceFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501DAD81C6B42C5BFF9933DB4E10B663 /* WorkspaceFlowLayout.swift */; };
+		8F5C63708FAB7BF08BACDEA05FAF0249 /* FieldDropdownLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD79A6AEAD65E1E21CC2D1A8665D4B /* FieldDropdownLayout.swift */; };
+		8FEAF619738A6A8567ED60D992CD1EB1 /* BKYWorkspaceUnits.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B4B8908DB4E0663419E0DA6623A38 /* BKYWorkspaceUnits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9091AFB17BFCF74837082FE4D90DF714 /* BlocklyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD4CC4C3F040A7F5496CB4C268D22B /* BlocklyEvent.swift */; };
+		9434852A22870EB49B1A4913E169E30B /* Dragger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B7729448403EE915E19361786C0A0 /* Dragger.swift */; };
+		9487DBEE39C0720C6FB6E3194DC7CA5A /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915CD78D955F7313E1BC8D6CE66F47E4 /* EdgeInsets.swift */; };
+		94BFEDDCBD6A1E18034C2EDFBD126CFB /* Messages in Resources */ = {isa = PBXBuildFile; fileRef = 8FA24C136A301B30B3A5B78E4B0E5E6A /* Messages */; };
+		9736933A34D4FCCF512515A624F3D684 /* WorkspaceFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE029D8EB86BAA55A0993BE95BA4BB /* WorkspaceFlow.swift */; };
+		989FEDE2ADB5890EBAF01EAB9560377B /* FieldDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9799BEFAAF8BDA40AF00CBE3465D9368 /* FieldDropdown.swift */; };
+		98BBE8C17F8740F192136E26383E4650 /* ObjectPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730E0216249BA78C6CCA4A92F6EC4E00 /* ObjectPool.swift */; };
+		9A3F584789E29A48269D6A135F4CE404 /* LayoutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38739197ABE52727F5616666F83D7BC /* LayoutBuilder.swift */; };
+		9AAECDEF88EA5802399C1AFEECA99FEA /* XMLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297741AA75CDF22773147764C77FFE1F /* XMLConstants.swift */; };
+		9C2C07D99BAF23E2EEB8570689EDD63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EC4ED32A514201DA9B8ED8792795A /* Foundation.framework */; };
+		9E80DAAB1D1556FFD1224BBBA5659EC7 /* Toolbox+XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6D4DAB900DCE6E2B3FAF4760CF8F3 /* Toolbox+XML.swift */; };
+		A0790F1DAB3D015028D74D7C0C86A75D /* bky_synonyms.json in Resources */ = {isa = PBXBuildFile; fileRef = F9341744390CDBA6FB8FB773C2FB0A8A /* bky_synonyms.json */; };
+		A201E1CE35D7D3C8FBAA855AC825FA59 /* Pods-BlocklyGameTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA87A570FA23F0B67E6D33523E22E84 /* Pods-BlocklyGameTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2BD17270B4B008FC152D744E187CDAC /* MutatorProcedureCallerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641B0AC243D01966902C83F6106B9CBB /* MutatorProcedureCallerLayout.swift */; };
+		A4EF354307FE8F5323BB9AD21418E0CC /* BlockFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378AA9FE42A709AA070081BED727ED7 /* BlockFactory.swift */; };
+		A71901B88CA96B1F09F57997765EFA41 /* TrashCanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB4E56E07CAAC40DFCF48099945776 /* TrashCanViewController.swift */; };
+		A8ADBF7AA3D23819700D2ADDE488689D /* bky_constants.json in Resources */ = {isa = PBXBuildFile; fileRef = E43C61333B44378E1521E842E900F568 /* bky_constants.json */; };
+		A8D0033E26BCA9E7D48BD44F905477E5 /* NumberIncrementerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E089C5004EAA993E96E398A2352BA6 /* NumberIncrementerView.swift */; };
+		A969FA0177C0288E9DDC3F54DCECC6AC /* DefaultInputLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB137F455B54688E19F831E49CF5D20 /* DefaultInputLayout.swift */; };
+		AB54EA59E054D222AA6D6170F56908DC /* FieldAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0D3F42B1F9C39D376BDBB20BA1C1D /* FieldAngle.swift */; };
+		ABB8507367530021BFF924B26AEE3CA8 /* Blockly.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69456FE86D04B589D5ECCD2D7AC05056 /* Blockly.xcassets */; };
+		ACA07BF844754239B1CA158239AF9A1C /* Mutator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDEB848CA7C303B4211F3E979535B5 /* Mutator.swift */; };
+		AD210BEC4C7E4018B0AF9ADAFE3D6E49 /* Pods-BlocklyGameUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D306FCBA46BABB80F2A04850792191F /* Pods-BlocklyGameUITests-dummy.m */; };
+		AF7CBC63235982E330980568E33679FC /* BlocklyEvent+Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEB80B26ECA5ECAAAFEDE4005E9996C /* BlocklyEvent+Delete.swift */; };
+		AF7DE77FB694D088EB1774637505EC07 /* BKYLayoutConfigStructs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D30455DFC7C60022C71E4821B732887 /* BKYLayoutConfigStructs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFB2B85B1C5437906988E969D8C330C3 /* FieldLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF443600BE9E6AFBF67E8114394A73F /* FieldLayout.swift */; };
+		B0B8EAC208A6C935678FD19D6F6A16E6 /* FieldColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DD7811B6865FE41D4630708CEDF1F1 /* FieldColor.swift */; };
+		B17E2D3305025D7C7AA575B6FC67FE5C /* MutatorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B8FFBF76BA1DA0D22B68787CC4410 /* MutatorLayout.swift */; };
+		B265FBEAB162F1609D6491CDE718EB8B /* AnglePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B5DA85CDF40C245A5CD97E7F9AF8BF /* AnglePickerViewController.swift */; };
+		B661FEA9A9C49A440C1FDAAC14A7BE24 /* AnglePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EDCA03AF212FE9CCF6F0DAB8EFF184 /* AnglePicker.swift */; };
+		B9DB8EB43F16787917BAB2A412521D87 /* WorkbenchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A81E441CBAB81185D7998E6EB4175 /* WorkbenchViewController.swift */; };
+		BC24D2F2A15D809F8ED49208B09C1BDA /* ProcedureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA66913E4A842EEA258571537D36FAC /* ProcedureCoordinator.swift */; };
+		BC5F276D805DA2E73727F2F37B4033C7 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1ACF8BDF0097E50A406CF10F51A45E /* MessageManager.swift */; };
+		BEA16862A547E82D007F2C328635984E /* InputLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF1CACA2B88CF187EAC38C605498B1 /* InputLayout.swift */; };
+		BED2C36EE3553FBBB230CED21263F4AC /* Pods-BlocklyGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 990FF70E8EBCEFEBF7F694D1F9E31364 /* Pods-BlocklyGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2FC3C14D6FED195C097ED240EED439 /* WorkspaceBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F525E568E532319CC24D530959BA73 /* WorkspaceBezierPath.swift */; };
+		C06CFE54B9AD02355352583E88BC36A4 /* InputBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81333F4DC6A504CDF3C0DDBBAB3F107F /* InputBuilder.swift */; };
+		C31915891165621F25BD3776C712403B /* FieldVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF073D923E27FDBB0F116DB718DAB4C1 /* FieldVariable.swift */; };
+		C327AF9A747F7912D52D97437F2156ED /* DropdownOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53C51EAC5A663C3211ACB9C081317A /* DropdownOptionsViewController.swift */; };
+		C402317DDCD2A76CC34790C62CD84B82 /* NameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8A998C6345A16C2DF2E4C1C2BA456 /* NameManager.swift */; };
+		C4A60AD26E7229E87ADE2C05ED043270 /* BlocklyPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289C73DC494C1E8F675A2CD23E9283DA /* BlocklyPanGestureRecognizer.swift */; };
+		C5E1C4CF5F26AE6C4500E9A627C29665 /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F71487C450BD0295A9074F86750FA /* Workspace.swift */; };
+		C61011D05D4E5BB890E7829E2DE56733 /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E59AB00B8F5E134C3BCC144122C99 /* Assertions.swift */; };
+		C71499BA4694EAF9E18D158E4827E0B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EC4ED32A514201DA9B8ED8792795A /* Foundation.framework */; };
+		C7E3E113E2783AFA90BE464186D060A3 /* FieldDateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA284400BC9B35C1676E8B176F77951 /* FieldDateLayout.swift */; };
+		C8E095F5914D67350FE2CC6F7CE0CA52 /* BundledFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773AE69D5369B5767E4BDCCF113F978 /* BundledFile.swift */; };
+		C95EE02235A01EE56AC88141B8D09150 /* FieldCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DC0452C9EFD17A394B48EF2B90ADA /* FieldCheckboxView.swift */; };
+		CA4A4A54B58330E6706E82F45B5026FD /* Toolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D719AE56B01C581FB868900808C3DFDC /* Toolbox.swift */; };
+		CB8296FBC3D5ACF636C566D52CFC0D26 /* ToolboxCategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878A5959CA48F8F12345B7B712C0B871 /* ToolboxCategoryListViewController.swift */; };
+		CC1852E4476D4B4C207812344F571F35 /* CodeGeneratorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8192B75389630C3EA2AD75F8252BAA /* CodeGeneratorService.swift */; };
+		CD35F7ECA230DB4EED2A3A338A028511 /* FieldVariableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC4D1BF02BF60AF5EAF42E488B8388B /* FieldVariableView.swift */; };
+		CF221C29471E2A152EAA952FF97BAC00 /* ToolboxLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD58676807DAF82FBA86AC8D672CAE5 /* ToolboxLayout.swift */; };
+		CFCB8DBE13706767C7B66BFB9AAC53D2 /* FieldLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039698423CD60101D55AB49C2A46C858 /* FieldLabelView.swift */; };
+		D09B8DCAB02FDAAB72496E98EA341AC7 /* BlocklyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9635CDAF2437DFFC8966DA249D266EF4 /* BlocklyError.swift */; };
+		D0A4D9B18610AEC131A1C21EF6AB0B52 /* BKYEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = C9466346F10B0ECC20AA04485955F4A8 /* BKYEdgeInsets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A610DD08E6EEA735B8805BC178DA29 /* Blockly-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B12F2043D7C11D9939979985CD8CA5 /* Blockly-dummy.m */; };
+		D2564B722DBDFA2AE8AE00B66A557A7D /* BlockLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574759419FE21C68E33023F0759BDD4 /* BlockLayout.swift */; };
+		D44465647BB3C1822F4CAE2207E40C4C /* WeakSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857920A1592E9A113E0E7ECC9FF0DED8 /* WeakSet.swift */; };
+		D45B71D4FBD660A02D3D53D3E6C33431 /* Workspace+XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B23424822EF08EACF7BCE8471B894B2 /* Workspace+XML.swift */; };
+		D54BEE58DEFC0F5D3234268AB26B63DD /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A07852E8BFD83CC13A4BA1962163B /* LayoutHelper.swift */; };
+		D7677C05E3FE8C8C7D01A284CC5585D3 /* BKYBlockJSONFile.h in Headers */ = {isa = PBXBuildFile; fileRef = EC06140DE4ECE5619AD5DF90ED3A1430 /* BKYBlockJSONFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D76F94CC9EF824AF85F8D7763C65A71B /* FieldColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0738E4FB21CB998617754E66A6CC20A /* FieldColorPickerViewController.swift */; };
+		D782B5C0A0E16FA5B0CAFB579EFCD44D /* FieldInputLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB573EB9EBD7EDECC3876BF9D4EBFFF /* FieldInputLayout.swift */; };
+		D8AAF507812D9B6F05522CEC466D00AE /* Default in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5D807291CFD5D8849360F9EB0615 /* Default */; };
+		DB316AB5BF17A84941EEF2889AB857EA /* BlocklyEvent+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B8E5C5676E425B04F9FC3B073FE7D /* BlocklyEvent+UI.swift */; };
+		DCBBD4392A7919DCD6E231716934DBE4 /* FieldAngleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13304A2A32FC49ECAAAA8A4BD25F6A78 /* FieldAngleView.swift */; };
+		DD9D6600BBBFE1A6AEED8FCF6DB7CC5C /* PathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1884681DBD10FB6A7BA0BF7309E90103 /* PathHelper.swift */; };
+		E04778AB499F23B264687152EEED6A7F /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125D9AD821E8BF0B47A383E253F3359D /* DropdownView.swift */; };
+		E1B88CA76B29FF938C8621A6EA9A992E /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462736ADD3FF60C2A25E6FF5293FA8A7 /* UIView+AutoLayout.swift */; };
+		E4FAB794E4292543BF47D68283A3A790 /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494FCA6657F9C546EC2333F8BFE561F0 /* NumberPad.swift */; };
+		E946FDFDCEE2CCBEF252720958F7581A /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5086105CAA4C6B0FD1B3F179E367185 /* CGPoint+Operators.swift */; };
+		E97B0EFEDEABFCC360263060FF32E402 /* FieldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334A1AC2254FFAF241293E607C9ACFE /* FieldLabel.swift */; };
+		E998F607F2A2C4597695F606C8666747 /* String+LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB432997C50C60A9D5BC7A2C957CC00 /* String+LayoutHelper.swift */; };
+		EA1C7EB827604D6375187F7ED48FDA57 /* RangeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BCD7FB17A1F57777DD92429B9220C /* RangeHelper.swift */; };
+		EA2032BC9304E51F4462D854ED27261D /* MutatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8102C8F972158DFB983E451858DB1F0 /* MutatorHelper.swift */; };
+		EA3D2D6403C0D02004516765F75291CF /* MutatorProcedureDefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439AA99EAF79B541795AF3B856309942 /* MutatorProcedureDefinitionView.swift */; };
+		EB6950A6FA3505C9943C6AF577C0A6EA /* FieldNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495C0C182EC0B6100E7513A4744768B3 /* FieldNumberView.swift */; };
+		F0404F53E3F6460E31486EC5A4D3B259 /* WorkspaceLayoutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE03FDAA9C0C9ED482E103E070054930 /* WorkspaceLayoutCoordinator.swift */; };
+		F04B02FED9834DEB5B4CDFB174175BEB /* FieldCheckboxLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E05CA4AC84B79E1948EB9551F0D7A /* FieldCheckboxLayout.swift */; };
+		F0EF5C57FFEDCEAF70FF6EE98FD9383A /* WorkspaceLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCFBB6DE87D0902A09DBEA435E70907 /* WorkspaceLayout.swift */; };
+		F218814D505EC677F42F62476D875174 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CFF5797B7B100FF59A52080ED46A3B /* Block.swift */; };
+		F4099C8C1DE24AAACD21956D4E13E664 /* DefaultLayoutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF10248C6B3186D8D27501792CCE5C8 /* DefaultLayoutConfig.swift */; };
+		F4E434EBBBA534EBF9DEBC8CAD7A03D5 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F022721DDDF2C9C84B09AEE0A9DCCA /* LayoutView.swift */; };
+		F925C341F80949D7B1311BC34ACB83E0 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61BB28A4DC27C47109A46FD949A20C /* Input.swift */; };
+		F9594C583BDDDEB984BF46750363BEA1 /* ProcedureParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69299C31F8F6EFDF127E1F44162C087 /* ProcedureParameter.swift */; };
+		FB1CE8A76E936CF9A095520D9A229F8C /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2644F95E5237ECAA88439CA63B80DBC /* ColorHelper.swift */; };
+		FB8C8CFD76F3AE0D409937D3E795C6F9 /* Pods-BlocklyGameTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5000F39DE6CA7ACF18A5385EB5F6C6D /* Pods-BlocklyGameTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29DCEB6E4289E25722E6D73CA27EF618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88C257C954247EE49E09C66A8B19E56A;
+			remoteInfo = AEXML;
+		};
+		2E53FD49926C0283297E4A13474202BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6190A2EF50E681DF4CFAA4834B39955A;
+			remoteInfo = Blockly;
+		};
+		EB1823D7E308350570D66E8F332D3D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88C257C954247EE49E09C66A8B19E56A;
+			remoteInfo = AEXML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004EBFFBDEDB2DEE51E1491DEF929960 /* Block+XML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Block+XML.swift"; path = "Sources/Model/XML/Block+XML.swift"; sourceTree = "<group>"; };
+		011DE91CDA8368F013F99C75A62AC874 /* Blockly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Blockly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		021F2F7CCA6068769316441CF1E12D53 /* Field+JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Field+JSON.swift"; path = "Sources/Model/JSON/Field+JSON.swift"; sourceTree = "<group>"; };
+		033B4B8908DB4E0663419E0DA6623A38 /* BKYWorkspaceUnits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BKYWorkspaceUnits.h; path = Sources/ObjC/BKYWorkspaceUnits.h; sourceTree = "<group>"; };
+		037A503F5C9378B7EAED9D17032159AA /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
+		039698423CD60101D55AB49C2A46C858 /* FieldLabelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldLabelView.swift; path = Sources/UI/Views/FieldLabelView.swift; sourceTree = "<group>"; };
+		0459C35AE092A94655F0DD3E01FA7702 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047D7F37DD5E43B5C02FA63C25FCDBF0 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = it.lproj/bky_messages.json; sourceTree = "<group>"; };
+		08442BAE209EB588F1F68D8B9A8DFBAA /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = hi.lproj/bky_messages.json; sourceTree = "<group>"; };
+		0917CEEC043016DA1DC8C82BDE508706 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = tr.lproj/bky_messages.json; sourceTree = "<group>"; };
+		0A61BB28A4DC27C47109A46FD949A20C /* Input.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Input.swift; path = Sources/Model/Input.swift; sourceTree = "<group>"; };
+		0CBDEB848CA7C303B4211F3E979535B5 /* Mutator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mutator.swift; path = Sources/Model/Mutator.swift; sourceTree = "<group>"; };
+		0D30455DFC7C60022C71E4821B732887 /* BKYLayoutConfigStructs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BKYLayoutConfigStructs.h; path = Sources/ObjC/BKYLayoutConfigStructs.h; sourceTree = "<group>"; };
+		0F72459393E8F72DE57C533838F6EB32 /* FieldVariableLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldVariableLayout.swift; path = Sources/Layout/FieldVariableLayout.swift; sourceTree = "<group>"; };
+		0FEA1FC34817F8D49A701800DE56AD1A /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		1099AD12104483158E293EFF2C9FE9CB /* Pods-BlocklyGameTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlocklyGameTests-resources.sh"; sourceTree = "<group>"; };
+		1117E0FA38960907AE7F63BA11B4B3AD /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ar.lproj/bky_messages.json; sourceTree = "<group>"; };
+		113C9C29DD788B4D8D09D6F8E96C43AF /* AEXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEXML-dummy.m"; sourceTree = "<group>"; };
+		125D9AD821E8BF0B47A383E253F3359D /* DropdownView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropdownView.swift; path = Sources/Common/DropdownView.swift; sourceTree = "<group>"; };
+		12AEFE71DEC6D177F3F746FAD7C4C9E5 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = he.lproj/bky_messages.json; sourceTree = "<group>"; };
+		13304A2A32FC49ECAAAA8A4BD25F6A78 /* FieldAngleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldAngleView.swift; path = Sources/UI/Views/FieldAngleView.swift; sourceTree = "<group>"; };
+		1334A1AC2254FFAF241293E607C9ACFE /* FieldLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldLabel.swift; path = Sources/Model/FieldLabel.swift; sourceTree = "<group>"; };
+		1406DF404CE779C05FC4158D036E5262 /* MutatorIfElseLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorIfElseLayout.swift; path = Sources/Layout/MutatorIfElseLayout.swift; sourceTree = "<group>"; };
+		142F9BAE5B1BBD2755E5738AA5A54C5E /* BKYWorkspaceUnits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BKYWorkspaceUnits.m; path = Sources/ObjC/BKYWorkspaceUnits.m; sourceTree = "<group>"; };
+		1574759419FE21C68E33023F0759BDD4 /* BlockLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockLayout.swift; path = Sources/Layout/BlockLayout.swift; sourceTree = "<group>"; };
+		15A3D7F6CE1C17AB19D818A380CB2BC5 /* Pods-BlocklyGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlocklyGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		1672DB1D317E3468AC031C61ECA580A2 /* Blockly-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blockly-umbrella.h"; sourceTree = "<group>"; };
+		16DD4CC4C3F040A7F5496CB4C268D22B /* BlocklyEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlocklyEvent.swift; path = Sources/Model/Event/BlocklyEvent.swift; sourceTree = "<group>"; };
+		17E4F7B6A2498815365C9D43380CB937 /* JSONHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONHelper.swift; path = Sources/Common/JSONHelper.swift; sourceTree = "<group>"; };
+		181C139FFF09F1497A93D748A5FC9AA2 /* AEXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AEXML.xcconfig; sourceTree = "<group>"; };
+		1884681DBD10FB6A7BA0BF7309E90103 /* PathHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathHelper.swift; path = Sources/UI/PathHelper.swift; sourceTree = "<group>"; };
+		195B8831E568ABA36F4A67717D0D8F76 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = uk.lproj/bky_messages.json; sourceTree = "<group>"; };
+		197D6EEA8CD0E8A1153C4F261EA54EAA /* MutatorProcedureDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorProcedureDefinition.swift; path = Sources/Model/MutatorProcedureDefinition.swift; sourceTree = "<group>"; };
+		1982736C8476DCE027DB9EF19D49E0AF /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = lv.lproj/bky_messages.json; sourceTree = "<group>"; };
+		1B23424822EF08EACF7BCE8471B894B2 /* Workspace+XML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Workspace+XML.swift"; path = "Sources/Model/XML/Workspace+XML.swift"; sourceTree = "<group>"; };
+		1FB573EB9EBD7EDECC3876BF9D4EBFFF /* FieldInputLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldInputLayout.swift; path = Sources/Layout/FieldInputLayout.swift; sourceTree = "<group>"; };
+		1FD05602D1F40BD654B2A45C6324A229 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = nl.lproj/bky_messages.json; sourceTree = "<group>"; };
+		202BAA4FC800F15E02C06F0EB07ACD3E /* FieldInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldInput.swift; path = Sources/Model/FieldInput.swift; sourceTree = "<group>"; };
+		229EF664265BAE38F48599AEB3D8FA18 /* ConnectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = Sources/Control/ConnectionManager.swift; sourceTree = "<group>"; };
+		22A0D3F42B1F9C39D376BDBB20BA1C1D /* FieldAngle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldAngle.swift; path = Sources/Model/FieldAngle.swift; sourceTree = "<group>"; };
+		22B5CE0D514291E346A8E7400981B026 /* MutatorProcedureDefinitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorProcedureDefinitionLayout.swift; path = Sources/Layout/MutatorProcedureDefinitionLayout.swift; sourceTree = "<group>"; };
+		22F3179655A8BC78CBEE73150EF57F54 /* DefaultBlockLayout+Background.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DefaultBlockLayout+Background.swift"; path = "Sources/Layout/Default/DefaultBlockLayout+Background.swift"; sourceTree = "<group>"; };
+		22FEB07166AD137D1B2A1E05AEA6C006 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = "pt-BR.lproj/bky_messages.json"; sourceTree = "<group>"; };
+		257813F778199E7B4C2A3B7BF89DC84A /* BlocklyTests-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BlocklyTests-Bridging-Header.h"; path = "Sources/Model/BlocklyTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		27469C7F9537F581102A9D9546430FAE /* FieldImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldImage.swift; path = Sources/Model/FieldImage.swift; sourceTree = "<group>"; };
+		2842ACD358E3A8232FEE30BD2CFB7413 /* Pods-BlocklyGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlocklyGame.modulemap"; sourceTree = "<group>"; };
+		2844716DD0F9395DB0012E98BAC17966 /* UIColor+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Helper.swift"; path = "Sources/Common/UIColor+Helper.swift"; sourceTree = "<group>"; };
+		289C73DC494C1E8F675A2CD23E9283DA /* BlocklyPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlocklyPanGestureRecognizer.swift; path = Sources/UI/BlocklyPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		297741AA75CDF22773147764C77FFE1F /* XMLConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLConstants.swift; path = Sources/Model/XML/XMLConstants.swift; sourceTree = "<group>"; };
+		2B3DACDEF62591CDE4F1346BFC6163CD /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = vi.lproj/bky_messages.json; sourceTree = "<group>"; };
+		2C5A07852E8BFD83CC13A4BA1962163B /* LayoutHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutHelper.swift; path = Sources/Layout/LayoutHelper.swift; sourceTree = "<group>"; };
+		2CB137F455B54688E19F831E49CF5D20 /* DefaultInputLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultInputLayout.swift; path = Sources/Layout/Default/DefaultInputLayout.swift; sourceTree = "<group>"; };
+		2CD58676807DAF82FBA86AC8D672CAE5 /* ToolboxLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolboxLayout.swift; path = Sources/Layout/ToolboxLayout.swift; sourceTree = "<group>"; };
+		2D3B8E5C5676E425B04F9FC3B073FE7D /* BlocklyEvent+UI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BlocklyEvent+UI.swift"; path = "Sources/Model/Event/BlocklyEvent+UI.swift"; sourceTree = "<group>"; };
+		2DB991D131E179843E2F195822552323 /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Sources/Common/Logging.swift; sourceTree = "<group>"; };
+		31CD93C49847DA3029B21FB73BB1393E /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = sq.lproj/bky_messages.json; sourceTree = "<group>"; };
+		327595BF2FEAA4B897F081441F1A9E6E /* Field.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Sources/Model/Field.swift; sourceTree = "<group>"; };
+		365F71487C450BD0295A9074F86750FA /* Workspace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Workspace.swift; path = Sources/Model/Workspace.swift; sourceTree = "<group>"; };
+		36A7AE067ED69D6DBF089DEFFC42E606 /* ToolboxCategoryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolboxCategoryViewController.swift; path = "Sources/UI/View Controllers/ToolboxCategoryViewController.swift"; sourceTree = "<group>"; };
+		37988D8B828A54A58DC8C8A73E535D1C /* FieldNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldNumber.swift; path = Sources/Model/FieldNumber.swift; sourceTree = "<group>"; };
+		382FAE276AA15FB1E8CCF0FB4BA4CC86 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = sv.lproj/bky_messages.json; sourceTree = "<group>"; };
+		3AB4019DD20B8B1D4D7752DD063B4A97 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ko.lproj/bky_messages.json; sourceTree = "<group>"; };
+		3BB28907BC5E945852BDBBB9E296558F /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = mk.lproj/bky_messages.json; sourceTree = "<group>"; };
+		3F13556804E3BE867E6AB0B3EC0549F1 /* Pods_BlocklyGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4B8FFBF76BA1DA0D22B68787CC4410 /* MutatorLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorLayout.swift; path = Sources/Layout/MutatorLayout.swift; sourceTree = "<group>"; };
+		41234DEBD01C9151BCC4D8416004C71C /* Pods_BlocklyGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		439AA99EAF79B541795AF3B856309942 /* MutatorProcedureDefinitionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorProcedureDefinitionView.swift; path = Sources/UI/Views/MutatorProcedureDefinitionView.swift; sourceTree = "<group>"; };
+		442713BDD7ED9FBBFBA5C9770A824042 /* LayoutFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutFactory.swift; path = Sources/Layout/LayoutFactory.swift; sourceTree = "<group>"; };
+		44371E07843BD9F9277D398A1C9B5D6F /* BlockGroupLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockGroupLayout.swift; path = Sources/Layout/BlockGroupLayout.swift; sourceTree = "<group>"; };
+		44AB497836AE18A0DBAA70C3868996A0 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ro.lproj/bky_messages.json; sourceTree = "<group>"; };
+		44EF8B556488E26FC44868A0F281C85A /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = bn.lproj/bky_messages.json; sourceTree = "<group>"; };
+		452C1E1FE058FC1FAC67B1E9E9230A63 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = sk.lproj/bky_messages.json; sourceTree = "<group>"; };
+		462736ADD3FF60C2A25E6FF5293FA8A7 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Common/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		475EE492985D826589DA003ECDCCA5BF /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/Options.swift; sourceTree = "<group>"; };
+		478DCA163F9B8CF39C27726F76A15BA5 /* BlockBumper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockBumper.swift; path = Sources/Control/BlockBumper.swift; sourceTree = "<group>"; };
+		4833410A01C2C0D24C75E229EE859456 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = cs.lproj/bky_messages.json; sourceTree = "<group>"; };
+		48C9800FBC42EFD505DFF6782A50C08C /* FieldView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldView.swift; path = Sources/UI/Views/FieldView.swift; sourceTree = "<group>"; };
+		48FFCBEC4CE5E69568F27EEEAC71A624 /* LayoutConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConfig.swift; path = Sources/Layout/LayoutConfig.swift; sourceTree = "<group>"; };
+		494FCA6657F9C546EC2333F8BFE561F0 /* NumberPad.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumberPad.swift; path = Sources/UI/Views/NumberPad.swift; sourceTree = "<group>"; };
+		495C0C182EC0B6100E7513A4744768B3 /* FieldNumberView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldNumberView.swift; path = Sources/UI/Views/FieldNumberView.swift; sourceTree = "<group>"; };
+		49DF1CACA2B88CF187EAC38C605498B1 /* InputLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputLayout.swift; path = Sources/Layout/InputLayout.swift; sourceTree = "<group>"; };
+		4B1ACF8BDF0097E50A406CF10F51A45E /* MessageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageManager.swift; path = Sources/Common/MessageManager.swift; sourceTree = "<group>"; };
+		4B349CC187F98AA62181DA20BE818316 /* BlocklyEvent+Change.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BlocklyEvent+Change.swift"; path = "Sources/Model/Event/BlocklyEvent+Change.swift"; sourceTree = "<group>"; };
+		4BD6346F48C9DB2D5850C505432CA71A /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = en.lproj/bky_messages.json; sourceTree = "<group>"; };
+		4BF12AFB411AF38D21B45E755C59C7CA /* ColorPalette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = Sources/Common/ColorPalette.swift; sourceTree = "<group>"; };
+		4C1384C34EF7B6CA4908F5E6A585C930 /* BlockBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockBuilder.swift; path = Sources/Model/BlockBuilder.swift; sourceTree = "<group>"; };
+		4D306FCBA46BABB80F2A04850792191F /* Pods-BlocklyGameUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlocklyGameUITests-dummy.m"; sourceTree = "<group>"; };
+		4D779B19A19D6F2D055B281BBEA3BECB /* Pods-BlocklyGameUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlocklyGameUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		501DAD81C6B42C5BFF9933DB4E10B663 /* WorkspaceFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceFlowLayout.swift; path = Sources/Layout/WorkspaceFlowLayout.swift; sourceTree = "<group>"; };
+		5032C2640ABB94B65DCF3BDCD09F8E16 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = sl.lproj/bky_messages.json; sourceTree = "<group>"; };
+		50CC6160678B64E4ED7A7E4DD3701FDD /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = kab.lproj/bky_messages.json; sourceTree = "<group>"; };
+		524B17AAD2205AC51E6B0E32929BAF9D /* Input+XML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Input+XML.swift"; path = "Sources/Model/XML/Input+XML.swift"; sourceTree = "<group>"; };
+		54B3209F19B2AC18485425C58905F87D /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ca.lproj/bky_messages.json; sourceTree = "<group>"; };
+		56DE7BD31BB4829F1344CCAE89A1A74E /* UIView+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Helper.swift"; path = "Sources/Common/UIView+Helper.swift"; sourceTree = "<group>"; };
+		572B8506B316595DD34D242CB0762A4B /* CodeGenerator */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = CodeGenerator; path = "Resources/Non-Localized/CodeGenerator"; sourceTree = "<group>"; };
+		5781EAC396476DDAE2351873EC3B8B88 /* BlocklyEvent+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BlocklyEvent+Create.swift"; path = "Sources/Model/Event/BlocklyEvent+Create.swift"; sourceTree = "<group>"; };
+		5A7F0473F330F223FC25FA9687E8252E /* MutatorProcedureCaller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorProcedureCaller.swift; path = Sources/Model/MutatorProcedureCaller.swift; sourceTree = "<group>"; };
+		5D190E9999E6B509FB45E6BE272F68A6 /* TrashCanView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrashCanView.swift; path = Sources/UI/Views/TrashCanView.swift; sourceTree = "<group>"; };
+		5D48852361E8209FDB9911F367818474 /* BlocklyEventFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlocklyEventFactory.swift; path = Sources/Model/Event/BlocklyEventFactory.swift; sourceTree = "<group>"; };
+		5D620C60714489E76B6AE29D8951A68D /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ru.lproj/bky_messages.json; sourceTree = "<group>"; };
+		5FCFBB6DE87D0902A09DBEA435E70907 /* WorkspaceLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceLayout.swift; path = Sources/Layout/WorkspaceLayout.swift; sourceTree = "<group>"; };
+		618C68CFE82A422653CE696BEC9832B1 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = th.lproj/bky_messages.json; sourceTree = "<group>"; };
+		61D4841141CA5847AA58F56B026034EF /* Blockly.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Blockly.modulemap; sourceTree = "<group>"; };
+		62F6B4C0060E07A01D9CBC7240E6071F /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Model/Connection.swift; sourceTree = "<group>"; };
+		6329C058A6EFC1773D4A0324764CECEA /* AEXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AEXML.modulemap; sourceTree = "<group>"; };
+		63975B609F00E7C7E6ADA2AD79508E36 /* NumberPadViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumberPadViewController.swift; path = "Sources/UI/View Controllers/NumberPadViewController.swift"; sourceTree = "<group>"; };
+		641B0AC243D01966902C83F6106B9CBB /* MutatorProcedureCallerLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorProcedureCallerLayout.swift; path = Sources/Layout/MutatorProcedureCallerLayout.swift; sourceTree = "<group>"; };
+		6505F43E47B0F157209D52ECECC9AA6F /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = is.lproj/bky_messages.json; sourceTree = "<group>"; };
+		656E05CA4AC84B79E1948EB9551F0D7A /* FieldCheckboxLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldCheckboxLayout.swift; path = Sources/Layout/FieldCheckboxLayout.swift; sourceTree = "<group>"; };
+		65DD7811B6865FE41D4630708CEDF1F1 /* FieldColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldColor.swift; path = Sources/Model/FieldColor.swift; sourceTree = "<group>"; };
+		6757736F9A2A4A5714A1861C63558582 /* Blockly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Blockly.h; path = Sources/ObjC/Blockly.h; sourceTree = "<group>"; };
+		67E4E3473317EBDE0DE79B1BF56516B7 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = az.lproj/bky_messages.json; sourceTree = "<group>"; };
+		69456FE86D04B589D5ECCD2D7AC05056 /* Blockly.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Blockly.xcassets; path = "Resources/Non-Localized/Blockly.xcassets"; sourceTree = "<group>"; };
+		69A2FBF913D89E46A7DD3FC9D9A3769C /* Blockly-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blockly-prefix.pch"; sourceTree = "<group>"; };
+		69E089C5004EAA993E96E398A2352BA6 /* NumberIncrementerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumberIncrementerView.swift; path = Sources/UI/Views/NumberIncrementerView.swift; sourceTree = "<group>"; };
+		6A31BACC38EB10EAFFB3D1FC86ADDECF /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ja.lproj/bky_messages.json; sourceTree = "<group>"; };
+		6A53C51EAC5A663C3211ACB9C081317A /* DropdownOptionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropdownOptionsViewController.swift; path = "Sources/UI/View Controllers/DropdownOptionsViewController.swift"; sourceTree = "<group>"; };
+		6BB34C3503CA283462B9C6CC33157345 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = lb.lproj/bky_messages.json; sourceTree = "<group>"; };
+		6CC4D1BF02BF60AF5EAF42E488B8388B /* FieldVariableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldVariableView.swift; path = Sources/UI/Views/FieldVariableView.swift; sourceTree = "<group>"; };
+		6E0F8E3559268150528BCF9153719DCC /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = sr.lproj/bky_messages.json; sourceTree = "<group>"; };
+		6E8192B75389630C3EA2AD75F8252BAA /* CodeGeneratorService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeGeneratorService.swift; path = Sources/Common/CodeGeneratorService.swift; sourceTree = "<group>"; };
+		6E8FD97521AD1077047E2932795169AD /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = fi.lproj/bky_messages.json; sourceTree = "<group>"; };
+		6F49D411A6EFB4E5CE2C0337A42FAB09 /* LayoutEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutEngine.swift; path = Sources/Layout/LayoutEngine.swift; sourceTree = "<group>"; };
+		6F9A14230D7FF732C453264D1A1C7FF5 /* BlocklyEvent+Move.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BlocklyEvent+Move.swift"; path = "Sources/Model/Event/BlocklyEvent+Move.swift"; sourceTree = "<group>"; };
+		70E5B4E0DA3FD20E4BB803246CC4DB2F /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = eo.lproj/bky_messages.json; sourceTree = "<group>"; };
+		723FF3E4FB598F450B591F0F7BCE4ABF /* Pods-BlocklyGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocklyGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72CE029D8EB86BAA55A0993BE95BA4BB /* WorkspaceFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceFlow.swift; path = Sources/Model/WorkspaceFlow.swift; sourceTree = "<group>"; };
+		730E0216249BA78C6CCA4A92F6EC4E00 /* ObjectPool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectPool.swift; path = Sources/Common/ObjectPool.swift; sourceTree = "<group>"; };
+		79D4F38F4253A7818BCE61804A0C0BB3 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = br.lproj/bky_messages.json; sourceTree = "<group>"; };
+		7B2A00161B04A842BCAC0FFDF4B7CB55 /* BlockExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockExtension.swift; path = Sources/Model/BlockExtension.swift; sourceTree = "<group>"; };
+		7B604A3383EB8BFCBCCAABC290A9533F /* Pods-BlocklyGameUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlocklyGameUITests-umbrella.h"; sourceTree = "<group>"; };
+		7BB195458332C9055B2348D83677444B /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C33C427030338F67BF52598520D40DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB6D4DAB900DCE6E2B3FAF4760CF8F3 /* Toolbox+XML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Toolbox+XML.swift"; path = "Sources/Model/XML/Toolbox+XML.swift"; sourceTree = "<group>"; };
+		7E6E61356F2CFFF6B98A3DB456C38E6E /* Pods-BlocklyGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlocklyGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F0201F43C38638602598EA3893C5D28 /* Pods-BlocklyGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocklyGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FCB4E56E07CAAC40DFCF48099945776 /* TrashCanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrashCanViewController.swift; path = "Sources/UI/View Controllers/TrashCanViewController.swift"; sourceTree = "<group>"; };
+		80B12F2043D7C11D9939979985CD8CA5 /* Blockly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Blockly-dummy.m"; sourceTree = "<group>"; };
+		81333F4DC6A504CDF3C0DDBBAB3F107F /* InputBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputBuilder.swift; path = Sources/Model/InputBuilder.swift; sourceTree = "<group>"; };
+		8378AA9FE42A709AA070081BED727ED7 /* BlockFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockFactory.swift; path = Sources/Model/BlockFactory.swift; sourceTree = "<group>"; };
+		8393FFB8BDBAE16D93716D8ECBF00091 /* DefaultLayoutEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultLayoutEngine.swift; path = Sources/Layout/Default/DefaultLayoutEngine.swift; sourceTree = "<group>"; };
+		84FA325A032B9D5BDC6C638F4D44CE92 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = "zh-Hant.lproj/bky_messages.json"; sourceTree = "<group>"; };
+		857920A1592E9A113E0E7ECC9FF0DED8 /* WeakSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakSet.swift; path = Sources/Common/WeakSet.swift; sourceTree = "<group>"; };
+		85E686596AC6B5E59E083D8BAF5CAEF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		860ABA362D9B69380A96BBEE5BFD52AD /* Pods-BlocklyGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocklyGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		878A5959CA48F8F12345B7B712C0B871 /* ToolboxCategoryListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolboxCategoryListViewController.swift; path = "Sources/UI/View Controllers/ToolboxCategoryListViewController.swift"; sourceTree = "<group>"; };
+		87D846C757230CAC0D25A6E9B4519E9E /* UIPopoverPresentationController+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPopoverPresentationController+Helper.swift"; path = "Sources/Common/UIPopoverPresentationController+Helper.swift"; sourceTree = "<group>"; };
+		8AA87A570FA23F0B67E6D33523E22E84 /* Pods-BlocklyGameTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlocklyGameTests-umbrella.h"; sourceTree = "<group>"; };
+		8B875B84910274DE01B68F589FDDEF42 /* MutatorProcedureIfReturn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorProcedureIfReturn.swift; path = Sources/Model/MutatorProcedureIfReturn.swift; sourceTree = "<group>"; };
+		8C48701011B06C0FDBD56AD704B0934E /* Pods-BlocklyGameUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlocklyGameUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8D5026A214FC61CEA92E50182409720F /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = es.lproj/bky_messages.json; sourceTree = "<group>"; };
+		8DE23F84CB4269B9F88A8CC2660EB1EE /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = pl.lproj/bky_messages.json; sourceTree = "<group>"; };
+		8E7EC4ED32A514201DA9B8ED8792795A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8EA2116F3ABF753D9955D5D025787B1A /* String+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Util.swift"; path = "Sources/Common/String+Util.swift"; sourceTree = "<group>"; };
+		8F31A5242A407D294188A29D36297BA3 /* EventManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventManager.swift; path = Sources/Control/EventManager.swift; sourceTree = "<group>"; };
+		8FA24C136A301B30B3A5B78E4B0E5E6A /* Messages */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Messages; path = "Resources/Non-Localized/Messages"; sourceTree = "<group>"; };
+		8FA66913E4A842EEA258571537D36FAC /* ProcedureCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureCoordinator.swift; path = Sources/Control/ProcedureCoordinator.swift; sourceTree = "<group>"; };
+		8FD7FDCC6F38C5A3F21FB5DF0237B71A /* UIEdgeInsets+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+Helper.swift"; path = "Sources/Common/UIEdgeInsets+Helper.swift"; sourceTree = "<group>"; };
+		9060C0BDF84E3EE783F5C32E2C892BDD /* Pods-BlocklyGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlocklyGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		90F525E568E532319CC24D530959BA73 /* WorkspaceBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceBezierPath.swift; path = Sources/UI/WorkspaceBezierPath.swift; sourceTree = "<group>"; };
+		913BF1AC363C08133F903FF2F9B199DC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		915CD78D955F7313E1BC8D6CE66F47E4 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Sources/Common/EdgeInsets.swift; sourceTree = "<group>"; };
+		919DB5EF7E03A1F6E77117A89E584580 /* Pods-BlocklyGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlocklyGame-resources.sh"; sourceTree = "<group>"; };
+		92DC5E147E138D435AC55074F99B0C9F /* FieldImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldImageView.swift; path = Sources/UI/Views/FieldImageView.swift; sourceTree = "<group>"; };
+		92F67A96ABC7D32B237BDEBC34A36AB7 /* AEXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		933BCE70B2DFC4C6F52B3F127A5A9546 /* Array+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Helper.swift"; path = "Sources/Common/Array+Helper.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E816D0CB923150CA096B788FF72F52 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = fa.lproj/bky_messages.json; sourceTree = "<group>"; };
+		94A0D12AE7AEDBA40CF7E2B3B4AF84B8 /* MutatorIfElse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorIfElse.swift; path = Sources/Model/MutatorIfElse.swift; sourceTree = "<group>"; };
+		9632957C1A012178FF9173BA873316E7 /* WrapperBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WrapperBox.swift; path = Sources/Common/WrapperBox.swift; sourceTree = "<group>"; };
+		9635CDAF2437DFFC8966DA249D266EF4 /* BlocklyError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlocklyError.swift; path = Sources/Common/BlocklyError.swift; sourceTree = "<group>"; };
+		9799BEFAAF8BDA40AF00CBE3465D9368 /* FieldDropdown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDropdown.swift; path = Sources/Model/FieldDropdown.swift; sourceTree = "<group>"; };
+		9805A3BF83BDD246F3E4D7316DA74318 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = "en-GB.lproj/bky_messages.json"; sourceTree = "<group>"; };
+		990FF70E8EBCEFEBF7F694D1F9E31364 /* Pods-BlocklyGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlocklyGame-umbrella.h"; sourceTree = "<group>"; };
+		9A49797E4DCD30E3DD1715719A248B83 /* BlockJSONFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockJSONFile.swift; path = Sources/Model/JSON/BlockJSONFile.swift; sourceTree = "<group>"; };
+		9AB14530562007F22609AC77F6E4A825 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = da.lproj/bky_messages.json; sourceTree = "<group>"; };
+		9AB1C04B8E9B4AD889015CB348DD67AB /* DefaultConnectionValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultConnectionValidator.swift; path = Sources/Control/DefaultConnectionValidator.swift; sourceTree = "<group>"; };
+		9B6C5F606514411C31236EC26BB6B6A0 /* Pods-BlocklyGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocklyGame.release.xcconfig"; sourceTree = "<group>"; };
+		9B88792DA157F8252EFF0B78563C5273 /* InputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputView.swift; path = Sources/UI/Views/InputView.swift; sourceTree = "<group>"; };
+		9C3CBF7D7892E4EDCC69ABEF35E26260 /* Field+XML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Field+XML.swift"; path = "Sources/Model/XML/Field+XML.swift"; sourceTree = "<group>"; };
+		9C3E824D8BA126110FC99441DC324BED /* Pods-BlocklyGameTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlocklyGameTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9CB432997C50C60A9D5BC7A2C957CC00 /* String+LayoutHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LayoutHelper.swift"; path = "Sources/Common/String+LayoutHelper.swift"; sourceTree = "<group>"; };
+		9D7BCD7FB17A1F57777DD92429B9220C /* RangeHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeHelper.swift; path = Sources/Common/RangeHelper.swift; sourceTree = "<group>"; };
+		A0255A9A7A6E4516E25E86FD72ADBB29 /* Pods-BlocklyGameTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlocklyGameTests.modulemap"; sourceTree = "<group>"; };
+		A18172C88C1C1473D2CE1D216DE9F214 /* WorkspaceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceView.swift; path = Sources/UI/Views/WorkspaceView.swift; sourceTree = "<group>"; };
+		A315F6F86FCB199C49B76ED4E4659878 /* DefaultBlockLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultBlockLayout.swift; path = Sources/Layout/Default/DefaultBlockLayout.swift; sourceTree = "<group>"; };
+		A5EA6BDB56C710686824C7B578D331FA /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = bg.lproj/bky_messages.json; sourceTree = "<group>"; };
+		A5F65978D82B618C28A66B582618798F /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Sources/Layout/Layout.swift; sourceTree = "<group>"; };
+		A5FBF24C7EDBB072A90AF60A5720B763 /* FieldLabelLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldLabelLayout.swift; path = Sources/Layout/FieldLabelLayout.swift; sourceTree = "<group>"; };
+		A773AE69D5369B5767E4BDCCF113F978 /* BundledFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundledFile.swift; path = Sources/Common/BundledFile.swift; sourceTree = "<group>"; };
+		A7B99A48154C3868B86499130B0A51D5 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = nb.lproj/bky_messages.json; sourceTree = "<group>"; };
+		A7CFF5797B7B100FF59A52080ED46A3B /* Block.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Block.swift; path = Sources/Model/Block.swift; sourceTree = "<group>"; };
+		A80FDE3CCA0267F9F8C61542115639A7 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		A8102C8F972158DFB983E451858DB1F0 /* MutatorHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorHelper.swift; path = Sources/Control/MutatorHelper.swift; sourceTree = "<group>"; };
+		A868BB5A5B6E3B67923BA20B54A4BAE7 /* DefaultBlockGroupLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultBlockGroupLayout.swift; path = Sources/Layout/Default/DefaultBlockGroupLayout.swift; sourceTree = "<group>"; };
+		A98A38BD5A67A79C7F8F027BCD4A10BC /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = pt.lproj/bky_messages.json; sourceTree = "<group>"; };
+		ACA71EFAAE2A0DB260A37C0F8E0EFCAB /* ZIndexedGroupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZIndexedGroupView.swift; path = Sources/UI/Views/ZIndexedGroupView.swift; sourceTree = "<group>"; };
+		ACF8A998C6345A16C2DF2E4C1C2BA456 /* NameManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameManager.swift; path = Sources/Control/NameManager.swift; sourceTree = "<group>"; };
+		AD1196AD06D1467D4C0AAFB716C80C91 /* FieldDateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDateView.swift; path = Sources/UI/Views/FieldDateView.swift; sourceTree = "<group>"; };
+		AE109388973320EDAFD87CF41BFD1D7E /* FieldDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDate.swift; path = Sources/Model/FieldDate.swift; sourceTree = "<group>"; };
+		B13B36D6139987C4D3B6DE0706C384E5 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ta.lproj/bky_messages.json; sourceTree = "<group>"; };
+		B2028C6F13FF6ECEB12CC015BF705EC5 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = et.lproj/bky_messages.json; sourceTree = "<group>"; };
+		B3A062075547348B6037F441F3D2C905 /* ViewBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewBuilder.swift; path = Sources/UI/Views/ViewBuilder.swift; sourceTree = "<group>"; };
+		B7335F0C72D852A9096B6EE1A66AFC84 /* WorkspaceUnits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceUnits.swift; path = Sources/Model/WorkspaceUnits.swift; sourceTree = "<group>"; };
+		B7736866A8C836FB049477AAD6B8D2E7 /* DefaultBlockView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultBlockView.swift; path = Sources/UI/Views/Default/DefaultBlockView.swift; sourceTree = "<group>"; };
+		B7B5DA85CDF40C245A5CD97E7F9AF8BF /* AnglePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnglePickerViewController.swift; path = "Sources/UI/View Controllers/AnglePickerViewController.swift"; sourceTree = "<group>"; };
+		B7F022721DDDF2C9C84B09AEE0A9DCCA /* LayoutView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutView.swift; path = Sources/UI/Views/LayoutView.swift; sourceTree = "<group>"; };
+		B8E89322B7E1D3E7D6E992E34287AA18 /* Pods-BlocklyGameUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlocklyGameUITests-resources.sh"; sourceTree = "<group>"; };
+		BAEC90455F470D9D058135A63DE247D1 /* FieldDropdownView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDropdownView.swift; path = Sources/UI/Views/FieldDropdownView.swift; sourceTree = "<group>"; };
+		BB8B88ABD77BF0C690E2DFA2AB701603 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = fr.lproj/bky_messages.json; sourceTree = "<group>"; };
+		BC80710D1EDA897E78BB34A476DFD538 /* Pods-BlocklyGameUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlocklyGameUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE6258BBB50183E4E96577B0236138D2 /* String+Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Encoding.swift"; path = "Sources/Common/String+Encoding.swift"; sourceTree = "<group>"; };
+		BEF10248C6B3186D8D27501792CCE5C8 /* DefaultLayoutConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultLayoutConfig.swift; path = Sources/Layout/Default/DefaultLayoutConfig.swift; sourceTree = "<group>"; };
+		BF6053DC91AA99483C4233ABD3376CBC /* CodeGeneratorServiceRequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeGeneratorServiceRequestBuilder.swift; path = Sources/Common/CodeGeneratorServiceRequestBuilder.swift; sourceTree = "<group>"; };
+		C03EAE8E5A0ADF324F848900017F03C6 /* MutatorIfElseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorIfElseView.swift; path = Sources/UI/Views/MutatorIfElseView.swift; sourceTree = "<group>"; };
+		C223B2FEE72F6ADFAE559A204BA5C85B /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = de.lproj/bky_messages.json; sourceTree = "<group>"; };
+		C27DE640519F491BA0CBC5240277A5C3 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
+		C2A42368ACCE695433EE60A01E8197E9 /* Pods-BlocklyGameTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlocklyGameTests-frameworks.sh"; sourceTree = "<group>"; };
+		C4B545CF6B2B5BFDA6F4C265A68A5B8C /* Dictionary+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Helper.swift"; path = "Sources/Common/Dictionary+Helper.swift"; sourceTree = "<group>"; };
+		C8AF5F68D03DEDB50D38568821B32D46 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = ms.lproj/bky_messages.json; sourceTree = "<group>"; };
+		C9466346F10B0ECC20AA04485955F4A8 /* BKYEdgeInsets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BKYEdgeInsets.h; path = Sources/ObjC/BKYEdgeInsets.h; sourceTree = "<group>"; };
+		C9FD81204146688B276D47B85E0B40C7 /* ViewManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewManager.swift; path = Sources/UI/Views/ViewManager.swift; sourceTree = "<group>"; };
+		CBF443600BE9E6AFBF67E8114394A73F /* FieldLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldLayout.swift; path = Sources/Layout/FieldLayout.swift; sourceTree = "<group>"; };
+		CD20B9521BDEC204F38B81922D6C9296 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
+		CD5147E1C1B395347631FDFDD8B28073 /* Input+JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Input+JSON.swift"; path = "Sources/Model/JSON/Input+JSON.swift"; sourceTree = "<group>"; };
+		CEEB80B26ECA5ECAAAFEDE4005E9996C /* BlocklyEvent+Delete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BlocklyEvent+Delete.swift"; path = "Sources/Model/Event/BlocklyEvent+Delete.swift"; sourceTree = "<group>"; };
+		CF073D923E27FDBB0F116DB718DAB4C1 /* FieldVariable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldVariable.swift; path = Sources/Model/FieldVariable.swift; sourceTree = "<group>"; };
+		CF727A9995EB98AA59C814DCE31B3EBC /* BezierPathLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierPathLayer.swift; path = Sources/UI/Views/BezierPathLayer.swift; sourceTree = "<group>"; };
+		D05DC0452C9EFD17A394B48EF2B90ADA /* FieldCheckboxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldCheckboxView.swift; path = Sources/UI/Views/FieldCheckboxView.swift; sourceTree = "<group>"; };
+		D13B5180615B3D4F484EA7526BE83A1B /* AEXML-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-umbrella.h"; sourceTree = "<group>"; };
+		D17985470694DB0DBD54A0E5FA604FDC /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = be.lproj/bky_messages.json; sourceTree = "<group>"; };
+		D4182C1B79D4A7C5ED71F85389C1F50F /* ViewFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewFactory.swift; path = Sources/UI/Views/ViewFactory.swift; sourceTree = "<group>"; };
+		D6B2A8F132DE8916A2595AB2A58897A0 /* MutatorProcedureIfReturnLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutatorProcedureIfReturnLayout.swift; path = Sources/Layout/MutatorProcedureIfReturnLayout.swift; sourceTree = "<group>"; };
+		D719AE56B01C581FB868900808C3DFDC /* Toolbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toolbox.swift; path = Sources/Model/Toolbox.swift; sourceTree = "<group>"; };
+		D89C0565A3A9FE18D6BADBD2692A77E4 /* AEXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEXML-prefix.pch"; sourceTree = "<group>"; };
+		D909F274518EA3C4BB0C6B4705307B8B /* Blockly.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blockly.xcconfig; sourceTree = "<group>"; };
+		D98B8EED6218DCB31D310A4D7135DC45 /* InsetTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetTextField.swift; path = Sources/Common/InsetTextField.swift; sourceTree = "<group>"; };
+		DA6A155C9B4CB6BE48BF089C72498B76 /* BKYLayoutConfigStructs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BKYLayoutConfigStructs.m; path = Sources/ObjC/BKYLayoutConfigStructs.m; sourceTree = "<group>"; };
+		DB7DF030EFF419C5B2B3CBDE644520E6 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = lt.lproj/bky_messages.json; sourceTree = "<group>"; };
+		DCA284400BC9B35C1676E8B176F77951 /* FieldDateLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDateLayout.swift; path = Sources/Layout/FieldDateLayout.swift; sourceTree = "<group>"; };
+		DD71439BB59692558CCAA18B724196FF /* CodeGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeGenerator.swift; path = Sources/Common/CodeGenerator.swift; sourceTree = "<group>"; };
+		DD869D9C9CDCB72B845E932C2D50F6D9 /* BlockGroupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockGroupView.swift; path = Sources/UI/Views/BlockGroupView.swift; sourceTree = "<group>"; };
+		E0738E4FB21CB998617754E66A6CC20A /* FieldColorPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldColorPickerViewController.swift; path = "Sources/UI/View Controllers/FieldColorPickerViewController.swift"; sourceTree = "<group>"; };
+		E0AD5D807291CFD5D8849360F9EB0615 /* Default */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Default; path = "Resources/Non-Localized/Default"; sourceTree = "<group>"; };
+		E0FDD03F3BA4F7D1FEDD16FC35C16A6D /* Block+JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Block+JSON.swift"; path = "Sources/Model/JSON/Block+JSON.swift"; sourceTree = "<group>"; };
+		E23A9C175101C6C5F2E7839CE5F7D337 /* FieldImageLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldImageLayout.swift; path = Sources/Layout/FieldImageLayout.swift; sourceTree = "<group>"; };
+		E40460DA2963D8FE6A2349BC2D63180F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43C61333B44378E1521E842E900F568 /* bky_constants.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_constants.json; path = Resources/Localized/Messages/bky_constants.json; sourceTree = "<group>"; };
+		E5086105CAA4C6B0FD1B3F179E367185 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Operators.swift"; path = "Sources/Common/CGPoint+Operators.swift"; sourceTree = "<group>"; };
+		E53FE6ACF3F92583F26684C568B3AA58 /* FieldColorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldColorView.swift; path = Sources/UI/Views/FieldColorView.swift; sourceTree = "<group>"; };
+		E76D02CCF17847A27715F8FA36EF1049 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7E5A83BCFA20C545D0640FD83C93B7C /* FieldInputView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldInputView.swift; path = Sources/UI/Views/FieldInputView.swift; sourceTree = "<group>"; };
+		E86AE5E6445C422D68D9949D9C136F71 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = id.lproj/bky_messages.json; sourceTree = "<group>"; };
+		E99D344A5FF00FB50FAF7F0D433D4366 /* Pods-BlocklyGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocklyGame.debug.xcconfig"; sourceTree = "<group>"; };
+		EB49FFD44AB975B8A9044EA79461378D /* FieldColorLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldColorLayout.swift; path = Sources/Layout/FieldColorLayout.swift; sourceTree = "<group>"; };
+		EB88EE5B9181F826F8E7CA14550F39CC /* FieldNumberLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldNumberLayout.swift; path = Sources/Layout/FieldNumberLayout.swift; sourceTree = "<group>"; };
+		EC06140DE4ECE5619AD5DF90ED3A1430 /* BKYBlockJSONFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BKYBlockJSONFile.h; path = Sources/ObjC/BKYBlockJSONFile.h; sourceTree = "<group>"; };
+		EC237C9A1446C3B6225E21FF939FCCA5 /* FieldCheckbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldCheckbox.swift; path = Sources/Model/FieldCheckbox.swift; sourceTree = "<group>"; };
+		EC4D5FFAFD822B1A3410147FE5B0F3BC /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = lrc.lproj/bky_messages.json; sourceTree = "<group>"; };
+		EE03FDAA9C0C9ED482E103E070054930 /* WorkspaceLayoutCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceLayoutCoordinator.swift; path = Sources/Layout/WorkspaceLayoutCoordinator.swift; sourceTree = "<group>"; };
+		EEBD79A6AEAD65E1E21CC2D1A8665D4B /* FieldDropdownLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldDropdownLayout.swift; path = Sources/Layout/FieldDropdownLayout.swift; sourceTree = "<group>"; };
+		EF1CA34822C400E4595E1A607543E8AA /* Pods-BlocklyGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlocklyGame-frameworks.sh"; sourceTree = "<group>"; };
+		EF875A0BEE5ACE612D9FCA0F3BAF1CC9 /* BKYEdgeInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BKYEdgeInsets.m; path = Sources/ObjC/BKYEdgeInsets.m; sourceTree = "<group>"; };
+		F03981668D47ED2EC61D31DAE5E29805 /* CGSize+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Operators.swift"; path = "Sources/Common/CGSize+Operators.swift"; sourceTree = "<group>"; };
+		F060331ED6E5C8673073622D9BB882F9 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = el.lproj/bky_messages.json; sourceTree = "<group>"; };
+		F0ECE47305296ACE19D2CCE415783ECE /* Pods-BlocklyGameUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlocklyGameUITests.modulemap"; sourceTree = "<group>"; };
+		F0EDCA03AF212FE9CCF6F0DAB8EFF184 /* AnglePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnglePicker.swift; path = Sources/UI/Views/AnglePicker.swift; sourceTree = "<group>"; };
+		F20E59AB00B8F5E134C3BCC144122C99 /* Assertions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assertions.swift; path = Sources/Common/Assertions.swift; sourceTree = "<group>"; };
+		F2644F95E5237ECAA88439CA63B80DBC /* ColorHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorHelper.swift; path = Sources/Common/ColorHelper.swift; sourceTree = "<group>"; };
+		F38739197ABE52727F5616666F83D7BC /* LayoutBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutBuilder.swift; path = Sources/Layout/LayoutBuilder.swift; sourceTree = "<group>"; };
+		F45B5D03490E1DB823DF02048A99CAF9 /* Pods-BlocklyGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlocklyGame-dummy.m"; sourceTree = "<group>"; };
+		F5000F39DE6CA7ACF18A5385EB5F6C6D /* Pods-BlocklyGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlocklyGameTests-dummy.m"; sourceTree = "<group>"; };
+		F62B7729448403EE915E19361786C0A0 /* Dragger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dragger.swift; path = Sources/Control/Dragger.swift; sourceTree = "<group>"; };
+		F69299C31F8F6EFDF127E1F44162C087 /* ProcedureParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcedureParameter.swift; path = Sources/Model/ProcedureParameter.swift; sourceTree = "<group>"; };
+		F85D8D9E7272A28C5E5B92C1D887C6FB /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = hu.lproj/bky_messages.json; sourceTree = "<group>"; };
+		F9341744390CDBA6FB8FB773C2FB0A8A /* bky_synonyms.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_synonyms.json; path = Resources/Localized/Messages/bky_synonyms.json; sourceTree = "<group>"; };
+		F94EA418B086B63FD2966AACCF8C1458 /* BlockView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockView.swift; path = Sources/UI/Views/BlockView.swift; sourceTree = "<group>"; };
+		FA0DF0AE0D43AE3DB60B843E857210D5 /* bky_messages.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = bky_messages.json; path = "zh-Hans.lproj/bky_messages.json"; sourceTree = "<group>"; };
+		FA1A81E441CBAB81185D7998E6EB4175 /* WorkbenchViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkbenchViewController.swift; path = "Sources/UI/View Controllers/WorkbenchViewController.swift"; sourceTree = "<group>"; };
+		FACAD692B449D4D378C0AEC088275ADD /* ConnectionValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionValidator.swift; path = Sources/Control/ConnectionValidator.swift; sourceTree = "<group>"; };
+		FC88D1DCD08A36D4BC18D0B895AFCDD9 /* Pods_BlocklyGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA3CC20CF092B45C62F591B9995A04D /* WorkspaceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceViewController.swift; path = "Sources/UI/View Controllers/WorkspaceViewController.swift"; sourceTree = "<group>"; };
+		FDCC4D7E680D630F0307ABC6C717B083 /* Pods-BlocklyGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlocklyGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE9EF8A5CEF0A3FE02B916B8230DB513 /* FieldAngleLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldAngleLayout.swift; path = Sources/Layout/FieldAngleLayout.swift; sourceTree = "<group>"; };
+		FEA0D4F414FD3AF5B15FDCC046896D91 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Sources/Common/ImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		006C3D1BB1682C96C8B3449B71C4A701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71499BA4694EAF9E18D158E4827E0B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505D57AD7372A1602F0A18343AD1B0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63229C4A1A40F27B628B0AC9EF3DD94B /* AEXML.framework in Frameworks */,
+				9C2C07D99BAF23E2EEB8570689EDD63B /* Foundation.framework in Frameworks */,
+				4E903F23E3AC20F0F7259450ADE218B3 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933BE60144EEF3562675DB52E4053B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2415A7BD419EA17FDA330B79D80F54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC472103DC34A084ADB9BC1DD06F43F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C307C55E9D23C7FC1286392F2DB6ED5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D82F46AAE07B94E3219C1793AE7C70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DB59D6FB60E0139D20AA099F282D3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01A52B7E743C7A0094A22C93D3471FB1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61D4841141CA5847AA58F56B026034EF /* Blockly.modulemap */,
+				D909F274518EA3C4BB0C6B4705307B8B /* Blockly.xcconfig */,
+				80B12F2043D7C11D9939979985CD8CA5 /* Blockly-dummy.m */,
+				69A2FBF913D89E46A7DD3FC9D9A3769C /* Blockly-prefix.pch */,
+				1672DB1D317E3468AC031C61ECA580A2 /* Blockly-umbrella.h */,
+				85E686596AC6B5E59E083D8BAF5CAEF1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Blockly";
+			sourceTree = "<group>";
+		};
+		235F3FFD4601296B99A235193B4F85AC /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				C27DE640519F491BA0CBC5240277A5C3 /* Document.swift */,
+				037A503F5C9378B7EAED9D17032159AA /* Element.swift */,
+				A80FDE3CCA0267F9F8C61542115639A7 /* Error.swift */,
+				475EE492985D826589DA003ECDCCA5BF /* Options.swift */,
+				0FEA1FC34817F8D49A701800DE56AD1A /* Parser.swift */,
+				46A890E7F332DCA2A86FA91C51496FF8 /* Support Files */,
+			);
+			path = AEXML;
+			sourceTree = "<group>";
+		};
+		2FE184A7C0620BF3C26C8053DCDB0349 /* Pods-BlocklyGame */ = {
+			isa = PBXGroup;
+			children = (
+				7C33C427030338F67BF52598520D40DA /* Info.plist */,
+				2842ACD358E3A8232FEE30BD2CFB7413 /* Pods-BlocklyGame.modulemap */,
+				7E6E61356F2CFFF6B98A3DB456C38E6E /* Pods-BlocklyGame-acknowledgements.markdown */,
+				15A3D7F6CE1C17AB19D818A380CB2BC5 /* Pods-BlocklyGame-acknowledgements.plist */,
+				F45B5D03490E1DB823DF02048A99CAF9 /* Pods-BlocklyGame-dummy.m */,
+				EF1CA34822C400E4595E1A607543E8AA /* Pods-BlocklyGame-frameworks.sh */,
+				919DB5EF7E03A1F6E77117A89E584580 /* Pods-BlocklyGame-resources.sh */,
+				990FF70E8EBCEFEBF7F694D1F9E31364 /* Pods-BlocklyGame-umbrella.h */,
+				E99D344A5FF00FB50FAF7F0D433D4366 /* Pods-BlocklyGame.debug.xcconfig */,
+				9B6C5F606514411C31236EC26BB6B6A0 /* Pods-BlocklyGame.release.xcconfig */,
+			);
+			name = "Pods-BlocklyGame";
+			path = "Target Support Files/Pods-BlocklyGame";
+			sourceTree = "<group>";
+		};
+		46A890E7F332DCA2A86FA91C51496FF8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6329C058A6EFC1773D4A0324764CECEA /* AEXML.modulemap */,
+				181C139FFF09F1497A93D748A5FC9AA2 /* AEXML.xcconfig */,
+				113C9C29DD788B4D8D09D6F8E96C43AF /* AEXML-dummy.m */,
+				D89C0565A3A9FE18D6BADBD2692A77E4 /* AEXML-prefix.pch */,
+				D13B5180615B3D4F484EA7526BE83A1B /* AEXML-umbrella.h */,
+				E76D02CCF17847A27715F8FA36EF1049 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AEXML";
+			sourceTree = "<group>";
+		};
+		49A13068F7897F8318E216FEB299D8AE /* Blockly */ = {
+			isa = PBXGroup;
+			children = (
+				F0EDCA03AF212FE9CCF6F0DAB8EFF184 /* AnglePicker.swift */,
+				B7B5DA85CDF40C245A5CD97E7F9AF8BF /* AnglePickerViewController.swift */,
+				933BCE70B2DFC4C6F52B3F127A5A9546 /* Array+Helper.swift */,
+				F20E59AB00B8F5E134C3BCC144122C99 /* Assertions.swift */,
+				CF727A9995EB98AA59C814DCE31B3EBC /* BezierPathLayer.swift */,
+				EC06140DE4ECE5619AD5DF90ED3A1430 /* BKYBlockJSONFile.h */,
+				C9466346F10B0ECC20AA04485955F4A8 /* BKYEdgeInsets.h */,
+				EF875A0BEE5ACE612D9FCA0F3BAF1CC9 /* BKYEdgeInsets.m */,
+				0D30455DFC7C60022C71E4821B732887 /* BKYLayoutConfigStructs.h */,
+				DA6A155C9B4CB6BE48BF089C72498B76 /* BKYLayoutConfigStructs.m */,
+				033B4B8908DB4E0663419E0DA6623A38 /* BKYWorkspaceUnits.h */,
+				142F9BAE5B1BBD2755E5738AA5A54C5E /* BKYWorkspaceUnits.m */,
+				A7CFF5797B7B100FF59A52080ED46A3B /* Block.swift */,
+				E0FDD03F3BA4F7D1FEDD16FC35C16A6D /* Block+JSON.swift */,
+				004EBFFBDEDB2DEE51E1491DEF929960 /* Block+XML.swift */,
+				4C1384C34EF7B6CA4908F5E6A585C930 /* BlockBuilder.swift */,
+				478DCA163F9B8CF39C27726F76A15BA5 /* BlockBumper.swift */,
+				7B2A00161B04A842BCAC0FFDF4B7CB55 /* BlockExtension.swift */,
+				8378AA9FE42A709AA070081BED727ED7 /* BlockFactory.swift */,
+				44371E07843BD9F9277D398A1C9B5D6F /* BlockGroupLayout.swift */,
+				DD869D9C9CDCB72B845E932C2D50F6D9 /* BlockGroupView.swift */,
+				9A49797E4DCD30E3DD1715719A248B83 /* BlockJSONFile.swift */,
+				1574759419FE21C68E33023F0759BDD4 /* BlockLayout.swift */,
+				6757736F9A2A4A5714A1861C63558582 /* Blockly.h */,
+				9635CDAF2437DFFC8966DA249D266EF4 /* BlocklyError.swift */,
+				16DD4CC4C3F040A7F5496CB4C268D22B /* BlocklyEvent.swift */,
+				4B349CC187F98AA62181DA20BE818316 /* BlocklyEvent+Change.swift */,
+				5781EAC396476DDAE2351873EC3B8B88 /* BlocklyEvent+Create.swift */,
+				CEEB80B26ECA5ECAAAFEDE4005E9996C /* BlocklyEvent+Delete.swift */,
+				6F9A14230D7FF732C453264D1A1C7FF5 /* BlocklyEvent+Move.swift */,
+				2D3B8E5C5676E425B04F9FC3B073FE7D /* BlocklyEvent+UI.swift */,
+				5D48852361E8209FDB9911F367818474 /* BlocklyEventFactory.swift */,
+				289C73DC494C1E8F675A2CD23E9283DA /* BlocklyPanGestureRecognizer.swift */,
+				257813F778199E7B4C2A3B7BF89DC84A /* BlocklyTests-Bridging-Header.h */,
+				F94EA418B086B63FD2966AACCF8C1458 /* BlockView.swift */,
+				A773AE69D5369B5767E4BDCCF113F978 /* BundledFile.swift */,
+				E5086105CAA4C6B0FD1B3F179E367185 /* CGPoint+Operators.swift */,
+				F03981668D47ED2EC61D31DAE5E29805 /* CGSize+Operators.swift */,
+				DD71439BB59692558CCAA18B724196FF /* CodeGenerator.swift */,
+				6E8192B75389630C3EA2AD75F8252BAA /* CodeGeneratorService.swift */,
+				BF6053DC91AA99483C4233ABD3376CBC /* CodeGeneratorServiceRequestBuilder.swift */,
+				F2644F95E5237ECAA88439CA63B80DBC /* ColorHelper.swift */,
+				4BF12AFB411AF38D21B45E755C59C7CA /* ColorPalette.swift */,
+				62F6B4C0060E07A01D9CBC7240E6071F /* Connection.swift */,
+				229EF664265BAE38F48599AEB3D8FA18 /* ConnectionManager.swift */,
+				FACAD692B449D4D378C0AEC088275ADD /* ConnectionValidator.swift */,
+				A868BB5A5B6E3B67923BA20B54A4BAE7 /* DefaultBlockGroupLayout.swift */,
+				A315F6F86FCB199C49B76ED4E4659878 /* DefaultBlockLayout.swift */,
+				22F3179655A8BC78CBEE73150EF57F54 /* DefaultBlockLayout+Background.swift */,
+				B7736866A8C836FB049477AAD6B8D2E7 /* DefaultBlockView.swift */,
+				9AB1C04B8E9B4AD889015CB348DD67AB /* DefaultConnectionValidator.swift */,
+				2CB137F455B54688E19F831E49CF5D20 /* DefaultInputLayout.swift */,
+				BEF10248C6B3186D8D27501792CCE5C8 /* DefaultLayoutConfig.swift */,
+				8393FFB8BDBAE16D93716D8ECBF00091 /* DefaultLayoutEngine.swift */,
+				C4B545CF6B2B5BFDA6F4C265A68A5B8C /* Dictionary+Helper.swift */,
+				F62B7729448403EE915E19361786C0A0 /* Dragger.swift */,
+				6A53C51EAC5A663C3211ACB9C081317A /* DropdownOptionsViewController.swift */,
+				125D9AD821E8BF0B47A383E253F3359D /* DropdownView.swift */,
+				915CD78D955F7313E1BC8D6CE66F47E4 /* EdgeInsets.swift */,
+				8F31A5242A407D294188A29D36297BA3 /* EventManager.swift */,
+				327595BF2FEAA4B897F081441F1A9E6E /* Field.swift */,
+				021F2F7CCA6068769316441CF1E12D53 /* Field+JSON.swift */,
+				9C3CBF7D7892E4EDCC69ABEF35E26260 /* Field+XML.swift */,
+				22A0D3F42B1F9C39D376BDBB20BA1C1D /* FieldAngle.swift */,
+				FE9EF8A5CEF0A3FE02B916B8230DB513 /* FieldAngleLayout.swift */,
+				13304A2A32FC49ECAAAA8A4BD25F6A78 /* FieldAngleView.swift */,
+				EC237C9A1446C3B6225E21FF939FCCA5 /* FieldCheckbox.swift */,
+				656E05CA4AC84B79E1948EB9551F0D7A /* FieldCheckboxLayout.swift */,
+				D05DC0452C9EFD17A394B48EF2B90ADA /* FieldCheckboxView.swift */,
+				65DD7811B6865FE41D4630708CEDF1F1 /* FieldColor.swift */,
+				EB49FFD44AB975B8A9044EA79461378D /* FieldColorLayout.swift */,
+				E0738E4FB21CB998617754E66A6CC20A /* FieldColorPickerViewController.swift */,
+				E53FE6ACF3F92583F26684C568B3AA58 /* FieldColorView.swift */,
+				AE109388973320EDAFD87CF41BFD1D7E /* FieldDate.swift */,
+				DCA284400BC9B35C1676E8B176F77951 /* FieldDateLayout.swift */,
+				AD1196AD06D1467D4C0AAFB716C80C91 /* FieldDateView.swift */,
+				9799BEFAAF8BDA40AF00CBE3465D9368 /* FieldDropdown.swift */,
+				EEBD79A6AEAD65E1E21CC2D1A8665D4B /* FieldDropdownLayout.swift */,
+				BAEC90455F470D9D058135A63DE247D1 /* FieldDropdownView.swift */,
+				27469C7F9537F581102A9D9546430FAE /* FieldImage.swift */,
+				E23A9C175101C6C5F2E7839CE5F7D337 /* FieldImageLayout.swift */,
+				92DC5E147E138D435AC55074F99B0C9F /* FieldImageView.swift */,
+				202BAA4FC800F15E02C06F0EB07ACD3E /* FieldInput.swift */,
+				1FB573EB9EBD7EDECC3876BF9D4EBFFF /* FieldInputLayout.swift */,
+				E7E5A83BCFA20C545D0640FD83C93B7C /* FieldInputView.swift */,
+				1334A1AC2254FFAF241293E607C9ACFE /* FieldLabel.swift */,
+				A5FBF24C7EDBB072A90AF60A5720B763 /* FieldLabelLayout.swift */,
+				039698423CD60101D55AB49C2A46C858 /* FieldLabelView.swift */,
+				CBF443600BE9E6AFBF67E8114394A73F /* FieldLayout.swift */,
+				37988D8B828A54A58DC8C8A73E535D1C /* FieldNumber.swift */,
+				EB88EE5B9181F826F8E7CA14550F39CC /* FieldNumberLayout.swift */,
+				495C0C182EC0B6100E7513A4744768B3 /* FieldNumberView.swift */,
+				CF073D923E27FDBB0F116DB718DAB4C1 /* FieldVariable.swift */,
+				0F72459393E8F72DE57C533838F6EB32 /* FieldVariableLayout.swift */,
+				6CC4D1BF02BF60AF5EAF42E488B8388B /* FieldVariableView.swift */,
+				48C9800FBC42EFD505DFF6782A50C08C /* FieldView.swift */,
+				FEA0D4F414FD3AF5B15FDCC046896D91 /* ImageLoader.swift */,
+				CD20B9521BDEC204F38B81922D6C9296 /* Info.plist */,
+				0A61BB28A4DC27C47109A46FD949A20C /* Input.swift */,
+				CD5147E1C1B395347631FDFDD8B28073 /* Input+JSON.swift */,
+				524B17AAD2205AC51E6B0E32929BAF9D /* Input+XML.swift */,
+				81333F4DC6A504CDF3C0DDBBAB3F107F /* InputBuilder.swift */,
+				49DF1CACA2B88CF187EAC38C605498B1 /* InputLayout.swift */,
+				9B88792DA157F8252EFF0B78563C5273 /* InputView.swift */,
+				D98B8EED6218DCB31D310A4D7135DC45 /* InsetTextField.swift */,
+				17E4F7B6A2498815365C9D43380CB937 /* JSONHelper.swift */,
+				A5F65978D82B618C28A66B582618798F /* Layout.swift */,
+				F38739197ABE52727F5616666F83D7BC /* LayoutBuilder.swift */,
+				48FFCBEC4CE5E69568F27EEEAC71A624 /* LayoutConfig.swift */,
+				6F49D411A6EFB4E5CE2C0337A42FAB09 /* LayoutEngine.swift */,
+				442713BDD7ED9FBBFBA5C9770A824042 /* LayoutFactory.swift */,
+				2C5A07852E8BFD83CC13A4BA1962163B /* LayoutHelper.swift */,
+				B7F022721DDDF2C9C84B09AEE0A9DCCA /* LayoutView.swift */,
+				2DB991D131E179843E2F195822552323 /* Logging.swift */,
+				4B1ACF8BDF0097E50A406CF10F51A45E /* MessageManager.swift */,
+				0CBDEB848CA7C303B4211F3E979535B5 /* Mutator.swift */,
+				A8102C8F972158DFB983E451858DB1F0 /* MutatorHelper.swift */,
+				94A0D12AE7AEDBA40CF7E2B3B4AF84B8 /* MutatorIfElse.swift */,
+				1406DF404CE779C05FC4158D036E5262 /* MutatorIfElseLayout.swift */,
+				C03EAE8E5A0ADF324F848900017F03C6 /* MutatorIfElseView.swift */,
+				3F4B8FFBF76BA1DA0D22B68787CC4410 /* MutatorLayout.swift */,
+				5A7F0473F330F223FC25FA9687E8252E /* MutatorProcedureCaller.swift */,
+				641B0AC243D01966902C83F6106B9CBB /* MutatorProcedureCallerLayout.swift */,
+				197D6EEA8CD0E8A1153C4F261EA54EAA /* MutatorProcedureDefinition.swift */,
+				22B5CE0D514291E346A8E7400981B026 /* MutatorProcedureDefinitionLayout.swift */,
+				439AA99EAF79B541795AF3B856309942 /* MutatorProcedureDefinitionView.swift */,
+				8B875B84910274DE01B68F589FDDEF42 /* MutatorProcedureIfReturn.swift */,
+				D6B2A8F132DE8916A2595AB2A58897A0 /* MutatorProcedureIfReturnLayout.swift */,
+				ACF8A998C6345A16C2DF2E4C1C2BA456 /* NameManager.swift */,
+				69E089C5004EAA993E96E398A2352BA6 /* NumberIncrementerView.swift */,
+				494FCA6657F9C546EC2333F8BFE561F0 /* NumberPad.swift */,
+				63975B609F00E7C7E6ADA2AD79508E36 /* NumberPadViewController.swift */,
+				730E0216249BA78C6CCA4A92F6EC4E00 /* ObjectPool.swift */,
+				1884681DBD10FB6A7BA0BF7309E90103 /* PathHelper.swift */,
+				8FA66913E4A842EEA258571537D36FAC /* ProcedureCoordinator.swift */,
+				F69299C31F8F6EFDF127E1F44162C087 /* ProcedureParameter.swift */,
+				9D7BCD7FB17A1F57777DD92429B9220C /* RangeHelper.swift */,
+				BE6258BBB50183E4E96577B0236138D2 /* String+Encoding.swift */,
+				9CB432997C50C60A9D5BC7A2C957CC00 /* String+LayoutHelper.swift */,
+				8EA2116F3ABF753D9955D5D025787B1A /* String+Util.swift */,
+				D719AE56B01C581FB868900808C3DFDC /* Toolbox.swift */,
+				7DB6D4DAB900DCE6E2B3FAF4760CF8F3 /* Toolbox+XML.swift */,
+				878A5959CA48F8F12345B7B712C0B871 /* ToolboxCategoryListViewController.swift */,
+				36A7AE067ED69D6DBF089DEFFC42E606 /* ToolboxCategoryViewController.swift */,
+				2CD58676807DAF82FBA86AC8D672CAE5 /* ToolboxLayout.swift */,
+				5D190E9999E6B509FB45E6BE272F68A6 /* TrashCanView.swift */,
+				7FCB4E56E07CAAC40DFCF48099945776 /* TrashCanViewController.swift */,
+				2844716DD0F9395DB0012E98BAC17966 /* UIColor+Helper.swift */,
+				8FD7FDCC6F38C5A3F21FB5DF0237B71A /* UIEdgeInsets+Helper.swift */,
+				87D846C757230CAC0D25A6E9B4519E9E /* UIPopoverPresentationController+Helper.swift */,
+				462736ADD3FF60C2A25E6FF5293FA8A7 /* UIView+AutoLayout.swift */,
+				56DE7BD31BB4829F1344CCAE89A1A74E /* UIView+Helper.swift */,
+				B3A062075547348B6037F441F3D2C905 /* ViewBuilder.swift */,
+				D4182C1B79D4A7C5ED71F85389C1F50F /* ViewFactory.swift */,
+				C9FD81204146688B276D47B85E0B40C7 /* ViewManager.swift */,
+				857920A1592E9A113E0E7ECC9FF0DED8 /* WeakSet.swift */,
+				FA1A81E441CBAB81185D7998E6EB4175 /* WorkbenchViewController.swift */,
+				365F71487C450BD0295A9074F86750FA /* Workspace.swift */,
+				1B23424822EF08EACF7BCE8471B894B2 /* Workspace+XML.swift */,
+				90F525E568E532319CC24D530959BA73 /* WorkspaceBezierPath.swift */,
+				72CE029D8EB86BAA55A0993BE95BA4BB /* WorkspaceFlow.swift */,
+				501DAD81C6B42C5BFF9933DB4E10B663 /* WorkspaceFlowLayout.swift */,
+				5FCFBB6DE87D0902A09DBEA435E70907 /* WorkspaceLayout.swift */,
+				EE03FDAA9C0C9ED482E103E070054930 /* WorkspaceLayoutCoordinator.swift */,
+				B7335F0C72D852A9096B6EE1A66AFC84 /* WorkspaceUnits.swift */,
+				A18172C88C1C1473D2CE1D216DE9F214 /* WorkspaceView.swift */,
+				FCA3CC20CF092B45C62F591B9995A04D /* WorkspaceViewController.swift */,
+				9632957C1A012178FF9173BA873316E7 /* WrapperBox.swift */,
+				297741AA75CDF22773147764C77FFE1F /* XMLConstants.swift */,
+				ACA71EFAAE2A0DB260A37C0F8E0EFCAB /* ZIndexedGroupView.swift */,
+				A7F900E0D4AB4C8EBDC4B0D02EFBFC50 /* Resources */,
+				01A52B7E743C7A0094A22C93D3471FB1 /* Support Files */,
+			);
+			path = Blockly;
+			sourceTree = "<group>";
+		};
+		4EB6AD9C1351FA3DC9E747A3784F9C7E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FE184A7C0620BF3C26C8053DCDB0349 /* Pods-BlocklyGame */,
+				99D56A4E43DD4DB6F36257A2CBFC848F /* Pods-BlocklyGameTests */,
+				F808EFB575DD26593CDBF202DC70C94F /* Pods-BlocklyGameUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				941EDFCCBB18CB29A5C7999672123AEA /* Frameworks */,
+				D6AB1F5C60956C15AC9028BD4632DD50 /* Pods */,
+				CAA7560A242627914ABA9E681CF3A1AE /* Products */,
+				4EB6AD9C1351FA3DC9E747A3784F9C7E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		941EDFCCBB18CB29A5C7999672123AEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BB195458332C9055B2348D83677444B /* AEXML.framework */,
+				C264D1FFAA2002B39DA3A1DC57FB691B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99D56A4E43DD4DB6F36257A2CBFC848F /* Pods-BlocklyGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				0459C35AE092A94655F0DD3E01FA7702 /* Info.plist */,
+				A0255A9A7A6E4516E25E86FD72ADBB29 /* Pods-BlocklyGameTests.modulemap */,
+				9C3E824D8BA126110FC99441DC324BED /* Pods-BlocklyGameTests-acknowledgements.markdown */,
+				9060C0BDF84E3EE783F5C32E2C892BDD /* Pods-BlocklyGameTests-acknowledgements.plist */,
+				F5000F39DE6CA7ACF18A5385EB5F6C6D /* Pods-BlocklyGameTests-dummy.m */,
+				C2A42368ACCE695433EE60A01E8197E9 /* Pods-BlocklyGameTests-frameworks.sh */,
+				1099AD12104483158E293EFF2C9FE9CB /* Pods-BlocklyGameTests-resources.sh */,
+				8AA87A570FA23F0B67E6D33523E22E84 /* Pods-BlocklyGameTests-umbrella.h */,
+				7F0201F43C38638602598EA3893C5D28 /* Pods-BlocklyGameTests.debug.xcconfig */,
+				FDCC4D7E680D630F0307ABC6C717B083 /* Pods-BlocklyGameTests.release.xcconfig */,
+			);
+			name = "Pods-BlocklyGameTests";
+			path = "Target Support Files/Pods-BlocklyGameTests";
+			sourceTree = "<group>";
+		};
+		A7F900E0D4AB4C8EBDC4B0D02EFBFC50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E43C61333B44378E1521E842E900F568 /* bky_constants.json */,
+				B9D14205C8DABAA4988E66F4273B65D5 /* bky_messages.json */,
+				F9341744390CDBA6FB8FB773C2FB0A8A /* bky_synonyms.json */,
+				69456FE86D04B589D5ECCD2D7AC05056 /* Blockly.xcassets */,
+				572B8506B316595DD34D242CB0762A4B /* CodeGenerator */,
+				E0AD5D807291CFD5D8849360F9EB0615 /* Default */,
+				8FA24C136A301B30B3A5B78E4B0E5E6A /* Messages */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C264D1FFAA2002B39DA3A1DC57FB691B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E7EC4ED32A514201DA9B8ED8792795A /* Foundation.framework */,
+				913BF1AC363C08133F903FF2F9B199DC /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAA7560A242627914ABA9E681CF3A1AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92F67A96ABC7D32B237BDEBC34A36AB7 /* AEXML.framework */,
+				011DE91CDA8368F013F99C75A62AC874 /* Blockly.framework */,
+				3F13556804E3BE867E6AB0B3EC0549F1 /* Pods_BlocklyGame.framework */,
+				FC88D1DCD08A36D4BC18D0B895AFCDD9 /* Pods_BlocklyGameTests.framework */,
+				41234DEBD01C9151BCC4D8416004C71C /* Pods_BlocklyGameUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6AB1F5C60956C15AC9028BD4632DD50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				235F3FFD4601296B99A235193B4F85AC /* AEXML */,
+				49A13068F7897F8318E216FEB299D8AE /* Blockly */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F808EFB575DD26593CDBF202DC70C94F /* Pods-BlocklyGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E40460DA2963D8FE6A2349BC2D63180F /* Info.plist */,
+				F0ECE47305296ACE19D2CCE415783ECE /* Pods-BlocklyGameUITests.modulemap */,
+				4D779B19A19D6F2D055B281BBEA3BECB /* Pods-BlocklyGameUITests-acknowledgements.markdown */,
+				BC80710D1EDA897E78BB34A476DFD538 /* Pods-BlocklyGameUITests-acknowledgements.plist */,
+				4D306FCBA46BABB80F2A04850792191F /* Pods-BlocklyGameUITests-dummy.m */,
+				8C48701011B06C0FDBD56AD704B0934E /* Pods-BlocklyGameUITests-frameworks.sh */,
+				B8E89322B7E1D3E7D6E992E34287AA18 /* Pods-BlocklyGameUITests-resources.sh */,
+				7B604A3383EB8BFCBCCAABC290A9533F /* Pods-BlocklyGameUITests-umbrella.h */,
+				860ABA362D9B69380A96BBEE5BFD52AD /* Pods-BlocklyGameUITests.debug.xcconfig */,
+				723FF3E4FB598F450B591F0F7BCE4ABF /* Pods-BlocklyGameUITests.release.xcconfig */,
+			);
+			name = "Pods-BlocklyGameUITests";
+			path = "Target Support Files/Pods-BlocklyGameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00A49535A05575DC0B7359A29710E254 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7677C05E3FE8C8C7D01A284CC5585D3 /* BKYBlockJSONFile.h in Headers */,
+				D0A4D9B18610AEC131A1C21EF6AB0B52 /* BKYEdgeInsets.h in Headers */,
+				AF7DE77FB694D088EB1774637505EC07 /* BKYLayoutConfigStructs.h in Headers */,
+				8FEAF619738A6A8567ED60D992CD1EB1 /* BKYWorkspaceUnits.h in Headers */,
+				3C9DCCEEB8061EE268E2A6EA0B75183E /* Blockly-umbrella.h in Headers */,
+				28850F20DBB153478449F017A24B9ADC /* Blockly.h in Headers */,
+				544010BEA4035B71C8618C5C0E56A6C4 /* BlocklyTests-Bridging-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450F0FA56FBAC7D228D360F353D505D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A201E1CE35D7D3C8FBAA855AC825FA59 /* Pods-BlocklyGameTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E1B29BA1F5523F16C2A36F2109F2DF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED2C36EE3553FBBB230CED21263F4AC /* Pods-BlocklyGame-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98044BB095406B135C84F28D696C5D7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C275DDD6262452621C3F273C1E36B0A /* Pods-BlocklyGameUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0613CA45FA3570375BCF0AD7364E7F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD1C9E300865986CBCBC18E90F5D79D /* AEXML-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6190A2EF50E681DF4CFAA4834B39955A /* Blockly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80410F0D3E644EA42EDFE5ECF31984D5 /* Build configuration list for PBXNativeTarget "Blockly" */;
+			buildPhases = (
+				D96C21D24965550563F40DA74AE5E452 /* Sources */,
+				505D57AD7372A1602F0A18343AD1B0B2 /* Frameworks */,
+				00A49535A05575DC0B7359A29710E254 /* Headers */,
+				426CCE6D31A0C3136E015322725FD967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABE784188F33BCFA010057810E6A0E5A /* PBXTargetDependency */,
+			);
+			name = Blockly;
+			productName = Blockly;
+			productReference = 011DE91CDA8368F013F99C75A62AC874 /* Blockly.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88C257C954247EE49E09C66A8B19E56A /* AEXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C4627B7E11408E0460F1F8F976E2F4 /* Build configuration list for PBXNativeTarget "AEXML" */;
+			buildPhases = (
+				747A9DA0F6886F738BFD444632081895 /* Sources */,
+				006C3D1BB1682C96C8B3449B71C4A701 /* Frameworks */,
+				D0613CA45FA3570375BCF0AD7364E7F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AEXML;
+			productName = AEXML;
+			productReference = 92F67A96ABC7D32B237BDEBC34A36AB7 /* AEXML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB20B2AF2DA4749B8EE1F64ED69ED191 /* Pods-BlocklyGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4BAEFDECE508C0B8B99D4CF44E128B /* Build configuration list for PBXNativeTarget "Pods-BlocklyGame" */;
+			buildPhases = (
+				EE7D3B44ABB6232A1A757D89A031C7EA /* Sources */,
+				D2D82F46AAE07B94E3219C1793AE7C70 /* Frameworks */,
+				5E1B29BA1F5523F16C2A36F2109F2DF3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4372F67DA87A639FBF4D7D52D96D1706 /* PBXTargetDependency */,
+				725A7F430161577BA2A948AA2F2B877F /* PBXTargetDependency */,
+			);
+			name = "Pods-BlocklyGame";
+			productName = "Pods-BlocklyGame";
+			productReference = 3F13556804E3BE867E6AB0B3EC0549F1 /* Pods_BlocklyGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7BEF2703A44443B438EC59FD698EADC /* Pods-BlocklyGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAFAFD041C8B71885985CAD72AC73D42 /* Build configuration list for PBXNativeTarget "Pods-BlocklyGameTests" */;
+			buildPhases = (
+				78BD0593E9D0CC0486DB1A2D9A6DFE7D /* Sources */,
+				933BE60144EEF3562675DB52E4053B4A /* Frameworks */,
+				450F0FA56FBAC7D228D360F353D505D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BlocklyGameTests";
+			productName = "Pods-BlocklyGameTests";
+			productReference = FC88D1DCD08A36D4BC18D0B895AFCDD9 /* Pods_BlocklyGameTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E856551A945056C50AD6EB7D28627829 /* Pods-BlocklyGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51426A3F7B66AA671D2C8E40E76DB8C4 /* Build configuration list for PBXNativeTarget "Pods-BlocklyGameUITests" */;
+			buildPhases = (
+				171A16966710201BAD151656F87FFB5A /* Sources */,
+				9AC472103DC34A084ADB9BC1DD06F43F /* Frameworks */,
+				98044BB095406B135C84F28D696C5D7E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BlocklyGameUITests";
+			productName = "Pods-BlocklyGameUITests";
+			productReference = 41234DEBD01C9151BCC4D8416004C71C /* Pods_BlocklyGameUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CAA7560A242627914ABA9E681CF3A1AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88C257C954247EE49E09C66A8B19E56A /* AEXML */,
+				6190A2EF50E681DF4CFAA4834B39955A /* Blockly */,
+				CB20B2AF2DA4749B8EE1F64ED69ED191 /* Pods-BlocklyGame */,
+				E7BEF2703A44443B438EC59FD698EADC /* Pods-BlocklyGameTests */,
+				E856551A945056C50AD6EB7D28627829 /* Pods-BlocklyGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		426CCE6D31A0C3136E015322725FD967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8ADBF7AA3D23819700D2ADDE488689D /* bky_constants.json in Resources */,
+				1F704BA4DCFBA79E9C63ADA7C621C33E /* bky_messages.json in Resources */,
+				A0790F1DAB3D015028D74D7C0C86A75D /* bky_synonyms.json in Resources */,
+				ABB8507367530021BFF924B26AEE3CA8 /* Blockly.xcassets in Resources */,
+				2B4DB80656D140624FC5C925552AC3B1 /* CodeGenerator in Resources */,
+				D8AAF507812D9B6F05522CEC466D00AE /* Default in Resources */,
+				94BFEDDCBD6A1E18034C2EDFBD126CFB /* Messages in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		171A16966710201BAD151656F87FFB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD210BEC4C7E4018B0AF9ADAFE3D6E49 /* Pods-BlocklyGameUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747A9DA0F6886F738BFD444632081895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C67BD33BEAD1A739CEC2A825F38C257 /* AEXML-dummy.m in Sources */,
+				6E4E7C06A1B9C35408BECAEFEA3C3AD5 /* Document.swift in Sources */,
+				14C6239F686582508AEA4A58F5F66E56 /* Element.swift in Sources */,
+				20D84C143269E60FBCDFCC30FFB2D6DB /* Error.swift in Sources */,
+				2758CD107D81A4B5951A58608D939FEF /* Options.swift in Sources */,
+				3F32E4E755ACB30B8701F53C3B8917B5 /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78BD0593E9D0CC0486DB1A2D9A6DFE7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8C8CFD76F3AE0D409937D3E795C6F9 /* Pods-BlocklyGameTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96C21D24965550563F40DA74AE5E452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B661FEA9A9C49A440C1FDAAC14A7BE24 /* AnglePicker.swift in Sources */,
+				B265FBEAB162F1609D6491CDE718EB8B /* AnglePickerViewController.swift in Sources */,
+				270615589A95B7903CCAEA97AE5BF890 /* Array+Helper.swift in Sources */,
+				C61011D05D4E5BB890E7829E2DE56733 /* Assertions.swift in Sources */,
+				2F655852E1D43E2F31FAEE9DA02BEEFC /* BezierPathLayer.swift in Sources */,
+				3DCB1D5462886EBF6263A99806CC22F5 /* BKYEdgeInsets.m in Sources */,
+				393230D4E3EB14E3C37004DE7B8BB702 /* BKYLayoutConfigStructs.m in Sources */,
+				1EAECF24B4C61CB51B343E20A4231158 /* BKYWorkspaceUnits.m in Sources */,
+				07DDD3670E6F5E0BC30705FAA4AA780C /* Block+JSON.swift in Sources */,
+				1051E72753F74769DD0726DC72B3163F /* Block+XML.swift in Sources */,
+				F218814D505EC677F42F62476D875174 /* Block.swift in Sources */,
+				7EF64A5553A856FE69438D71714F0918 /* BlockBuilder.swift in Sources */,
+				8C8D26AFC783B4A02AA558232B5322F8 /* BlockBumper.swift in Sources */,
+				33363A21A6D73F4759FCFD33AAF1361C /* BlockExtension.swift in Sources */,
+				A4EF354307FE8F5323BB9AD21418E0CC /* BlockFactory.swift in Sources */,
+				67164CBE1CEBDF63BB11FDB12C981FF2 /* BlockGroupLayout.swift in Sources */,
+				551F734F6E183C5BF8FFBC10D2549BE2 /* BlockGroupView.swift in Sources */,
+				52840DCD786B13F170A2CB1EF41FB711 /* BlockJSONFile.swift in Sources */,
+				D2564B722DBDFA2AE8AE00B66A557A7D /* BlockLayout.swift in Sources */,
+				D0A610DD08E6EEA735B8805BC178DA29 /* Blockly-dummy.m in Sources */,
+				D09B8DCAB02FDAAB72496E98EA341AC7 /* BlocklyError.swift in Sources */,
+				4FE88E7E70E305C0168CDCFF7F6B6F13 /* BlocklyEvent+Change.swift in Sources */,
+				7D03AC8D40867F91C51BFB4086FC422C /* BlocklyEvent+Create.swift in Sources */,
+				AF7CBC63235982E330980568E33679FC /* BlocklyEvent+Delete.swift in Sources */,
+				6A08EABB60CFE8F66FD5728FC27D9DC9 /* BlocklyEvent+Move.swift in Sources */,
+				DB316AB5BF17A84941EEF2889AB857EA /* BlocklyEvent+UI.swift in Sources */,
+				9091AFB17BFCF74837082FE4D90DF714 /* BlocklyEvent.swift in Sources */,
+				69936246115149CE352C2E2350CF2703 /* BlocklyEventFactory.swift in Sources */,
+				C4A60AD26E7229E87ADE2C05ED043270 /* BlocklyPanGestureRecognizer.swift in Sources */,
+				1E128A06A1A752A7F87725FBB3FDC592 /* BlockView.swift in Sources */,
+				C8E095F5914D67350FE2CC6F7CE0CA52 /* BundledFile.swift in Sources */,
+				E946FDFDCEE2CCBEF252720958F7581A /* CGPoint+Operators.swift in Sources */,
+				0A92EC8BA20BE0B35C0518B33F17CF2B /* CGSize+Operators.swift in Sources */,
+				592E2959C144252145AE2E5DDA700C1A /* CodeGenerator.swift in Sources */,
+				CC1852E4476D4B4C207812344F571F35 /* CodeGeneratorService.swift in Sources */,
+				38CF5FA8AA74C9B6A476B7FC808F8D02 /* CodeGeneratorServiceRequestBuilder.swift in Sources */,
+				FB1CE8A76E936CF9A095520D9A229F8C /* ColorHelper.swift in Sources */,
+				8BC1707B79E37706525E0E9E8C4EB9CC /* ColorPalette.swift in Sources */,
+				8BDDDD8F172665F6890C8C8CF0F259FC /* Connection.swift in Sources */,
+				5CE30936AD0A1BCA61138EE4D508BF75 /* ConnectionManager.swift in Sources */,
+				826CBC6F0D2FE57DE565C24B020E7A63 /* ConnectionValidator.swift in Sources */,
+				544DE8838482D93A48896CF18B24B766 /* DefaultBlockGroupLayout.swift in Sources */,
+				34DB7022740F8BD97BD93CCC8D8863B0 /* DefaultBlockLayout+Background.swift in Sources */,
+				01EDF52C6084E012DA74CC4C2F0B30E4 /* DefaultBlockLayout.swift in Sources */,
+				8785E27DCE1AF24F54850DD6005C357A /* DefaultBlockView.swift in Sources */,
+				0BD97B0E9F8DD55263198E5679FE5C8A /* DefaultConnectionValidator.swift in Sources */,
+				A969FA0177C0288E9DDC3F54DCECC6AC /* DefaultInputLayout.swift in Sources */,
+				F4099C8C1DE24AAACD21956D4E13E664 /* DefaultLayoutConfig.swift in Sources */,
+				369EC8B2E461F7CE214B08DB63D9607A /* DefaultLayoutEngine.swift in Sources */,
+				1D19F7BBA103BFF1BED8364B430BBEE6 /* Dictionary+Helper.swift in Sources */,
+				9434852A22870EB49B1A4913E169E30B /* Dragger.swift in Sources */,
+				C327AF9A747F7912D52D97437F2156ED /* DropdownOptionsViewController.swift in Sources */,
+				E04778AB499F23B264687152EEED6A7F /* DropdownView.swift in Sources */,
+				9487DBEE39C0720C6FB6E3194DC7CA5A /* EdgeInsets.swift in Sources */,
+				33B99C5B9A1FACBD4991C3F0374D7732 /* EventManager.swift in Sources */,
+				54562C74EEBAC9E8506EAD1A8E7C0C64 /* Field+JSON.swift in Sources */,
+				1F32D75555896342ECFEE9EECEE2DE9D /* Field+XML.swift in Sources */,
+				1FAED0428D286D34252B9E4C22F13DA1 /* Field.swift in Sources */,
+				AB54EA59E054D222AA6D6170F56908DC /* FieldAngle.swift in Sources */,
+				780BB252BE15F5F2540FD8EFF6264F1A /* FieldAngleLayout.swift in Sources */,
+				DCBBD4392A7919DCD6E231716934DBE4 /* FieldAngleView.swift in Sources */,
+				0910644BA5ADFCD9507E0F003ACD4C29 /* FieldCheckbox.swift in Sources */,
+				F04B02FED9834DEB5B4CDFB174175BEB /* FieldCheckboxLayout.swift in Sources */,
+				C95EE02235A01EE56AC88141B8D09150 /* FieldCheckboxView.swift in Sources */,
+				B0B8EAC208A6C935678FD19D6F6A16E6 /* FieldColor.swift in Sources */,
+				7218C77120C05628A68C0B1472915B25 /* FieldColorLayout.swift in Sources */,
+				D76F94CC9EF824AF85F8D7763C65A71B /* FieldColorPickerViewController.swift in Sources */,
+				6D3EABE308400E18D7257F3DFCFB49FE /* FieldColorView.swift in Sources */,
+				4D3C9952E943451970923AECEA4B3AEC /* FieldDate.swift in Sources */,
+				C7E3E113E2783AFA90BE464186D060A3 /* FieldDateLayout.swift in Sources */,
+				5759B05355EC12E7A1098AB2F28127E3 /* FieldDateView.swift in Sources */,
+				989FEDE2ADB5890EBAF01EAB9560377B /* FieldDropdown.swift in Sources */,
+				8F5C63708FAB7BF08BACDEA05FAF0249 /* FieldDropdownLayout.swift in Sources */,
+				4EF524A84886FF49D8DD7E923CA73CE8 /* FieldDropdownView.swift in Sources */,
+				170943E170F90B142E625131D16E9031 /* FieldImage.swift in Sources */,
+				46CFE35451C6F5B045AB17D7BEA3237D /* FieldImageLayout.swift in Sources */,
+				14A063F1C4321082242F39CAF88C9641 /* FieldImageView.swift in Sources */,
+				4FBCDFA2DC36504CDDC16DA11FC41D2F /* FieldInput.swift in Sources */,
+				D782B5C0A0E16FA5B0CAFB579EFCD44D /* FieldInputLayout.swift in Sources */,
+				7A927E554EA051987E8798DE87404525 /* FieldInputView.swift in Sources */,
+				E97B0EFEDEABFCC360263060FF32E402 /* FieldLabel.swift in Sources */,
+				7A6EDA97BE86D3CA763954261058D46C /* FieldLabelLayout.swift in Sources */,
+				CFCB8DBE13706767C7B66BFB9AAC53D2 /* FieldLabelView.swift in Sources */,
+				AFB2B85B1C5437906988E969D8C330C3 /* FieldLayout.swift in Sources */,
+				567C67F1E0EF9CEB0474BC428DC327B0 /* FieldNumber.swift in Sources */,
+				1A70D35B52F35BFC88CEED068BEFD969 /* FieldNumberLayout.swift in Sources */,
+				EB6950A6FA3505C9943C6AF577C0A6EA /* FieldNumberView.swift in Sources */,
+				C31915891165621F25BD3776C712403B /* FieldVariable.swift in Sources */,
+				437E2C18F9C278DE498CFAE1E791BE0D /* FieldVariableLayout.swift in Sources */,
+				CD35F7ECA230DB4EED2A3A338A028511 /* FieldVariableView.swift in Sources */,
+				7F27312D5731ED35AD9B6F27272186F6 /* FieldView.swift in Sources */,
+				6F75DC752A7999FA921D96B10B5CD2F1 /* ImageLoader.swift in Sources */,
+				25D3DB32BB917B1322995B22F89FAC52 /* Info.plist in Sources */,
+				25D7D14BBF71A313AC4F10EF30A9888E /* Input+JSON.swift in Sources */,
+				29694A94D9E1F87A78E96920EBA6D8BA /* Input+XML.swift in Sources */,
+				F925C341F80949D7B1311BC34ACB83E0 /* Input.swift in Sources */,
+				C06CFE54B9AD02355352583E88BC36A4 /* InputBuilder.swift in Sources */,
+				BEA16862A547E82D007F2C328635984E /* InputLayout.swift in Sources */,
+				4BE702E32DB541D9BA4E8962B50B5066 /* InputView.swift in Sources */,
+				4CD153A06DC3D65B8E846338C0D2B087 /* InsetTextField.swift in Sources */,
+				05D5C3A153F620B294E80463870B98CC /* JSONHelper.swift in Sources */,
+				459364B6AB6AFAFB37F9F75E8D52C5B7 /* Layout.swift in Sources */,
+				9A3F584789E29A48269D6A135F4CE404 /* LayoutBuilder.swift in Sources */,
+				85CAD38FC752183B9882D53D74DC5EF3 /* LayoutConfig.swift in Sources */,
+				43EFF8106F40BBDFF3497DBDE51A03D0 /* LayoutEngine.swift in Sources */,
+				42BB1CBD656C0FD30A090766F3666DBC /* LayoutFactory.swift in Sources */,
+				D54BEE58DEFC0F5D3234268AB26B63DD /* LayoutHelper.swift in Sources */,
+				F4E434EBBBA534EBF9DEBC8CAD7A03D5 /* LayoutView.swift in Sources */,
+				6C872D7E8B8A16A92ED8722B9CEAEB8C /* Logging.swift in Sources */,
+				BC5F276D805DA2E73727F2F37B4033C7 /* MessageManager.swift in Sources */,
+				ACA07BF844754239B1CA158239AF9A1C /* Mutator.swift in Sources */,
+				EA2032BC9304E51F4462D854ED27261D /* MutatorHelper.swift in Sources */,
+				547BBEF8D4C0E7861939BC01C06352F5 /* MutatorIfElse.swift in Sources */,
+				15A0C703E7EC0537DD379C4050109BF5 /* MutatorIfElseLayout.swift in Sources */,
+				2C420A80FBF593FE8C9401F5C1E64F56 /* MutatorIfElseView.swift in Sources */,
+				B17E2D3305025D7C7AA575B6FC67FE5C /* MutatorLayout.swift in Sources */,
+				780A1049AE0367F72B59890F5323BE49 /* MutatorProcedureCaller.swift in Sources */,
+				A2BD17270B4B008FC152D744E187CDAC /* MutatorProcedureCallerLayout.swift in Sources */,
+				7CB748384D4E62E31379695416D789AD /* MutatorProcedureDefinition.swift in Sources */,
+				769153282F1D4AD85CF3F7BEC13F8D1E /* MutatorProcedureDefinitionLayout.swift in Sources */,
+				EA3D2D6403C0D02004516765F75291CF /* MutatorProcedureDefinitionView.swift in Sources */,
+				39A3586382DC8F30808BCA5D20D7DE78 /* MutatorProcedureIfReturn.swift in Sources */,
+				215BB506CA3BBD00E2A1B2836C10B328 /* MutatorProcedureIfReturnLayout.swift in Sources */,
+				C402317DDCD2A76CC34790C62CD84B82 /* NameManager.swift in Sources */,
+				A8D0033E26BCA9E7D48BD44F905477E5 /* NumberIncrementerView.swift in Sources */,
+				E4FAB794E4292543BF47D68283A3A790 /* NumberPad.swift in Sources */,
+				878336048675B276E7D02A02B831B798 /* NumberPadViewController.swift in Sources */,
+				98BBE8C17F8740F192136E26383E4650 /* ObjectPool.swift in Sources */,
+				DD9D6600BBBFE1A6AEED8FCF6DB7CC5C /* PathHelper.swift in Sources */,
+				BC24D2F2A15D809F8ED49208B09C1BDA /* ProcedureCoordinator.swift in Sources */,
+				F9594C583BDDDEB984BF46750363BEA1 /* ProcedureParameter.swift in Sources */,
+				EA1C7EB827604D6375187F7ED48FDA57 /* RangeHelper.swift in Sources */,
+				8ADCB70FC2A727577B461D31C0904C36 /* String+Encoding.swift in Sources */,
+				E998F607F2A2C4597695F606C8666747 /* String+LayoutHelper.swift in Sources */,
+				5C342C14FC4E11DF972C1997ACDA34DB /* String+Util.swift in Sources */,
+				9E80DAAB1D1556FFD1224BBBA5659EC7 /* Toolbox+XML.swift in Sources */,
+				CA4A4A54B58330E6706E82F45B5026FD /* Toolbox.swift in Sources */,
+				CB8296FBC3D5ACF636C566D52CFC0D26 /* ToolboxCategoryListViewController.swift in Sources */,
+				06441BDCAFB7898275087FB6617F5803 /* ToolboxCategoryViewController.swift in Sources */,
+				CF221C29471E2A152EAA952FF97BAC00 /* ToolboxLayout.swift in Sources */,
+				064097BF3897280C0263B4EFC415F561 /* TrashCanView.swift in Sources */,
+				A71901B88CA96B1F09F57997765EFA41 /* TrashCanViewController.swift in Sources */,
+				17B5A1D5EFDE3E356A3B638F44BDBDE3 /* UIColor+Helper.swift in Sources */,
+				6D9D2AF283A3B08066A2C131281F8844 /* UIEdgeInsets+Helper.swift in Sources */,
+				545DD41EE531A0A9C5AC5A3BF79D9078 /* UIPopoverPresentationController+Helper.swift in Sources */,
+				E1B88CA76B29FF938C8621A6EA9A992E /* UIView+AutoLayout.swift in Sources */,
+				21C552F74CE15025188871F129C19078 /* UIView+Helper.swift in Sources */,
+				156E6512EBC6E97148A656C8B26C0D03 /* ViewBuilder.swift in Sources */,
+				8721C68CD28FD2D782B9047D17E4D6A6 /* ViewFactory.swift in Sources */,
+				31BC8FF8B250EC9ABF8EF9A680FB4087 /* ViewManager.swift in Sources */,
+				D44465647BB3C1822F4CAE2207E40C4C /* WeakSet.swift in Sources */,
+				B9DB8EB43F16787917BAB2A412521D87 /* WorkbenchViewController.swift in Sources */,
+				D45B71D4FBD660A02D3D53D3E6C33431 /* Workspace+XML.swift in Sources */,
+				C5E1C4CF5F26AE6C4500E9A627C29665 /* Workspace.swift in Sources */,
+				BF2FC3C14D6FED195C097ED240EED439 /* WorkspaceBezierPath.swift in Sources */,
+				9736933A34D4FCCF512515A624F3D684 /* WorkspaceFlow.swift in Sources */,
+				8D9F202BABC475E1D75E118182CD4126 /* WorkspaceFlowLayout.swift in Sources */,
+				F0EF5C57FFEDCEAF70FF6EE98FD9383A /* WorkspaceLayout.swift in Sources */,
+				F0404F53E3F6460E31486EC5A4D3B259 /* WorkspaceLayoutCoordinator.swift in Sources */,
+				08D61E854E083DFD0B085E4F1B074C08 /* WorkspaceUnits.swift in Sources */,
+				892C631D3B3FD826FA4ED570FB8C59AC /* WorkspaceView.swift in Sources */,
+				3C2A42E6C6DEA3C2B6C3B7BF8EF3D86B /* WorkspaceViewController.swift in Sources */,
+				72E646B2F5BF9736824489998DCCACC4 /* WrapperBox.swift in Sources */,
+				9AAECDEF88EA5802399C1AFEECA99FEA /* XMLConstants.swift in Sources */,
+				573ECFF9E056456BCF50A4D1D1DA61A7 /* ZIndexedGroupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7D3B44ABB6232A1A757D89A031C7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A21DC4D47972720B5BD23A6A44704E5 /* Pods-BlocklyGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4372F67DA87A639FBF4D7D52D96D1706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AEXML;
+			target = 88C257C954247EE49E09C66A8B19E56A /* AEXML */;
+			targetProxy = EB1823D7E308350570D66E8F332D3D58 /* PBXContainerItemProxy */;
+		};
+		725A7F430161577BA2A948AA2F2B877F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Blockly;
+			target = 6190A2EF50E681DF4CFAA4834B39955A /* Blockly */;
+			targetProxy = 2E53FD49926C0283297E4A13474202BD /* PBXContainerItemProxy */;
+		};
+		ABE784188F33BCFA010057810E6A0E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AEXML;
+			target = 88C257C954247EE49E09C66A8B19E56A /* AEXML */;
+			targetProxy = 29DCEB6E4289E25722E6D73CA27EF618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9D14205C8DABAA4988E66F4273B65D5 /* bky_messages.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1117E0FA38960907AE7F63BA11B4B3AD /* bky_messages.json */,
+				67E4E3473317EBDE0DE79B1BF56516B7 /* bky_messages.json */,
+				D17985470694DB0DBD54A0E5FA604FDC /* bky_messages.json */,
+				A5EA6BDB56C710686824C7B578D331FA /* bky_messages.json */,
+				44EF8B556488E26FC44868A0F281C85A /* bky_messages.json */,
+				79D4F38F4253A7818BCE61804A0C0BB3 /* bky_messages.json */,
+				54B3209F19B2AC18485425C58905F87D /* bky_messages.json */,
+				4833410A01C2C0D24C75E229EE859456 /* bky_messages.json */,
+				9AB14530562007F22609AC77F6E4A825 /* bky_messages.json */,
+				C223B2FEE72F6ADFAE559A204BA5C85B /* bky_messages.json */,
+				F060331ED6E5C8673073622D9BB882F9 /* bky_messages.json */,
+				9805A3BF83BDD246F3E4D7316DA74318 /* bky_messages.json */,
+				4BD6346F48C9DB2D5850C505432CA71A /* bky_messages.json */,
+				70E5B4E0DA3FD20E4BB803246CC4DB2F /* bky_messages.json */,
+				8D5026A214FC61CEA92E50182409720F /* bky_messages.json */,
+				B2028C6F13FF6ECEB12CC015BF705EC5 /* bky_messages.json */,
+				93E816D0CB923150CA096B788FF72F52 /* bky_messages.json */,
+				6E8FD97521AD1077047E2932795169AD /* bky_messages.json */,
+				BB8B88ABD77BF0C690E2DFA2AB701603 /* bky_messages.json */,
+				12AEFE71DEC6D177F3F746FAD7C4C9E5 /* bky_messages.json */,
+				08442BAE209EB588F1F68D8B9A8DFBAA /* bky_messages.json */,
+				F85D8D9E7272A28C5E5B92C1D887C6FB /* bky_messages.json */,
+				E86AE5E6445C422D68D9949D9C136F71 /* bky_messages.json */,
+				6505F43E47B0F157209D52ECECC9AA6F /* bky_messages.json */,
+				047D7F37DD5E43B5C02FA63C25FCDBF0 /* bky_messages.json */,
+				6A31BACC38EB10EAFFB3D1FC86ADDECF /* bky_messages.json */,
+				50CC6160678B64E4ED7A7E4DD3701FDD /* bky_messages.json */,
+				3AB4019DD20B8B1D4D7752DD063B4A97 /* bky_messages.json */,
+				6BB34C3503CA283462B9C6CC33157345 /* bky_messages.json */,
+				EC4D5FFAFD822B1A3410147FE5B0F3BC /* bky_messages.json */,
+				DB7DF030EFF419C5B2B3CBDE644520E6 /* bky_messages.json */,
+				1982736C8476DCE027DB9EF19D49E0AF /* bky_messages.json */,
+				3BB28907BC5E945852BDBBB9E296558F /* bky_messages.json */,
+				C8AF5F68D03DEDB50D38568821B32D46 /* bky_messages.json */,
+				A7B99A48154C3868B86499130B0A51D5 /* bky_messages.json */,
+				1FD05602D1F40BD654B2A45C6324A229 /* bky_messages.json */,
+				8DE23F84CB4269B9F88A8CC2660EB1EE /* bky_messages.json */,
+				22FEB07166AD137D1B2A1E05AEA6C006 /* bky_messages.json */,
+				A98A38BD5A67A79C7F8F027BCD4A10BC /* bky_messages.json */,
+				44AB497836AE18A0DBAA70C3868996A0 /* bky_messages.json */,
+				5D620C60714489E76B6AE29D8951A68D /* bky_messages.json */,
+				452C1E1FE058FC1FAC67B1E9E9230A63 /* bky_messages.json */,
+				5032C2640ABB94B65DCF3BDCD09F8E16 /* bky_messages.json */,
+				31CD93C49847DA3029B21FB73BB1393E /* bky_messages.json */,
+				6E0F8E3559268150528BCF9153719DCC /* bky_messages.json */,
+				382FAE276AA15FB1E8CCF0FB4BA4CC86 /* bky_messages.json */,
+				B13B36D6139987C4D3B6DE0706C384E5 /* bky_messages.json */,
+				618C68CFE82A422653CE696BEC9832B1 /* bky_messages.json */,
+				0917CEEC043016DA1DC8C82BDE508706 /* bky_messages.json */,
+				195B8831E568ABA36F4A67717D0D8F76 /* bky_messages.json */,
+				2B3DACDEF62591CDE4F1346BFC6163CD /* bky_messages.json */,
+				FA0DF0AE0D43AE3DB60B843E857210D5 /* bky_messages.json */,
+				84FA325A032B9D5BDC6C638F4D44CE92 /* bky_messages.json */,
+			);
+			name = bky_messages.json;
+			path = Resources/Localized/Messages;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C5860F3004FECC121B84C4FE5AF9B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860ABA362D9B69380A96BBEE5BFD52AD /* Pods-BlocklyGameUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlocklyGameUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlocklyGameUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13DDB4006239B5100879B59519440087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181C139FFF09F1497A93D748A5FC9AA2 /* AEXML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AEXML/AEXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEXML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AEXML/AEXML.modulemap";
+				PRODUCT_NAME = AEXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5DAA586C5E536CFE896EA5D96CDC10A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99D344A5FF00FB50FAF7F0D433D4366 /* Pods-BlocklyGame.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlocklyGame/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlocklyGame;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		693D6A6058918D525C2618520E97F10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6C5F606514411C31236EC26BB6B6A0 /* Pods-BlocklyGame.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlocklyGame/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlocklyGame;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D17ED83BAD84348F9924098D8BEEC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCC4D7E680D630F0307ABC6C717B083 /* Pods-BlocklyGameTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlocklyGameTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlocklyGameTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E2DA89387499A02126A7F5EB73C6BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D909F274518EA3C4BB0C6B4705307B8B /* Blockly.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Blockly/Blockly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Blockly/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Blockly/Blockly.modulemap";
+				PRODUCT_NAME = Blockly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AF9D1446D4D6276834D4BFE747AFB4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181C139FFF09F1497A93D748A5FC9AA2 /* AEXML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AEXML/AEXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AEXML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AEXML/AEXML.modulemap";
+				PRODUCT_NAME = AEXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D198109DD2931EAA773BCCB08F9FD997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 723FF3E4FB598F450B591F0F7BCE4ABF /* Pods-BlocklyGameUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlocklyGameUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlocklyGameUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E376E1D5BBF508572BFA6336521EC764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D909F274518EA3C4BB0C6B4705307B8B /* Blockly.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Blockly/Blockly-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Blockly/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Blockly/Blockly.modulemap";
+				PRODUCT_NAME = Blockly;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F41D97941346CEAA9BA02CD602000E27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F0201F43C38638602598EA3893C5D28 /* Pods-BlocklyGameTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlocklyGameTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlocklyGameTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51426A3F7B66AA671D2C8E40E76DB8C4 /* Build configuration list for PBXNativeTarget "Pods-BlocklyGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5860F3004FECC121B84C4FE5AF9B57 /* Debug */,
+				D198109DD2931EAA773BCCB08F9FD997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A4BAEFDECE508C0B8B99D4CF44E128B /* Build configuration list for PBXNativeTarget "Pods-BlocklyGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAA586C5E536CFE896EA5D96CDC10A9 /* Debug */,
+				693D6A6058918D525C2618520E97F10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80410F0D3E644EA42EDFE5ECF31984D5 /* Build configuration list for PBXNativeTarget "Blockly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2DA89387499A02126A7F5EB73C6BBE /* Debug */,
+				E376E1D5BBF508572BFA6336521EC764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAFAFD041C8B71885985CAD72AC73D42 /* Build configuration list for PBXNativeTarget "Pods-BlocklyGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41D97941346CEAA9BA02CD602000E27 /* Debug */,
+				6D17ED83BAD84348F9924098D8BEEC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C4627B7E11408E0460F1F8F976E2F4 /* Build configuration list for PBXNativeTarget "AEXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF9D1446D4D6276834D4BFE747AFB4EE /* Debug */,
+				13DDB4006239B5100879B59519440087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
