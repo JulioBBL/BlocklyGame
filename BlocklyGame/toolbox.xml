@@ -14,6 +14,10 @@
   -->
 
 <xml>
+    <category name="Mine" colour="#00ff00">
+        <block type="custom_changebgcolor"></block>
+        <block type="custom_say"></block>
+    </category>
     <category name="Logic" colour="%{BKY_LOGIC_HUE}">
         <block type="controls_if"></block>
         <block type="logic_compare"></block>
@@ -161,9 +165,5 @@
     <category name="Variables" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE">
     </category>
     <category name="Functions" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE" />
-    
-    <category name="Mine" colour="#00ff00">
-        <block type="custom_changebgcolor"></block>
-        <block type="custom_say"></block>
-    </category>
+    <sep></sep>
 </xml>
