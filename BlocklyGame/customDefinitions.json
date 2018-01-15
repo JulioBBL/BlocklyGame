@@ -1,35 +1,12 @@
 [
  {
- "type": "colour_uicolor",
- "message0": "%1",
- "args0": [
-           {
-           "type": "field_colour",
-           "name": "color",
-           "colour": "#ff0000"
-           }
-           ],
- "output": "uicolor",
- "colour": 230,
- "tooltip": "",
- "helpUrl": ""
- },
- {
- "type": "colour_uicolor_random",
- "message0": "Random Color",
- "output": "uicolor",
- "colour": 230,
- "tooltip": "",
- "helpUrl": ""
- },
- {
  "type": "custom_changebgcolor",
  "message0": "Change Background color to %1",
  "args0": [
            {
            "type": "input_value",
            "name": "color",
-           "check": "uicolor"
+           "check": "Colour"
            }
            ],
  "previousStatement": null,
@@ -38,8 +15,6 @@
  "tooltip": "",
  "helpUrl": ""
  },
- 
- 
  {
  "type": "custom_say",
  "message0": "say %1",

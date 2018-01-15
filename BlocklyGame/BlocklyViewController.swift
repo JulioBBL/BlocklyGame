@@ -61,8 +61,20 @@ class BlocklyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        (UIApplication.shared.delegate as! AppDelegate).stuffDoer = JSHandler(view: self)
+        //MARK: SKView stuff
+        // Load the SKScene from 'GameScene.sks'
+        if let scene = SKScene(fileNamed: "GameScene") {
+            // Set the scale mode to scale to fit the window
+            scene.scaleMode = .aspectFill
+            
+            // Present the scene
+            self.StuffView.presentScene(scene)
+        }
+        self.StuffView.ignoresSiblingOrder = true
+        self.StuffView.showsFPS = true
+        self.StuffView.showsNodeCount = true
         
+        //MARK: initialize Workbench
         // Create a workbench
         let workbenchViewController = WorkbenchViewController(style: .defaultStyle)
 //        workbenchViewController.engine.config.setColor(UIColor(rgb: 0x000000, a: CGFloat(0.5)), for: DefaultLayoutConfig.BlockStrokeDefaultColor)
@@ -106,10 +118,13 @@ class BlocklyViewController: UIViewController {
         workbenchViewController.view.frame = self.WorkbenchView.bounds
         workbenchViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         workbenchViewController.didMove(toParentViewController: self)
+        
+        //MARK: initialize the output handler for block code execution
+        (UIApplication.shared.delegate as! AppDelegate).stuffDoer = JSHandler(view: self, scene: self.StuffView.scene!)
     }
     
     @IBAction func didPressPlayButton(_ sender: UIButton) {
-        self.StuffView.backgroundColor = UIColor.random()
+//        self.StuffView.scene?.backgroundColor = UIColor.random()
         print("Play button was pressed")
         if let currentWorkbench = self.currentWorkbench {
             self.generateJavaScriptCode(forWorkbench: currentWorkbench) { error, code in

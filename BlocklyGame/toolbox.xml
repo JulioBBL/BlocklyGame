@@ -141,8 +141,10 @@
         <block type="text"></block>
     </category>
     <category name="Color" colour="%{BKY_COLOUR_HUE}">
-        <block type="colour_uicolor"></block>
-        <block type="colour_uicolor_random"></block>
+        <block type="colour_picker">
+            <field name="COLOUR">#ff0000</field>
+        </block>
+        <block type="colour_random"></block>
     </category>
     <category name="Lists" colour="%{BKY_LISTS_HUE}">
         <block type="lists_create_empty"></block>

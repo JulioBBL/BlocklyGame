@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,44 +34,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohP-Kp-Mam" userLabel="StuffView" customClass="SKView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="220"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-vn-duA">
-                                        <rect key="frame" x="325" y="170" width="30" height="30"/>
-                                        <state key="normal" title="Play">
-                                            <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didPressPlayButton:" destination="ehu-ID-2Fo" eventType="touchUpInside" id="Kcl-L3-5ks"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Mip-vn-duA" secondAttribute="trailing" constant="20" symbolic="YES" id="dfd-YP-xDJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mip-vn-duA" secondAttribute="bottom" constant="20" symbolic="YES" id="tIa-uQ-iRB"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fr7-4t-k9J" userLabel="WorkbenchView">
                                 <rect key="frame" x="0.0" y="240" width="375" height="427"/>
                             </view>
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6a4-I9-4tD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="220"/>
+                            </skView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-vn-duA">
+                                <rect key="frame" x="329" y="194" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressPlayButton:" destination="ehu-ID-2Fo" eventType="touchUpInside" id="Kcl-L3-5ks"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="6a4-I9-4tD" secondAttribute="trailing" id="3Io-K6-LtI"/>
+                            <constraint firstItem="6a4-I9-4tD" firstAttribute="top" secondItem="DgQ-uw-CRE" secondAttribute="topMargin" id="8Ir-tz-Og6"/>
                             <constraint firstItem="fr7-4t-k9J" firstAttribute="height" secondItem="6Pq-My-zyW" secondAttribute="height" multiplier="0.66" id="Abj-6D-1b5"/>
                             <constraint firstItem="fr7-4t-k9J" firstAttribute="bottom" secondItem="6Pq-My-zyW" secondAttribute="bottom" id="MTl-kq-gMJ"/>
-                            <constraint firstItem="ohP-Kp-Mam" firstAttribute="top" secondItem="6Pq-My-zyW" secondAttribute="top" id="RsL-bz-0L1"/>
-                            <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="ohP-Kp-Mam" secondAttribute="trailing" id="TD9-Hf-wQ2"/>
                             <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="fr7-4t-k9J" secondAttribute="trailing" id="VnC-k3-X5d"/>
-                            <constraint firstItem="ohP-Kp-Mam" firstAttribute="leading" secondItem="6Pq-My-zyW" secondAttribute="leading" id="X8T-3e-PKc"/>
-                            <constraint firstItem="fr7-4t-k9J" firstAttribute="top" secondItem="ohP-Kp-Mam" secondAttribute="bottom" id="aUh-LU-bSq"/>
+                            <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="Mip-vn-duA" secondAttribute="trailing" constant="16" id="dCh-f9-Qzm"/>
+                            <constraint firstItem="fr7-4t-k9J" firstAttribute="top" secondItem="Mip-vn-duA" secondAttribute="bottom" constant="16" id="iSe-WN-aUa"/>
+                            <constraint firstItem="fr7-4t-k9J" firstAttribute="top" secondItem="6a4-I9-4tD" secondAttribute="bottom" id="jnu-hT-gJb"/>
                             <constraint firstItem="fr7-4t-k9J" firstAttribute="leading" secondItem="6Pq-My-zyW" secondAttribute="leading" id="kFk-4g-Su0"/>
+                            <constraint firstItem="6a4-I9-4tD" firstAttribute="leading" secondItem="6Pq-My-zyW" secondAttribute="leading" id="uBZ-rt-OcM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Pq-My-zyW"/>
                     </view>
                     <connections>
-                        <outlet property="StuffView" destination="ohP-Kp-Mam" id="exR-Bh-DXY"/>
+                        <outlet property="StuffView" destination="6a4-I9-4tD" id="9lg-Op-KnX"/>
                         <outlet property="WorkbenchView" destination="fr7-4t-k9J" id="lZW-7H-qa0"/>
                     </connections>
                 </viewController>
