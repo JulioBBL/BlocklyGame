@@ -10,6 +10,8 @@
 		43159B4F504D4F9572F14374 /* Pods_BlocklyGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748ACCFB78202AAF54A50848 /* Pods_BlocklyGameTests.framework */; };
 		5949A94F20066CE000552C26 /* customCodeGeneratos.js in Resources */ = {isa = PBXBuildFile; fileRef = 5949A94E20066CE000552C26 /* customCodeGeneratos.js */; };
 		5949A953200672AB00552C26 /* CodeRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949A952200672AB00552C26 /* CodeRunner.swift */; };
+		5949A955200E61FB00552C26 /* acorn_interpreter.js in Resources */ = {isa = PBXBuildFile; fileRef = 5949A954200E61FA00552C26 /* acorn_interpreter.js */; };
+		5949A957200E74D000552C26 /* interpreterHandler.js in Resources */ = {isa = PBXBuildFile; fileRef = 5949A956200E74D000552C26 /* interpreterHandler.js */; };
 		597F29FD1FF7344800F30573 /* BlocklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F29FC1FF7344800F30573 /* BlocklyViewController.swift */; };
 		597F2A151FF8190900F30573 /* toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 597F2A141FF8190900F30573 /* toolbox.xml */; };
 		597F2A181FF8276400F30573 /* UIColor+FlatUIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F2A171FF8276400F30573 /* UIColor+FlatUIColors.swift */; };
@@ -56,6 +58,8 @@
 		1A7EF14D08D216D1C2EC2743 /* Pods-BlocklyGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5949A94E20066CE000552C26 /* customCodeGeneratos.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = customCodeGeneratos.js; sourceTree = "<group>"; };
 		5949A952200672AB00552C26 /* CodeRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRunner.swift; sourceTree = "<group>"; };
+		5949A954200E61FA00552C26 /* acorn_interpreter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = acorn_interpreter.js; sourceTree = "<group>"; };
+		5949A956200E74D000552C26 /* interpreterHandler.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = interpreterHandler.js; sourceTree = "<group>"; };
 		597F29FC1FF7344800F30573 /* BlocklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyViewController.swift; sourceTree = "<group>"; };
 		597F2A141FF8190900F30573 /* toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = toolbox.xml; sourceTree = "<group>"; };
 		597F2A171FF8276400F30573 /* UIColor+FlatUIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+FlatUIColors.swift"; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 				597F2A1D1FF9223300F30573 /* blockly_compressed.js */,
 				597F2A211FF9282300F30573 /* javascript_compressed.js */,
 				597F2A1E1FF9223300F30573 /* en.js */,
+				5949A954200E61FA00552C26 /* acorn_interpreter.js */,
+				5949A956200E74D000552C26 /* interpreterHandler.js */,
 				597F2A161FF8274A00F30573 /* Extensions */,
 				597F2A2B1FFC497700F30573 /* Model */,
 				597F2A141FF8190900F30573 /* toolbox.xml */,
@@ -348,9 +354,11 @@
 				5949A94F20066CE000552C26 /* customCodeGeneratos.js in Resources */,
 				597F2A281FFC43A000F30573 /* customDefinitions.json in Resources */,
 				59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */,
+				5949A957200E74D000552C26 /* interpreterHandler.js in Resources */,
 				597F2A201FF9223300F30573 /* en.js in Resources */,
 				597F2A151FF8190900F30573 /* toolbox.xml in Resources */,
 				59CB80A81FF7328000D2EE8D /* Assets.xcassets in Resources */,
+				5949A955200E61FB00552C26 /* acorn_interpreter.js in Resources */,
 				59CB80AB1FF7328000D2EE8D /* LaunchScreen.storyboard in Resources */,
 				59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */,
 			);

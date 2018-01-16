@@ -12,6 +12,8 @@ import SpriteKit
 import JavaScriptCore
 
 @objc protocol JSHandlerJSExport: JSExport {
+    static func highlightBlock(_ uuid: String)
+    static func setTimeout(_ ms: Int)
     static func say(_ text: String)
     static func changeBackgroundColor(_ color: String)
 }
@@ -28,6 +30,19 @@ class JSHandler: NSObject, JSHandlerJSExport {
     }
     
     //MARK: Static
+    class func highlightBlock(_ uuid: String) {
+        DispatchQueue.main.async {
+            if let a = (UIApplication.shared.delegate as! AppDelegate).currentWorkBench {
+                a.unhighlightAllBlocks()
+                a.highlightBlock(blockUUID: uuid)
+            }
+        }
+    }
+    
+    class func setTimeout(_ ms: Int) {
+        usleep(useconds_t(ms * 1000))
+    }
+    
     class func say(_ text: String) {
         DispatchQueue.main.async {
             if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {

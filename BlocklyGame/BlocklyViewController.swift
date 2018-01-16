@@ -14,7 +14,13 @@ class BlocklyViewController: UIViewController {
     @IBOutlet weak var WorkbenchView: UIView!
     @IBOutlet weak var StuffView: SKView!
     
-    var currentWorkbench: WorkbenchViewController?
+    var currentWorkbench: WorkbenchViewController? {
+        didSet {
+            if let appdelegate = UIApplication.shared.delegate as? AppDelegate {
+                appdelegate.currentWorkBench = self.currentWorkbench
+            }
+        }
+    }
     var codeGeneratorService: CodeGeneratorService = {
         let codeGeneratorService = CodeGeneratorService(
             jsCoreDependencies: [
@@ -129,6 +135,7 @@ class BlocklyViewController: UIViewController {
         if let currentWorkbench = self.currentWorkbench {
             self.generateJavaScriptCode(forWorkbench: currentWorkbench) { error, code in
                 if error == nil {
+                    //MARK: run code
                     if let code = code, code != "" {
                         // Create and store a new CodeRunner, so it doesn't go out of memory.
                         let codeRunner = CodeRunner()
@@ -137,6 +144,8 @@ class BlocklyViewController: UIViewController {
                         // Run the JS code, and remove the CodeRunner when finished.
                         codeRunner.runJavascriptCode(code, completion: {
                             self.codeRunners = self.codeRunners.filter { $0 !== codeRunner }
+                            self.currentWorkbench?.unhighlightAllBlocks()
+                            print("CODE HAS BEEN EXECUTED WITH SUCCESS")
                         })
                     } else {
                         print("No code was provided")
