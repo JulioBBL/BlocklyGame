@@ -15,9 +15,22 @@
 
 <xml>
     <category name="Mine" colour="#00ff00">
-        <block type="custom_changebgcolor"></block>
-        <block type="custom_say"></block>
+        <block type="custom_changebgcolor">
+            <value name="color">
+                <shadow type="colour_picker">
+                    <field name="COLOUR">#ff0000</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="custom_say">
+            <value name="string">
+                <shadow type="text"></shadow>
+            </value>
+        </block>
     </category>
+    
+    
+    
     <category name="Logic" colour="%{BKY_LOGIC_HUE}">
         <block type="controls_if"></block>
         <block type="logic_compare"></block>

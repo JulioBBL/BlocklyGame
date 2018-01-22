@@ -1,4 +1,4 @@
-var playing = true
+var isPlaying = false;
 
 function initApi(interpreter, scope) {
     // Add an API function for highlighting blocks.
@@ -29,7 +29,7 @@ function stepInterpretedCode(code) {
     var myInterpreter = new Interpreter(code, initApi);
     
     function nextStep() {
-        if (playing && myInterpreter.step()) {
+        if (isPlaying && myInterpreter.step()) {
             JSHandler.setTimeout(30);
             nextStep();
         }

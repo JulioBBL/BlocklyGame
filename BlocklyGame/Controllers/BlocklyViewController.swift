@@ -13,7 +13,18 @@ import Blockly
 class BlocklyViewController: UIViewController {
     @IBOutlet weak var WorkbenchView: UIView!
     @IBOutlet weak var StuffView: SKView!
+    @IBOutlet weak var playButton: UIButton!
     
+    var isPlaying: Bool = false {
+        didSet {
+            if self.isPlaying {
+                self.playButton.setTitle("Stop",for: .normal)
+            } else {
+                self.playButton.setTitle("Play",for: .normal)
+            }
+        }
+    }
+    var level: Level?
     var currentWorkbench: WorkbenchViewController? {
         didSet {
             if let appdelegate = UIApplication.shared.delegate as? AppDelegate {
@@ -100,7 +111,7 @@ class BlocklyViewController: UIViewController {
         
         // Load the toolbox into the workbench
         do {
-            if let toolboxFile = Bundle.main.path(forResource: "toolbox.xml", ofType: nil) {
+            if let toolboxFile = Bundle.main.path(forResource: self.level?.difficulty.path(), ofType: nil) {
                 // Load the XML from `toolbox.xml`
                 let toolboxXML = try String(contentsOfFile: toolboxFile, encoding: String.Encoding.utf8)
                 
@@ -110,7 +121,7 @@ class BlocklyViewController: UIViewController {
                 // Load the toolbox into the workbench
                 try workbenchViewController.loadToolbox(toolbox)
             } else {
-                print("Could not load 'toolbox.xml'")
+                print("Could not load toolbox with path '\(self.level?.difficulty.path() ?? "NO PATH PROVIDED")'")
             }
 
         } catch let error {
@@ -130,30 +141,45 @@ class BlocklyViewController: UIViewController {
     }
     
     @IBAction func didPressPlayButton(_ sender: UIButton) {
-//        self.StuffView.scene?.backgroundColor = UIColor.random()
         print("Play button was pressed")
-        if let currentWorkbench = self.currentWorkbench {
-            self.generateJavaScriptCode(forWorkbench: currentWorkbench) { error, code in
-                if error == nil {
-                    //MARK: run code
-                    if let code = code, code != "" {
-                        // Create and store a new CodeRunner, so it doesn't go out of memory.
-                        let codeRunner = CodeRunner()
-                        self.codeRunners.append(codeRunner)
-                        
-                        // Run the JS code, and remove the CodeRunner when finished.
-                        codeRunner.runJavascriptCode(code, completion: {
-                            self.codeRunners = self.codeRunners.filter { $0 !== codeRunner }
-                            self.currentWorkbench?.unhighlightAllBlocks()
-                            print("CODE HAS BEEN EXECUTED WITH SUCCESS")
-                        })
-                    } else {
-                        print("No code was provided")
+        
+        if self.isPlaying {
+            self.isPlaying = false
+            
+            self.codeRunners.first?.stopJavascriptCode()
+        } else {
+            self.isPlaying = true
+            
+            if let currentWorkbench = self.currentWorkbench {
+                self.generateJavaScriptCode(forWorkbench: currentWorkbench) { error, code in
+                    if error == nil {
+                        //MARK: run code
+                        if let code = code, code != "" {
+                            // Create and store a new CodeRunner, so it doesn't go out of memory.
+                            let codeRunner = CodeRunner()
+                            self.codeRunners.append(codeRunner)
+                            
+                            // Run the JS code, and remove the CodeRunner when finished.
+                            codeRunner.runJavascriptCode(code, completion: {
+                                self.codeRunners = self.codeRunners.filter { $0 !== codeRunner }
+                                self.currentWorkbench?.unhighlightAllBlocks()
+                                
+                                if self.isPlaying {
+                                    print("CODE HAS FINIDHED RUNNING")
+                                    //see if the execution was successful
+                                    self.isPlaying = false
+                                } else {
+                                    print("CODE WAS STOPPED FOR EXTERNAL SOURCES")
+                                }
+                            })
+                        } else {
+                            print("No code was provided")
+                        }
                     }
                 }
+            } else {
+                print("could not locate current workbech")
             }
-        } else {
-            print("could not locate current workbech")
         }
     }
     

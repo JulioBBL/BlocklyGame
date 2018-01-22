@@ -62,23 +62,25 @@ class CodeRunner {
      */
     func runJavascriptCode(_ code: String, completion: @escaping () -> Void) {
         jsThread.async {
-            // 1
             guard let context = self.context else {
                 print("JSContext not found.")
                 return
             }
+            // Set the playing variable to true
+            self.context?.setObject(true, forKeyedSubscript: "isPlaying" as NSString)
             
-            // 2
+            // Call the function that steps through the code
             let stepCodeFunction = context.objectForKeyedSubscript("stepInterpretedCode")
             _ = stepCodeFunction?.call(withArguments: [code])
-            
-            // Evaluate the JavaScript code asynchronously on the background thread.
-//            _ = self.context?.evaluateScript(code)
             
             // When it finishes, call the completion closure on the main thread.
             DispatchQueue.main.async {
                 completion()
             }
         }
+    }
+    
+    func stopJavascriptCode() {
+        self.context?.setObject(false, forKeyedSubscript: "isPlaying" as NSString)
     }
 }

@@ -19,6 +19,7 @@ import JavaScriptCore
 }
 
 class JSHandler: NSObject, JSHandlerJSExport {
+    
     var viewController: UIViewController
     var outputScene: SKScene
     

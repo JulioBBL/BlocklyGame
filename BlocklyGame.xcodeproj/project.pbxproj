@@ -26,12 +26,17 @@
 		59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809C1FF7328000D2EE8D /* GameScene.sks */; };
 		59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809E1FF7328000D2EE8D /* Actions.sks */; };
 		59CB80A11FF7328000D2EE8D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80A01FF7328000D2EE8D /* GameScene.swift */; };
-		59CB80A31FF7328000D2EE8D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80A21FF7328000D2EE8D /* GameViewController.swift */; };
 		59CB80A61FF7328000D2EE8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CB80A41FF7328000D2EE8D /* Main.storyboard */; };
 		59CB80A81FF7328000D2EE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CB80A71FF7328000D2EE8D /* Assets.xcassets */; };
 		59CB80AB1FF7328000D2EE8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */; };
 		59CB80B61FF7328000D2EE8D /* BlocklyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80B51FF7328000D2EE8D /* BlocklyGameTests.swift */; };
 		59CB80C11FF7328000D2EE8D /* BlocklyGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB80C01FF7328000D2EE8D /* BlocklyGameUITests.swift */; };
+		59E41A6C2014C708007BD81E /* LevelSelectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A6B2014C708007BD81E /* LevelSelectionCollectionViewController.swift */; };
+		59E41A6E2014D2C4007BD81E /* Toolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A6D2014D2C4007BD81E /* Toolbox.swift */; };
+		59E41A702014D733007BD81E /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A6F2014D733007BD81E /* Level.swift */; };
+		59E41A732014E777007BD81E /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A722014E777007BD81E /* PreviewViewController.swift */; };
+		59E41A752015028B007BD81E /* ChallengeSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A742015028B007BD81E /* ChallengeSelectCollectionViewCell.swift */; };
+		59E41A77201509F0007BD81E /* Int+toBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A76201509F0007BD81E /* Int+toBool.swift */; };
 		741C0408A666D61F7B080D32 /* Pods_BlocklyGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A6EA5791CAEEE13BD3391 /* Pods_BlocklyGameUITests.framework */; };
 		ABAA63D32B5C0970E0DA75A7 /* Pods_BlocklyGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE967BEAD54A7A2F3A214F41 /* Pods_BlocklyGame.framework */; };
 /* End PBXBuildFile section */
@@ -75,7 +80,6 @@
 		59CB809C1FF7328000D2EE8D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		59CB809E1FF7328000D2EE8D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		59CB80A01FF7328000D2EE8D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		59CB80A21FF7328000D2EE8D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		59CB80A51FF7328000D2EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59CB80A71FF7328000D2EE8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59CB80AA1FF7328000D2EE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,6 +90,12 @@
 		59CB80BC1FF7328000D2EE8D /* BlocklyGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocklyGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CB80C01FF7328000D2EE8D /* BlocklyGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklyGameUITests.swift; sourceTree = "<group>"; };
 		59CB80C21FF7328000D2EE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E41A6B2014C708007BD81E /* LevelSelectionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectionCollectionViewController.swift; sourceTree = "<group>"; };
+		59E41A6D2014D2C4007BD81E /* Toolbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbox.swift; sourceTree = "<group>"; };
+		59E41A6F2014D733007BD81E /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		59E41A722014E777007BD81E /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		59E41A742015028B007BD81E /* ChallengeSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		59E41A76201509F0007BD81E /* Int+toBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+toBool.swift"; sourceTree = "<group>"; };
 		605873F7132D7C31FB621D0F /* Pods-BlocklyGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		73515B53E0A2C3993930B11E /* Pods-BlocklyGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame.debug.xcconfig"; sourceTree = "<group>"; };
 		748ACCFB78202AAF54A50848 /* Pods_BlocklyGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +149,7 @@
 				597F2A171FF8276400F30573 /* UIColor+FlatUIColors.swift */,
 				597F2A1B1FF8284400F30573 /* UIColor+Hex.swift */,
 				597F2A231FFC342800F30573 /* UIColor+Random.swift */,
+				59E41A76201509F0007BD81E /* Int+toBool.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -146,8 +157,11 @@
 		597F2A2B1FFC497700F30573 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59E41A6D2014D2C4007BD81E /* Toolbox.swift */,
 				597F2A302006680C00F30573 /* JSHandler.swift */,
 				5949A952200672AB00552C26 /* CodeRunner.swift */,
+				59E41A6F2014D733007BD81E /* Level.swift */,
+				59E41A742015028B007BD81E /* ChallengeSelectCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,16 +198,15 @@
 				597F2A1E1FF9223300F30573 /* en.js */,
 				5949A954200E61FA00552C26 /* acorn_interpreter.js */,
 				5949A956200E74D000552C26 /* interpreterHandler.js */,
+				597F2A141FF8190900F30573 /* toolbox.xml */,
 				597F2A161FF8274A00F30573 /* Extensions */,
 				597F2A2B1FFC497700F30573 /* Model */,
-				597F2A141FF8190900F30573 /* toolbox.xml */,
+				59E41A712014E160007BD81E /* Controllers */,
 				59CB809A1FF7328000D2EE8D /* AppDelegate.swift */,
 				59CB809C1FF7328000D2EE8D /* GameScene.sks */,
 				59CB809E1FF7328000D2EE8D /* Actions.sks */,
 				59CB80A01FF7328000D2EE8D /* GameScene.swift */,
-				59CB80A21FF7328000D2EE8D /* GameViewController.swift */,
 				59CB80A41FF7328000D2EE8D /* Main.storyboard */,
-				597F29FC1FF7344800F30573 /* BlocklyViewController.swift */,
 				59CB80A71FF7328000D2EE8D /* Assets.xcassets */,
 				59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */,
 				59CB80AC1FF7328000D2EE8D /* Info.plist */,
@@ -217,6 +230,16 @@
 				59CB80C21FF7328000D2EE8D /* Info.plist */,
 			);
 			path = BlocklyGameUITests;
+			sourceTree = "<group>";
+		};
+		59E41A712014E160007BD81E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				59E41A6B2014C708007BD81E /* LevelSelectionCollectionViewController.swift */,
+				59E41A722014E777007BD81E /* PreviewViewController.swift */,
+				597F29FC1FF7344800F30573 /* BlocklyViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D34E6AC9138495F2BDBC50DC /* Pods */ = {
@@ -537,15 +560,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E41A6C2014C708007BD81E /* LevelSelectionCollectionViewController.swift in Sources */,
+				59E41A77201509F0007BD81E /* Int+toBool.swift in Sources */,
 				59CB80A11FF7328000D2EE8D /* GameScene.swift in Sources */,
 				597F2A181FF8276400F30573 /* UIColor+FlatUIColors.swift in Sources */,
+				59E41A6E2014D2C4007BD81E /* Toolbox.swift in Sources */,
 				597F29FD1FF7344800F30573 /* BlocklyViewController.swift in Sources */,
 				597F2A241FFC342800F30573 /* UIColor+Random.swift in Sources */,
+				59E41A702014D733007BD81E /* Level.swift in Sources */,
 				597F2A1C1FF8284400F30573 /* UIColor+Hex.swift in Sources */,
 				597F2A312006680C00F30573 /* JSHandler.swift in Sources */,
-				59CB80A31FF7328000D2EE8D /* GameViewController.swift in Sources */,
+				59E41A752015028B007BD81E /* ChallengeSelectCollectionViewCell.swift in Sources */,
 				59CB809B1FF7328000D2EE8D /* AppDelegate.swift in Sources */,
 				5949A953200672AB00552C26 /* CodeRunner.swift in Sources */,
+				59E41A732014E777007BD81E /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
