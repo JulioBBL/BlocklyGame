@@ -6,24 +6,22 @@
 //  Copyright © 2018 Julio Brazil. All rights reserved.
 //
 
-import Foundation
+import SpriteKit
 
 public class Level {
-    var imageName: String
-    var title: String
-    var description: String
-    var hints: [String]
-    var difficulty: ToolboxType
-    var steps: Int //number of smaller goals for the use to achieve
-    var progress: Int //number of steps that the user has already cleared
+    var done: Bool
+    var hint: String
+    var toolbox: String
+    var customScene: String?
+    var envyronmentSetup: (SKScene) -> Void
+    var endTester: (SKScene) -> Bool
     
-    init(imageName: String = "", title: String = "Title", description: String = "description", hints: [String] = [], difficulty: ToolboxType = .extreme, steps: Int = 1, progress: Int = 0) {
-        self.imageName = imageName
-        self.title = title
-        self.description = description
-        self.hints = hints
-        self.difficulty = difficulty
-        self.steps = steps
-        self.progress = progress
+    init(done: Bool = false, hint: String = "", toolbox: String = "toolbox.xml", customScene: String? = nil, envyronmentSetup: @escaping (SKScene) -> Void, endTester: @escaping (SKScene) -> Bool) {
+        self.done = done
+        self.hint = hint
+        self.toolbox = toolbox
+        self.customScene = customScene
+        self.envyronmentSetup = envyronmentSetup
+        self.endTester = endTester
     }
 }

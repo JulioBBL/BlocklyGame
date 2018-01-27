@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43159B4F504D4F9572F14374 /* Pods_BlocklyGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748ACCFB78202AAF54A50848 /* Pods_BlocklyGameTests.framework */; };
+		591A5598201A704B004C827C /* LabirinthChallenge.sks in Resources */ = {isa = PBXBuildFile; fileRef = 591A5597201A704B004C827C /* LabirinthChallenge.sks */; };
 		5949A94F20066CE000552C26 /* customCodeGeneratos.js in Resources */ = {isa = PBXBuildFile; fileRef = 5949A94E20066CE000552C26 /* customCodeGeneratos.js */; };
 		5949A953200672AB00552C26 /* CodeRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949A952200672AB00552C26 /* CodeRunner.swift */; };
 		5949A955200E61FB00552C26 /* acorn_interpreter.js in Resources */ = {isa = PBXBuildFile; fileRef = 5949A954200E61FA00552C26 /* acorn_interpreter.js */; };
@@ -22,6 +23,16 @@
 		597F2A241FFC342800F30573 /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F2A231FFC342800F30573 /* UIColor+Random.swift */; };
 		597F2A281FFC43A000F30573 /* customDefinitions.json in Resources */ = {isa = PBXBuildFile; fileRef = 597F2A271FFC43A000F30573 /* customDefinitions.json */; };
 		597F2A312006680C00F30573 /* JSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F2A302006680C00F30573 /* JSHandler.swift */; };
+		599878C02017686000D4EE89 /* Ch1_Lv1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 599878BF2017686000D4EE89 /* Ch1_Lv1.xml */; };
+		599878C22017C56C00D4EE89 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599878C12017C56C00D4EE89 /* Structs.swift */; };
+		59B09182201A8997008119AA /* MyTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59B09181201A8997008119AA /* MyTileSet.sks */; };
+		59B09184201BCC0C008119AA /* Labirinth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B09183201BCC0C008119AA /* Labirinth.swift */; };
+		59B09186201BD15E008119AA /* LabirinthScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B09185201BD15E008119AA /* LabirinthScene.swift */; };
+		59B09188201BDD04008119AA /* Ch2_Lv1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 59B09187201BDD04008119AA /* Ch2_Lv1.xml */; };
+		59B0918A201CB355008119AA /* Ch2_Lv2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 59B09189201CB355008119AA /* Ch2_Lv2.xml */; };
+		59B0918C201CD56B008119AA /* Ch2_test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 59B0918B201CD56B008119AA /* Ch2_test.xml */; };
+		59B0918E201CF3D5008119AA /* Ch2_Lv3.xml in Resources */ = {isa = PBXBuildFile; fileRef = 59B0918D201CF3D5008119AA /* Ch2_Lv3.xml */; };
+		59B09194201CFF89008119AA /* Ch2_Lv4.xml in Resources */ = {isa = PBXBuildFile; fileRef = 59B09193201CFF89008119AA /* Ch2_Lv4.xml */; };
 		59CB809B1FF7328000D2EE8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CB809A1FF7328000D2EE8D /* AppDelegate.swift */; };
 		59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809C1FF7328000D2EE8D /* GameScene.sks */; };
 		59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59CB809E1FF7328000D2EE8D /* Actions.sks */; };
@@ -37,6 +48,9 @@
 		59E41A732014E777007BD81E /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A722014E777007BD81E /* PreviewViewController.swift */; };
 		59E41A752015028B007BD81E /* ChallengeSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A742015028B007BD81E /* ChallengeSelectCollectionViewCell.swift */; };
 		59E41A77201509F0007BD81E /* Int+toBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A76201509F0007BD81E /* Int+toBool.swift */; };
+		59E41A79201659EB007BD81E /* begginerToolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 59E41A78201659EB007BD81E /* begginerToolbox.xml */; };
+		59E41A7B2016B305007BD81E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A7A2016B305007BD81E /* Challenge.swift */; };
+		59E41A7E2016B4B6007BD81E /* Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E41A7D2016B4B6007BD81E /* Challenge1.swift */; };
 		741C0408A666D61F7B080D32 /* Pods_BlocklyGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086A6EA5791CAEEE13BD3391 /* Pods_BlocklyGameUITests.framework */; };
 		ABAA63D32B5C0970E0DA75A7 /* Pods_BlocklyGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE967BEAD54A7A2F3A214F41 /* Pods_BlocklyGame.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +75,7 @@
 /* Begin PBXFileReference section */
 		086A6EA5791CAEEE13BD3391 /* Pods_BlocklyGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7EF14D08D216D1C2EC2743 /* Pods-BlocklyGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameUITests/Pods-BlocklyGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		591A5597201A704B004C827C /* LabirinthChallenge.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LabirinthChallenge.sks; sourceTree = "<group>"; };
 		5949A94E20066CE000552C26 /* customCodeGeneratos.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = customCodeGeneratos.js; sourceTree = "<group>"; };
 		5949A952200672AB00552C26 /* CodeRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeRunner.swift; sourceTree = "<group>"; };
 		5949A954200E61FA00552C26 /* acorn_interpreter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = acorn_interpreter.js; sourceTree = "<group>"; };
@@ -75,6 +90,16 @@
 		597F2A231FFC342800F30573 /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
 		597F2A271FFC43A000F30573 /* customDefinitions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = customDefinitions.json; sourceTree = "<group>"; };
 		597F2A302006680C00F30573 /* JSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSHandler.swift; sourceTree = "<group>"; };
+		599878BF2017686000D4EE89 /* Ch1_Lv1.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ch1_Lv1.xml; sourceTree = "<group>"; };
+		599878C12017C56C00D4EE89 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = BlocklyGame/Structs.swift; sourceTree = SOURCE_ROOT; };
+		59B09181201A8997008119AA /* MyTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyTileSet.sks; sourceTree = "<group>"; };
+		59B09183201BCC0C008119AA /* Labirinth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labirinth.swift; sourceTree = "<group>"; };
+		59B09185201BD15E008119AA /* LabirinthScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabirinthScene.swift; sourceTree = "<group>"; };
+		59B09187201BDD04008119AA /* Ch2_Lv1.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ch2_Lv1.xml; sourceTree = "<group>"; };
+		59B09189201CB355008119AA /* Ch2_Lv2.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ch2_Lv2.xml; sourceTree = "<group>"; };
+		59B0918B201CD56B008119AA /* Ch2_test.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ch2_test.xml; sourceTree = "<group>"; };
+		59B0918D201CF3D5008119AA /* Ch2_Lv3.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ch2_Lv3.xml; sourceTree = "<group>"; };
+		59B09193201CFF89008119AA /* Ch2_Lv4.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Ch2_Lv4.xml; sourceTree = "<group>"; };
 		59CB80971FF7328000D2EE8D /* BlocklyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlocklyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59CB809A1FF7328000D2EE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59CB809C1FF7328000D2EE8D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -96,6 +121,9 @@
 		59E41A722014E777007BD81E /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		59E41A742015028B007BD81E /* ChallengeSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeSelectCollectionViewCell.swift; sourceTree = "<group>"; };
 		59E41A76201509F0007BD81E /* Int+toBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+toBool.swift"; sourceTree = "<group>"; };
+		59E41A78201659EB007BD81E /* begginerToolbox.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = begginerToolbox.xml; sourceTree = "<group>"; };
+		59E41A7A2016B305007BD81E /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		59E41A7D2016B4B6007BD81E /* Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge1.swift; sourceTree = "<group>"; };
 		605873F7132D7C31FB621D0F /* Pods-BlocklyGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGameTests/Pods-BlocklyGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		73515B53E0A2C3993930B11E /* Pods-BlocklyGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlocklyGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlocklyGame/Pods-BlocklyGame.debug.xcconfig"; sourceTree = "<group>"; };
 		748ACCFB78202AAF54A50848 /* Pods_BlocklyGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlocklyGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,13 +185,30 @@
 		597F2A2B1FFC497700F30573 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				599878C12017C56C00D4EE89 /* Structs.swift */,
 				59E41A6D2014D2C4007BD81E /* Toolbox.swift */,
 				597F2A302006680C00F30573 /* JSHandler.swift */,
 				5949A952200672AB00552C26 /* CodeRunner.swift */,
 				59E41A6F2014D733007BD81E /* Level.swift */,
 				59E41A742015028B007BD81E /* ChallengeSelectCollectionViewCell.swift */,
+				59E41A7A2016B305007BD81E /* Challenge.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		599878BE2017626100D4EE89 /* Toolboxes */ = {
+			isa = PBXGroup;
+			children = (
+				597F2A141FF8190900F30573 /* toolbox.xml */,
+				59E41A78201659EB007BD81E /* begginerToolbox.xml */,
+				599878BF2017686000D4EE89 /* Ch1_Lv1.xml */,
+				59B09187201BDD04008119AA /* Ch2_Lv1.xml */,
+				59B09189201CB355008119AA /* Ch2_Lv2.xml */,
+				59B0918D201CF3D5008119AA /* Ch2_Lv3.xml */,
+				59B09193201CFF89008119AA /* Ch2_Lv4.xml */,
+				59B0918B201CD56B008119AA /* Ch2_test.xml */,
+			);
+			path = Toolboxes;
 			sourceTree = "<group>";
 		};
 		59CB808E1FF7328000D2EE8D = {
@@ -198,9 +243,10 @@
 				597F2A1E1FF9223300F30573 /* en.js */,
 				5949A954200E61FA00552C26 /* acorn_interpreter.js */,
 				5949A956200E74D000552C26 /* interpreterHandler.js */,
-				597F2A141FF8190900F30573 /* toolbox.xml */,
+				599878BE2017626100D4EE89 /* Toolboxes */,
 				597F2A161FF8274A00F30573 /* Extensions */,
 				597F2A2B1FFC497700F30573 /* Model */,
+				59E41A7C2016B48C007BD81E /* Challenges */,
 				59E41A712014E160007BD81E /* Controllers */,
 				59CB809A1FF7328000D2EE8D /* AppDelegate.swift */,
 				59CB809C1FF7328000D2EE8D /* GameScene.sks */,
@@ -208,6 +254,7 @@
 				59CB80A01FF7328000D2EE8D /* GameScene.swift */,
 				59CB80A41FF7328000D2EE8D /* Main.storyboard */,
 				59CB80A71FF7328000D2EE8D /* Assets.xcassets */,
+				59B09181201A8997008119AA /* MyTileSet.sks */,
 				59CB80A91FF7328000D2EE8D /* LaunchScreen.storyboard */,
 				59CB80AC1FF7328000D2EE8D /* Info.plist */,
 			);
@@ -240,6 +287,17 @@
 				597F29FC1FF7344800F30573 /* BlocklyViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		59E41A7C2016B48C007BD81E /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				59E41A7D2016B4B6007BD81E /* Challenge1.swift */,
+				591A5597201A704B004C827C /* LabirinthChallenge.sks */,
+				59B09183201BCC0C008119AA /* Labirinth.swift */,
+				59B09185201BD15E008119AA /* LabirinthScene.swift */,
+			);
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 		D34E6AC9138495F2BDBC50DC /* Pods */ = {
@@ -371,10 +429,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B09194201CFF89008119AA /* Ch2_Lv4.xml in Resources */,
+				59E41A79201659EB007BD81E /* begginerToolbox.xml in Resources */,
+				59B0918E201CF3D5008119AA /* Ch2_Lv3.xml in Resources */,
+				59B09188201BDD04008119AA /* Ch2_Lv1.xml in Resources */,
 				59CB80A61FF7328000D2EE8D /* Main.storyboard in Resources */,
 				597F2A221FF9282400F30573 /* javascript_compressed.js in Resources */,
 				597F2A1F1FF9223300F30573 /* blockly_compressed.js in Resources */,
+				599878C02017686000D4EE89 /* Ch1_Lv1.xml in Resources */,
+				591A5598201A704B004C827C /* LabirinthChallenge.sks in Resources */,
 				5949A94F20066CE000552C26 /* customCodeGeneratos.js in Resources */,
+				59B0918A201CB355008119AA /* Ch2_Lv2.xml in Resources */,
 				597F2A281FFC43A000F30573 /* customDefinitions.json in Resources */,
 				59CB809D1FF7328000D2EE8D /* GameScene.sks in Resources */,
 				5949A957200E74D000552C26 /* interpreterHandler.js in Resources */,
@@ -382,8 +447,10 @@
 				597F2A151FF8190900F30573 /* toolbox.xml in Resources */,
 				59CB80A81FF7328000D2EE8D /* Assets.xcassets in Resources */,
 				5949A955200E61FB00552C26 /* acorn_interpreter.js in Resources */,
+				59B09182201A8997008119AA /* MyTileSet.sks in Resources */,
 				59CB80AB1FF7328000D2EE8D /* LaunchScreen.storyboard in Resources */,
 				59CB809F1FF7328000D2EE8D /* Actions.sks in Resources */,
+				59B0918C201CD56B008119AA /* Ch2_test.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,16 +631,21 @@
 				59E41A77201509F0007BD81E /* Int+toBool.swift in Sources */,
 				59CB80A11FF7328000D2EE8D /* GameScene.swift in Sources */,
 				597F2A181FF8276400F30573 /* UIColor+FlatUIColors.swift in Sources */,
+				59E41A7B2016B305007BD81E /* Challenge.swift in Sources */,
 				59E41A6E2014D2C4007BD81E /* Toolbox.swift in Sources */,
 				597F29FD1FF7344800F30573 /* BlocklyViewController.swift in Sources */,
 				597F2A241FFC342800F30573 /* UIColor+Random.swift in Sources */,
 				59E41A702014D733007BD81E /* Level.swift in Sources */,
+				59B09184201BCC0C008119AA /* Labirinth.swift in Sources */,
 				597F2A1C1FF8284400F30573 /* UIColor+Hex.swift in Sources */,
 				597F2A312006680C00F30573 /* JSHandler.swift in Sources */,
+				599878C22017C56C00D4EE89 /* Structs.swift in Sources */,
+				59B09186201BD15E008119AA /* LabirinthScene.swift in Sources */,
 				59E41A752015028B007BD81E /* ChallengeSelectCollectionViewCell.swift in Sources */,
 				59CB809B1FF7328000D2EE8D /* AppDelegate.swift in Sources */,
 				5949A953200672AB00552C26 /* CodeRunner.swift in Sources */,
 				59E41A732014E777007BD81E /* PreviewViewController.swift in Sources */,
+				59E41A7E2016B4B6007BD81E /* Challenge1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Julio Brazil. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import JavaScriptCore
 
 /**
@@ -14,7 +14,17 @@ import JavaScriptCore
  */
 class CodeRunner {
     /// Use a JSContext object, which contains a JavaScript virtual machine.
-    private var context: JSContext?
+    private var context: JSContext? {
+        didSet {
+            if let context = self.context {
+                DispatchQueue.main.async {
+                    if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
+                        a.context = context
+                    }
+                }
+            }
+        }
+    }
     
     /// Create a background thread, so the main thread isn't blocked when executing JS code.
     private let jsThread = DispatchQueue(label: "jsContext")

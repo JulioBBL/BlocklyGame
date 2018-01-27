@@ -23,6 +23,44 @@ function initApi(interpreter, scope) {
         return interpreter.createPrimitive(JSHandler.changeBackgroundColor(color));
     };
     interpreter.setProperty(scope, 'changeBackgroundColor', interpreter.createNativeFunction(wrapper));
+    
+    
+    // Add an API function for the changeSquareColor() block.
+    wrapper = function(color) {
+        color = color ? color.toString() : '';
+        return interpreter.createPrimitive(JSHandler.changeSquareColor(color));
+    };
+    interpreter.setProperty(scope, 'changeSquareColor', interpreter.createNativeFunction(wrapper));
+    
+    
+    // Add an API function for the moveForward() block.
+    wrapper = function() {
+        return interpreter.createPrimitive(JSHandler.moveForward());
+    };
+    interpreter.setProperty(scope, 'moveForward', interpreter.createNativeFunction(wrapper));
+    
+    
+    // Add an API function for the rotate() block.
+    wrapper = function(direction) {
+        direction = direction || '';
+        return interpreter.createPrimitive(JSHandler.rotate(direction));
+    };
+    interpreter.setProperty(scope, 'rotate', interpreter.createNativeFunction(wrapper));
+    
+    
+    // Add an API function for the canGo() block.
+    wrapper = function(direction) {
+        direction = direction ? direction.toString() : '';
+        return interpreter.createPrimitive(JSHandler.canGo(direction));
+    };
+    interpreter.setProperty(scope, 'canGo', interpreter.createNativeFunction(wrapper));
+    
+    
+    // Add an API function for the hasFinished() block.
+    wrapper = function() {
+        return interpreter.createPrimitive(JSHandler.hasFinished());
+    };
+    interpreter.setProperty(scope, 'hasFinished', interpreter.createNativeFunction(wrapper));
 }
 
 function stepInterpretedCode(code) {

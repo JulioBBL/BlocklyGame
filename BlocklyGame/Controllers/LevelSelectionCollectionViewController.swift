@@ -1,5 +1,5 @@
 //
-//  LevelSelectionCollectionViewController.swift
+//  ChallengeSelectionCollectionViewController.swift
 //  BlocklyGame
 //
 //  Created by Julio Brazil on 21/01/18.
@@ -9,8 +9,8 @@
 import UIKit
 
 class LevelSelectionCollectionViewController: UICollectionViewController {
-    var selectedLevel: Level?
-    var levels: [Level] = []
+    var selectedChallenge: Challenge?
+    var challenges: [Challenge] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,17 +19,8 @@ class LevelSelectionCollectionViewController: UICollectionViewController {
          self.clearsSelectionOnViewWillAppear = true
 
         // Do any additional setup after loading the view.
-        let levels = [Level(title: "Title 1",
-                           description: "this is a description",
-                           hints: ["this is a hint","and so is this"],
-                           difficulty: .begginer,
-                           steps: 7,
-                           progress: 5),
-                      Level(title: "Hello World",
-                            description: "Oh, look, a description",
-                            progress: 1),
-                      Level()]
-        self.levels.append(contentsOf: levels)
+        let challenges: [Challenge] = [Challenge1(), Labirinth()]
+        self.challenges.append(contentsOf: challenges)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,8 +28,8 @@ class LevelSelectionCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        self.collectionView?.reloadData()
     }
 
     // MARK: - Navigation
@@ -48,7 +39,7 @@ class LevelSelectionCollectionViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "toChallengePreview" {
-            (segue.destination as! PreviewViewController).level = self.selectedLevel!
+            (segue.destination as! PreviewViewController).challenge = self.selectedChallenge!
         }
     }
 
@@ -61,18 +52,18 @@ class LevelSelectionCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return self.levels.count
+        return self.challenges.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let level = levels[indexPath.row]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "levelCard", for: indexPath) as! ChallengeSelectCollectionViewCell
+        let challenge = challenges[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "challengeCard", for: indexPath) as! ChallengeSelectCollectionViewCell
         
-        cell.titleLabel.text = level.title
-        cell.difficultyLabel.text = level.difficulty.rawValue
-        cell.progressLabel.text = "\(level.progress)/\(level.steps)"
-        cell.progressView.progress = Float(level.progress) / Float(level.steps)
-        cell.colorDot.backgroundColor = level.progress == level.steps ? UIColor.emerald : UIColor.clear
+        cell.titleLabel.text = challenge.title
+        cell.difficultyLabel.text = challenge.difficulty.rawValue
+        cell.progressLabel.text = "\(challenge.progress)/\(challenge.steps)"
+        cell.progressView.progress = Float(challenge.progress) / Float(challenge.steps)
+        cell.colorDot.backgroundColor = challenge.progress == challenge.steps ? UIColor.emerald : UIColor.clear
     
         return cell
     }
@@ -80,7 +71,7 @@ class LevelSelectionCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.selectedLevel = levels[indexPath.row]
+        self.selectedChallenge = challenges[indexPath.row]
         self.performSegue(withIdentifier: "toChallengePreview", sender: self)
     }
     /*

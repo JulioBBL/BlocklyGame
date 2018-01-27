@@ -29,8 +29,6 @@
         </block>
     </category>
     
-    
-    
     <category name="Logic" colour="%{BKY_LOGIC_HUE}">
         <block type="controls_if"></block>
         <block type="logic_compare"></block>
@@ -40,6 +38,7 @@
         <block type="logic_null"></block>
         <block type="logic_ternary"></block>
     </category>
+
     <category name="Loops" colour="%{BKY_LOOPS_HUE}">
         <block type="controls_repeat_ext">
             <value name="TIMES">
@@ -75,6 +74,7 @@
         <block type="controls_forEach"></block>
         <block type="controls_flow_statements"></block>
     </category>
+
     <category name="Math" colour="%{BKY_MATH_HUE}">
         <block type="math_number"></block>
         <block type="math_arithmetic">
@@ -154,15 +154,18 @@
         </block>
         <block type="math_random_float"></block>
     </category>
+
     <category name="Text" colour="%{BKY_TEXTS_HUE}">
         <block type="text"></block>
     </category>
+
     <category name="Color" colour="%{BKY_COLOUR_HUE}">
         <block type="colour_picker">
             <field name="COLOUR">#ff0000</field>
         </block>
         <block type="colour_random"></block>
     </category>
+
     <category name="Lists" colour="%{BKY_LISTS_HUE}">
         <block type="lists_create_empty"></block>
         <block type="lists_repeat"></block>
@@ -175,8 +178,9 @@
         <block type="lists_sort"></block>
         <block type="lists_reverse"></block>
     </category>
+
     <category name="Variables" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE">
     </category>
+
     <category name="Functions" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE" />
-    <sep></sep>
 </xml>

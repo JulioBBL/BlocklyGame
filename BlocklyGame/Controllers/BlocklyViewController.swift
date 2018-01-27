@@ -14,6 +14,8 @@ class BlocklyViewController: UIViewController {
     @IBOutlet weak var WorkbenchView: UIView!
     @IBOutlet weak var StuffView: SKView!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var hintView: UIView!
+    @IBOutlet weak var hintLabel: UILabel!
     
     var isPlaying: Bool = false {
         didSet {
@@ -63,8 +65,7 @@ class BlocklyViewController: UIViewController {
         return codeGeneratorService
     }()
     
-    // Store a list of all CodeRunner instances currently running JS code.
-    private var codeRunners = [CodeRunner]()
+    var codeRunner = CodeRunner()
     var _currentRequestUUID: String = ""
 
     override var prefersStatusBarHidden : Bool {
@@ -77,15 +78,18 @@ class BlocklyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
         
         //MARK: SKView stuff
         // Load the SKScene from 'GameScene.sks'
-        if let scene = SKScene(fileNamed: "GameScene") {
+        if let scene = SKScene(fileNamed: self.level?.customScene ?? "GameScene") {
             // Set the scale mode to scale to fit the window
             scene.scaleMode = .aspectFill
             
             // Present the scene
             self.StuffView.presentScene(scene)
+            
+            self.level?.envyronmentSetup(scene)
         }
         self.StuffView.ignoresSiblingOrder = true
         self.StuffView.showsFPS = true
@@ -111,7 +115,7 @@ class BlocklyViewController: UIViewController {
         
         // Load the toolbox into the workbench
         do {
-            if let toolboxFile = Bundle.main.path(forResource: self.level?.difficulty.path(), ofType: nil) {
+            if let toolboxFile = Bundle.main.path(forResource: self.level?.toolbox, ofType: nil) {
                 // Load the XML from `toolbox.xml`
                 let toolboxXML = try String(contentsOfFile: toolboxFile, encoding: String.Encoding.utf8)
                 
@@ -121,7 +125,7 @@ class BlocklyViewController: UIViewController {
                 // Load the toolbox into the workbench
                 try workbenchViewController.loadToolbox(toolbox)
             } else {
-                print("Could not load toolbox with path '\(self.level?.difficulty.path() ?? "NO PATH PROVIDED")'")
+                print("Could not load toolbox with path '\(self.level?.toolbox ?? "NO PATH PROVIDED")'")
             }
 
         } catch let error {
@@ -138,6 +142,9 @@ class BlocklyViewController: UIViewController {
         
         //MARK: initialize the output handler for block code execution
         (UIApplication.shared.delegate as! AppDelegate).stuffDoer = JSHandler(view: self, scene: self.StuffView.scene!)
+        
+        //MARK: hint
+        self.hintLabel.text = self.level?.hint
     }
     
     @IBAction func didPressPlayButton(_ sender: UIButton) {
@@ -146,7 +153,7 @@ class BlocklyViewController: UIViewController {
         if self.isPlaying {
             self.isPlaying = false
             
-            self.codeRunners.first?.stopJavascriptCode()
+            self.codeRunner.stopJavascriptCode()
         } else {
             self.isPlaying = true
             
@@ -155,24 +162,43 @@ class BlocklyViewController: UIViewController {
                     if error == nil {
                         //MARK: run code
                         if let code = code, code != "" {
-                            // Create and store a new CodeRunner, so it doesn't go out of memory.
-                            let codeRunner = CodeRunner()
-                            self.codeRunners.append(codeRunner)
-                            
-                            // Run the JS code, and remove the CodeRunner when finished.
-                            codeRunner.runJavascriptCode(code, completion: {
-                                self.codeRunners = self.codeRunners.filter { $0 !== codeRunner }
+                            // Run the JS code
+                            self.codeRunner.runJavascriptCode(code, completion: {
                                 self.currentWorkbench?.unhighlightAllBlocks()
                                 
                                 if self.isPlaying {
                                     print("CODE HAS FINIDHED RUNNING")
                                     //see if the execution was successful
+                                    if let finished = self.level?.endTester(self.StuffView.scene!) {
+                                        var alert = UIAlertController()
+                                        if finished {
+                                            //TODO stuff when finished
+                                            self.level?.done = true
+                                            
+                                            alert = UIAlertController(title: "Congratulations!", message: "You've completed this level, ready for the next one?", preferredStyle: UIAlertControllerStyle.alert)
+                                            alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+                                            alert.addAction(UIAlertAction(title: "Next", style: .default, handler: { _ in
+                                                self.navigationController?.popViewController(animated: true)
+                                            }))
+                                        } else {
+                                            alert = UIAlertController(title: "Oops", message: "Looks like your code has finished running but you are not quite done, want to thy again?", preferredStyle: UIAlertControllerStyle.alert)
+                                            alert.addAction(UIAlertAction(title: "Exit", style: .default, handler: { _ in
+                                                self.navigationController?.popViewController(animated: true)
+                                            }))
+                                            alert.addAction(UIAlertAction(title: "Try again", style: .default, handler: { _ in
+                                                self.level?.envyronmentSetup(self.StuffView.scene!)
+                                            }))
+                                        }
+                                        
+                                        self.present(alert, animated: true, completion: nil)
+                                    }
                                     self.isPlaying = false
                                 } else {
-                                    print("CODE WAS STOPPED FOR EXTERNAL SOURCES")
+                                    print("CODE WAS STOPPED FROM EXTERNAL SOURCES")
                                 }
                             })
                         } else {
+                            self.isPlaying = false
                             print("No code was provided")
                         }
                     }
@@ -181,6 +207,18 @@ class BlocklyViewController: UIViewController {
                 print("could not locate current workbech")
             }
         }
+    }
+    
+    @IBAction func didPressExitButton(_ sender: Any) {
+        self.exit()
+    }
+    
+    @IBAction func didPressHideHintButton(_ sender: Any) {
+        self.hintView.isHidden = true
+    }
+    
+    @IBAction func didPressShowHintButton(_ sender: Any) {
+        self.hintView.isHidden = false
     }
     
     func generateJavaScriptCode(forWorkbench workbench: WorkbenchViewController, completion: @escaping (Error?, String?) -> Void) {
@@ -206,7 +244,7 @@ class BlocklyViewController: UIViewController {
         }
     }
     
-//    func saveBlocks() {
+    func saveWorkspace(completion: @escaping () -> Void) {
 //        // Save the workspace to disk
 //        if let workspace = self.currentWorkbench?.workspace {
 //            do {
@@ -216,23 +254,25 @@ class BlocklyViewController: UIViewController {
 //                print("Couldn't save workspace to disk: \(error)")
 //            }
 //        }
-//    }
-    
+        
+        DispatchQueue.main.async {
+            completion()
+        }
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
-    /*
      // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func exit() {
+        self.saveWorkspace {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     
 }
 

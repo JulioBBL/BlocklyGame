@@ -8,22 +8,9 @@
 
 import Foundation
 
-enum ToolboxType: String {
+enum Difficulty: String {
     case begginer = "Begginer"
     case intermediate = "Intermediate"
     case advanced = "Advanced"
     case extreme = "Extreme"
-    
-    func path() -> String {
-        switch self {
-        case .begginer:
-            return "begginerToolbox.xml"
-        case .intermediate:
-            return "intermidateToolbox.xml"
-        case .advanced:
-            return "advancedToolbox.xml"
-        case .extreme:
-            return "toolbox.xml"
-        }
-    }
 }
