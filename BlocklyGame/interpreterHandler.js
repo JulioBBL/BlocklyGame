@@ -68,7 +68,7 @@ function stepInterpretedCode(code) {
     
     function nextStep() {
         if (isPlaying && myInterpreter.step()) {
-            JSHandler.setTimeout(30);
+            JSHandler.setTimeout(50);
             nextStep();
         }
     }
