@@ -20,9 +20,9 @@ class BlocklyViewController: UIViewController {
     var isPlaying: Bool = false {
         didSet {
             if self.isPlaying {
-                self.playButton.setTitle("Stop",for: .normal)
+                self.playButton.setImage(UIImage(named: "Stop"), for: .normal)
             } else {
-                self.playButton.setTitle("Play",for: .normal)
+                self.playButton.setImage(UIImage(named: "Play"), for: .normal)
             }
         }
     }

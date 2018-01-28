@@ -129,14 +129,13 @@
                                     <constraint firstAttribute="width" secondItem="6a4-I9-4tD" secondAttribute="height" multiplier="16:9" id="Z70-vP-NH3"/>
                                 </constraints>
                             </skView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mle-Do-kiJ">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mle-Do-kiJ">
                                 <rect key="frame" x="16" y="366" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="JBb-LS-yjo"/>
                                     <constraint firstAttribute="height" constant="50" id="ooL-50-ALo"/>
                                 </constraints>
-                                <state key="normal" title="?">
+                                <state key="normal" image="?">
                                     <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -179,28 +178,26 @@
                                     <constraint firstItem="b0S-P3-vYq" firstAttribute="top" secondItem="8EP-9q-xRn" secondAttribute="top" id="rHj-uf-Eyg"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-vn-duA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-vn-duA">
                                 <rect key="frame" x="702" y="366" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="9cs-JC-Tc4"/>
                                     <constraint firstAttribute="height" constant="50" id="B6v-zh-Bvs"/>
                                 </constraints>
-                                <state key="normal" title="Play">
+                                <state key="normal" image="Play">
                                     <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didPressPlayButton:" destination="ehu-ID-2Fo" eventType="touchUpInside" id="Kcl-L3-5ks"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMZ-VY-eZW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMZ-VY-eZW" userLabel="Exit">
                                 <rect key="frame" x="16" y="16" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="YZN-f7-FAw"/>
                                     <constraint firstAttribute="width" constant="50" id="jXf-y2-OVh"/>
                                 </constraints>
-                                <state key="normal" title="Exit">
+                                <state key="normal" image="Exit">
                                     <color key="titleColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -248,15 +245,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WIS-wJ-JxB">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="8" sectionInsetReference="layoutMargins" id="WIS-wJ-JxB">
                             <size key="itemSize" width="422" height="285"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="challengeCard" id="YXH-k2-TcJ" customClass="ChallengeSelectCollectionViewCell" customModule="BlocklyGame" customModuleProvider="target">
-                                <rect key="frame" x="173" y="0.0" width="422" height="285"/>
+                                <rect key="frame" x="173" y="24" width="422" height="285"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="422" height="285"/>
@@ -385,4 +382,9 @@
             <point key="canvasLocation" x="-2474" y="131"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="?" width="200" height="200"/>
+        <image name="Exit" width="200" height="200"/>
+        <image name="Play" width="200" height="200"/>
+    </resources>
 </document>
