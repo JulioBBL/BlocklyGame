@@ -28,7 +28,7 @@ class Challenge1: Challenge {
     
     init() {
         self.levels = [Level(hint: "Change the color of the square",
-                             toolbox: "toolbox.xml",
+                             toolbox: "Ch1_Lv1.xml",
                              //TODO toolbox: "Ch1_Lv1.xml",
                              envyronmentSetup: { scene in
                                 let square = SKShapeNode(rect: CGRect(x: -100, y: -100, width: 200, height: 200))

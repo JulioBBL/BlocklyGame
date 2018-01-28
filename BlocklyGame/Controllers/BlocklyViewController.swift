@@ -194,6 +194,7 @@ class BlocklyViewController: UIViewController {
                                     }
                                     self.isPlaying = false
                                 } else {
+                                    self.level?.envyronmentSetup(self.StuffView.scene!)
                                     print("CODE WAS STOPPED FROM EXTERNAL SOURCES")
                                 }
                             })
