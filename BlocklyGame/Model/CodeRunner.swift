@@ -17,11 +17,7 @@ class CodeRunner {
     private var context: JSContext? {
         didSet {
             if let context = self.context {
-                DispatchQueue.main.async {
-                    if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-                        a.context = context
-                    }
-                }
+                JSHandler.shared.context = context
             }
         }
     }

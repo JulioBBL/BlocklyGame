@@ -164,15 +164,12 @@ class LabirinthScene: SKScene {
                 self.plopPlayer(atColumn: nextPosition.0, row: nextPosition.1, rotation: def.rotation.hashValue)
             } else {
                 //TODO say to the player that he cannot move outside of the path
-                DispatchQueue.main.async {
-                    if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-                        a.displayAlert(withTitle: "Oops", message: "You cannot leave the path", action: {
-                            self.setup(mapName: self.mapName ?? "")
-                        })
-                        (a.viewController as! BlocklyViewController).codeRunner.stopJavascriptCode()
-                        (a.viewController as! BlocklyViewController).isPlaying = false
-                    }
-                }
+                let a = JSHandler.shared
+                a.displayAlert(withTitle: "Oops", message: "You cannot leave the path", action: {
+                    self.setup(mapName: self.mapName ?? "")
+                })
+                (a.viewController as! BlocklyViewController).codeRunner.stopJavascriptCode()
+                (a.viewController as! BlocklyViewController).isPlaying = false
             }
         }
     }

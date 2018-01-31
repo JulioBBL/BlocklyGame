@@ -16,6 +16,7 @@ class BlocklyViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var hintView: UIView!
     @IBOutlet weak var hintLabel: UILabel!
+    @IBOutlet weak var speedSegmentedControl: UISegmentedControl!
     
     var isPlaying: Bool = false {
         didSet {
@@ -29,9 +30,7 @@ class BlocklyViewController: UIViewController {
     var level: Level?
     var currentWorkbench: WorkbenchViewController? {
         didSet {
-            if let appdelegate = UIApplication.shared.delegate as? AppDelegate {
-                appdelegate.currentWorkBench = self.currentWorkbench
-            }
+            JSHandler.shared.currentWorkBench = self.currentWorkbench
         }
     }
     var codeGeneratorService: CodeGeneratorService = {
@@ -79,6 +78,8 @@ class BlocklyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        
+        self.speedSegmentedControl.selectedSegmentIndex = JSHandler.shared.speed.rawValue
         
         //MARK: SKView stuff
         // Load the SKScene from 'GameScene.sks'
@@ -141,7 +142,8 @@ class BlocklyViewController: UIViewController {
         workbenchViewController.didMove(toParentViewController: self)
         
         //MARK: initialize the output handler for block code execution
-        (UIApplication.shared.delegate as! AppDelegate).stuffDoer = JSHandler(view: self, scene: self.StuffView.scene!)
+        JSHandler.shared.viewController = self
+        JSHandler.shared.outputScene = self.StuffView.scene!
         
         //MARK: hint
         self.hintLabel.text = self.level?.hint
@@ -152,10 +154,10 @@ class BlocklyViewController: UIViewController {
         
         if self.isPlaying {
             self.isPlaying = false
-            
             self.codeRunner.stopJavascriptCode()
         } else {
             self.isPlaying = true
+            self.level?.envyronmentSetup(self.StuffView.scene!)
             
             if let currentWorkbench = self.currentWorkbench {
                 self.generateJavaScriptCode(forWorkbench: currentWorkbench) { error, code in
@@ -174,6 +176,7 @@ class BlocklyViewController: UIViewController {
                                         if finished {
                                             //TODO stuff when finished
                                             self.level?.done = true
+                                            self.isPlaying = false
                                             
                                             alert = UIAlertController(title: "Congratulations!", message: "You've completed this level, ready for the next one?", preferredStyle: UIAlertControllerStyle.alert)
                                             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
@@ -222,6 +225,10 @@ class BlocklyViewController: UIViewController {
         self.hintView.isHidden = false
     }
     
+    @IBAction func didChangeSpeed(_ sender: UISegmentedControl) {
+        JSHandler.shared.speed = Speed(rawValue: sender.selectedSegmentIndex)!
+    }
+    
     func generateJavaScriptCode(forWorkbench workbench: WorkbenchViewController, completion: @escaping (Error?, String?) -> Void) {
         guard let workspace = workbench.workspace else {
             print("Workbench does not contain a workspace.")
@@ -246,16 +253,6 @@ class BlocklyViewController: UIViewController {
     }
     
     func saveWorkspace(completion: @escaping () -> Void) {
-//        // Save the workspace to disk
-//        if let workspace = self.currentWorkbench?.workspace {
-//            do {
-//                let xml = try workspace.toXML()
-//                FileHelper.saveContents(xml, to: "workspace.xml")
-//            } catch let error {
-//                print("Couldn't save workspace to disk: \(error)")
-//            }
-//        }
-        
         DispatchQueue.main.async {
             completion()
         }

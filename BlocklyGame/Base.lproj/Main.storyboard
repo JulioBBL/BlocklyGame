@@ -204,11 +204,23 @@
                                     <action selector="didPressExitButton:" destination="ehu-ID-2Fo" eventType="touchUpInside" id="AmS-p7-xDZ"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Gi-Px-vEv">
+                                <rect key="frame" x="685" y="16" width="67" height="29"/>
+                                <segments>
+                                    <segment title="🐢"/>
+                                    <segment title="🐇"/>
+                                </segments>
+                                <color key="tintColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="didChangeSpeed:" destination="ehu-ID-2Fo" eventType="valueChanged" id="aAL-Ea-RoJ"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="6a4-I9-4tD" secondAttribute="trailing" id="3Io-K6-LtI"/>
                             <constraint firstItem="8EP-9q-xRn" firstAttribute="bottom" secondItem="6a4-I9-4tD" secondAttribute="bottom" id="FHW-34-Ded"/>
+                            <constraint firstItem="7Gi-Px-vEv" firstAttribute="top" secondItem="DgQ-uw-CRE" secondAttribute="top" constant="16" id="KLh-gG-Vzo"/>
                             <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="fr7-4t-k9J" secondAttribute="trailing" id="VnC-k3-X5d"/>
                             <constraint firstItem="8EP-9q-xRn" firstAttribute="leading" secondItem="6a4-I9-4tD" secondAttribute="leading" id="Ybr-sX-5Nq"/>
                             <constraint firstItem="6Pq-My-zyW" firstAttribute="trailing" secondItem="Mip-vn-duA" secondAttribute="trailing" constant="16" id="dCh-f9-Qzm"/>
@@ -220,17 +232,20 @@
                             <constraint firstItem="Mle-Do-kiJ" firstAttribute="bottom" secondItem="6a4-I9-4tD" secondAttribute="bottom" constant="-16" id="nxt-re-2cR"/>
                             <constraint firstItem="NMZ-VY-eZW" firstAttribute="leading" secondItem="6Pq-My-zyW" secondAttribute="leading" constant="16" id="rbc-fv-NH8"/>
                             <constraint firstItem="6a4-I9-4tD" firstAttribute="leading" secondItem="6Pq-My-zyW" secondAttribute="leading" id="uBZ-rt-OcM"/>
+                            <constraint firstAttribute="trailing" secondItem="7Gi-Px-vEv" secondAttribute="trailing" constant="16" id="v8O-zz-Xq6"/>
                             <constraint firstItem="fr7-4t-k9J" firstAttribute="bottom" secondItem="6Pq-My-zyW" secondAttribute="bottom" id="v8f-Fc-wMh"/>
                             <constraint firstItem="NMZ-VY-eZW" firstAttribute="top" secondItem="DgQ-uw-CRE" secondAttribute="top" constant="16" id="xLt-rq-8nU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Pq-My-zyW"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="StuffView" destination="6a4-I9-4tD" id="9lg-Op-KnX"/>
                         <outlet property="WorkbenchView" destination="fr7-4t-k9J" id="lZW-7H-qa0"/>
                         <outlet property="hintLabel" destination="V1c-ZU-JkI" id="xWu-0S-yBI"/>
                         <outlet property="hintView" destination="8EP-9q-xRn" id="hp1-Ng-iRB"/>
                         <outlet property="playButton" destination="Mip-vn-duA" id="8q2-ZK-HMx"/>
+                        <outlet property="speedSegmentedControl" destination="7Gi-Px-vEv" id="Pep-oD-5zb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l92-l2-2VF" userLabel="First Responder" sceneMemberID="firstResponder"/>

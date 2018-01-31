@@ -21,29 +21,13 @@
             <block type="movement_check_path"></block>
         </value>
     </block>
+    <block type="movement_check_path"></block>
     <block type="controls_whileUntil">
         <field name="MODE">UNTIL</field>
         <value name="BOOL">
             <block type="check_completion"></block>
         </value>
     </block>
-<!--    -->
-<!--    -->
-<!--    <block type="movement_forward"></block>-->
-<!--    <block type="movement_rotate"></block>-->
-<!--    <block type="controls_if">-->
-<!--        <value name="IF0">-->
-<!--            <block type="movement_check_path"></block>-->
-<!--        </value>-->
-<!--    </block>-->
-<!--    <block type="movement_check_path"></block>-->
-<!--    <block type="controls_whileUntil">-->
-<!--        <value name="BOOL">-->
-<!--            <shadow type="logic_boolean">-->
-<!--                <block type="check_completion"></block>-->
-<!--            </shadow>-->
-<!--        </value>-->
-<!--    </block>-->
-<!--    <block type="check_completion"></block>-->
+    <block type="check_completion"></block>
 </xml>
 

@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 import SpriteKit
 import JavaScriptCore
+import Blockly
 
 @objc protocol JSHandlerJSExport: JSExport {
-    var context: JSContext { get set }
+    var context: JSContext? { get set }
     
     static func highlightBlock(_ uuid: String)
-    static func setTimeout(_ ms: Int)
+    static func setTimeout()
     static func say(_ text: String)
     
     static func changeBackgroundColor(_ color: String)
@@ -28,88 +29,62 @@ import JavaScriptCore
 }
 
 class JSHandler: NSObject, JSHandlerJSExport {
-    var context: JSContext
-    var viewController: UIViewController
-    var outputScene: SKScene
-    
-    init(view: UIViewController, scene: SKScene) {
-        self.viewController = view
-        self.outputScene = scene
-        self.context = JSContext()
-        
-        super.init()
-    }
+    static let shared = JSHandler()
+    var speed: Speed = .🐢
+    var context: JSContext?
+    var viewController: UIViewController?
+    var outputScene: SKScene?
+    var currentWorkBench: WorkbenchViewController?
     
     //MARK: Static
     class func highlightBlock(_ uuid: String) {
         DispatchQueue.main.async {
-            if let a = (UIApplication.shared.delegate as! AppDelegate).currentWorkBench {
+            if let a = self.shared.currentWorkBench {
                 a.unhighlightAllBlocks()
                 a.highlightBlock(blockUUID: uuid)
             }
         }
     }
     
-    class func setTimeout(_ ms: Int) {
+    class func setTimeout() {
+        var ms: Int
+        
+        switch self.shared.speed {
+        case .🐢:
+            ms = 50
+        default:
+            ms = 10
+        }
+        
         usleep(useconds_t(ms * 1000))
     }
     
     class func say(_ text: String) {
-        DispatchQueue.main.async {
-            if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-                a.doSay(text)
-            }
-        }
+        self.shared.doSay(text)
     }
     
     class func changeBackgroundColor(_ color: String) {
-        DispatchQueue.main.async {
-            if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-                a.doChangeBackgroundColor(color)
-            }
-        }
+        self.shared.doChangeBackgroundColor(color)
     }
     
     class func changeSquareColor(_ color: String) {
-        DispatchQueue.main.async {
-            if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-                a.doChangeSquareColor(color)
-            }
-        }
+        self.shared.doChangeSquareColor(color)
     }
     
     class func moveForward() {
-        DispatchQueue.main.async {
-            if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-                a.doMoveForward()
-            }
-        }
+        self.shared.doMoveForward()
     }
     
     class func rotate(_ direction: String) {
-        DispatchQueue.main.async {
-            if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-                a.doRotate(direction)
-            }
-        }
+        self.shared.doRotate(direction)
     }
     
-    //DON'T LOOK AT THIS FUNCTION, YOUR EYES MAY BLEED
     class func canGo(_ direction: String) -> JSValue {
-        var value = JSValue()
-        if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-            value = a.doCanGo(direction)
-        }
-        return value
+        return self.shared.doCanGo(direction)
     }
     
-    //DON'T LOOK AT THIS FUNCTION, YOUR EYES MAY BLEED
     class func hasFinished() -> JSValue {
-        var value = JSValue()
-        if let a = (UIApplication.shared.delegate as! AppDelegate).stuffDoer {
-            value = a.doHasFinished()
-        }
-        return value
+        return self.shared.doHasFinished()
     }
     
     //MARK: Dynamic
@@ -118,7 +93,9 @@ class JSHandler: NSObject, JSHandlerJSExport {
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
             action()
         }))
-        self.viewController.present(alert, animated: true, completion: nil)
+        if let a = self.viewController {
+            a.present(alert, animated: true, completion: nil)
+        }
     }
     
     func doSay(_ text: String) {
@@ -128,13 +105,16 @@ class JSHandler: NSObject, JSHandlerJSExport {
     }
     
     func doChangeBackgroundColor(_ color: String) {
-        print(color)
-        self.outputScene.backgroundColor = UIColor(hexString: color)
+        if let a = self.outputScene {
+            a.backgroundColor = UIColor(hexString: color)
+        }
     }
     
     func doChangeSquareColor(_ color: String) {
         print(color)
-        (self.outputScene.childNode(withName: "Square") as! SKShapeNode).fillColor = UIColor(hexString: color)
+        if let a = (self.outputScene?.childNode(withName: "Square") as? SKShapeNode) {
+            a.fillColor = UIColor(hexString: color)
+        }
     }
     
     func doMoveForward() {
@@ -162,4 +142,9 @@ class JSHandler: NSObject, JSHandlerJSExport {
         }
         return JSValue(bool: false, in: self.context)
     }
+}
+
+enum Speed: Int {
+    case 🐢 = 0
+    case 🐇 = 1
 }

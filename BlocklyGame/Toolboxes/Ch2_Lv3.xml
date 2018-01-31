@@ -22,5 +22,6 @@
             <block type="check_completion"></block>
         </value>
     </block>
+    <block type="check_completion"></block>
 </xml>
 
