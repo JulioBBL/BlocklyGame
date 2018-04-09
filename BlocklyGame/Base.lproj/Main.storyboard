@@ -125,6 +125,7 @@
                             </view>
                             <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6a4-I9-4tD">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="432"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6a4-I9-4tD" secondAttribute="height" multiplier="16:9" id="Z70-vP-NH3"/>
                                 </constraints>

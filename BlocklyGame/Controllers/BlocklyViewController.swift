@@ -93,8 +93,6 @@ class BlocklyViewController: UIViewController {
             self.level?.envyronmentSetup(scene)
         }
         self.StuffView.ignoresSiblingOrder = true
-        self.StuffView.showsFPS = true
-        self.StuffView.showsNodeCount = true
         
         //MARK: initialize Workbench
         // Create a workbench
